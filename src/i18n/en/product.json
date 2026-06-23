@@ -1,0 +1,342 @@
+{
+  "hero": {
+    "badge": "KHAAD BHARAT BIOCHAR",
+    "subtext": "Powered by JSL Enterprises",
+    "title": "Natural BIO CHAR for Smarter Farming",
+    "subtitle": "Improve soil. Save water. Support better yields.",
+    "description": "KHAAD BHARAT BIOCHAR is a natural carbon-rich soil enhancer designed to help Indian farmers improve soil quality, retain moisture, and reduce farming costs.",
+    "ctaExplore": "Explore Benefits",
+    "ctaDownload": "Download Product Guide"
+  },
+  "overview": {
+    "title": "What is KHAAD BHARAT BIOCHAR?",
+    "intro": "KHAAD BHARAT Biochar is a high-stability, carbon-rich soil amendment designed to rejuvenate depleting agricultural lands.",
+    "points": [
+      "Natural Biochar: Made from carefully sorted agricultural residue, kitchen waste, and organic materials.",
+      "Controlled Process: Thermally processed under oxygen-limited conditions to retain maximum porous structure.",
+      "Soil Enhancement: Modifies physical soil structure to hold vital nutrients right where root systems develop.",
+      "Sustainable Farming: Helps rebuild the topsoil layer organically, reducing dependency on chemical inputs."
+    ]
+  },
+  "benefits": {
+    "title": "Key Benefits of Biochar",
+    "subtitle": "Why Indian farmers trust KHAAD BHARAT Biochar",
+    "items": [
+      {
+        "title": "Water Retention",
+        "description": "Acts as a microscopic sponge, holding up to 6 times its weight in water to keep fields damp longer.",
+        "icon": "Droplet"
+      },
+      {
+        "title": "Better Soil Health",
+        "description": "Fosters a rich environment for beneficial microbes and earthworms around the crop roots.",
+        "icon": "Sprout"
+      },
+      {
+        "title": "Reduced Fertilizer Usage",
+        "description": "Prevents valuable chemical and organic fertilizers from washing away, saving input costs.",
+        "icon": "Scale"
+      },
+      {
+        "title": "Stronger Crop Growth",
+        "description": "Ensures a steady supply of nutrients and hydration, promoting deep root establishment.",
+        "icon": "Leaf"
+      },
+      {
+        "title": "Lower Irrigation Costs",
+        "description": "Reduces the number of watering cycles, directly cutting diesel and electricity expenses.",
+        "icon": "TrendingDown"
+      },
+      {
+        "title": "Climate Support",
+        "description": "Locks carbon safely in the ground for centuries, reducing greenhouse gases.",
+        "icon": "Globe"
+      }
+    ]
+  },
+  "biocharExplanation": {
+    "title": "How BIO CHAR Works in the Soil",
+    "subtitle": "The science behind long-term soil productivity",
+    "text": "Biochar has an incredibly high surface area and porous structure at the microscopic level. This acts as a physical sponge, capturing water molecules and locking in nutrients that would otherwise wash away during irrigation or rain. It also provides a safe habitat for beneficial microbes, promoting natural soil health."
+  },
+  "features": {
+    "title": "Product Specifications",
+    "subtitle": "Designed for premium performance under tough conditions",
+    "items": [
+      {
+        "title": "Organic Composition",
+        "desc": "100% organic carbon matrix derived from natural waste biomass, free of toxic chemicals."
+      },
+      {
+        "title": "Lightweight Structure",
+        "desc": "Extremely porous structure reduces soil bulk density, facilitating root aeration."
+      },
+      {
+        "title": "Long-Term Soil Support",
+        "desc": "Highly stable carbon that does not decompose quickly, staying in the soil for years."
+      },
+      {
+        "title": "Eco-Farming Compatibility",
+        "desc": "Perfectly blends with compost, vermicompost, cow dung, and other organic fertilizers."
+      },
+      {
+        "title": "Low Water Dependency",
+        "desc": "Improves water holding capacity of dry sandy soils, reducing water stress."
+      }
+    ]
+  },
+  "waterSaving": {
+    "title": "How BIO CHAR Helps Save Water",
+    "subtitle": "Combat drought, lower bills, and protect crops",
+    "desc1": "By blending KHAAD BHARAT Biochar into the root zone, the soil holds moisture for much longer periods. This decreases the frequency of tube-well watering, saving valuable ground water.",
+    "desc2": "Fewer watering cycles mean lower electricity bills for tube-well pumps and reduced diesel costs for generator-operated motors, increasing the farmer's net profit.",
+    "comparisonLabel": "Soil Moisture Retention over 10 Days"
+  },
+  "soilHealth": {
+    "title": "Rejuvenating Soil Health from the Roots",
+    "subtitle": "Visualizing the underground shift in soil structure",
+    "text": "Repeated chemical use compacts the soil and kills natural microbes. Adding Biochar creates aeration channels, neutralizes acidic pH levels, and creates a stable habitat for helpful organisms.",
+    "weakSoilTitle": "Traditional / Compacted Soil",
+    "weakSoilDetails": [
+      "Low water holding capacity",
+      "Nutrients quickly wash away",
+      "Compacted soil restricts root growth",
+      "Low microbe and earthworm count"
+    ],
+    "improvedSoilTitle": "Biochar-Enhanced Soil",
+    "improvedSoilDetails": [
+      "Sponge-like moisture retention",
+      "Locked-in fertilizers near roots",
+      "Highly aerated, loose soil structure",
+      "Active microbial ecosystem and earthworms"
+    ],
+    "spongeEffectTitle": "Microscopic Sponge Effect",
+    "spongeEffectDesc": "Biochar pores house water permanently in root zones."
+  },
+  "usageGuide": {
+    "title": "How to Use BIO CHAR",
+    "subtitle": "Simple steps for maximum field impact",
+    "steps": [
+      {
+        "title": "Prepare Field",
+        "desc": "Plough the soil well and clear any weeds before sowing or transplanting."
+      },
+      {
+        "title": "Mix with Compost",
+        "desc": "Blend Biochar with organic compost or cow dung (1:4 ratio) for optimal nutrient charging."
+      },
+      {
+        "title": "Apply near Root Zone",
+        "desc": "Apply the mixture directly near the crop roots or sow it along the seed lines."
+      },
+      {
+        "title": "Irrigate Properly",
+        "desc": "Give a thorough watering immediately after application to activate the pores."
+      },
+      {
+        "title": "Monitor & Save",
+        "desc": "Observe moisture retention and gradually reduce your watering frequency."
+      }
+    ]
+  },
+  "applicationSteps": {
+    "title": "Product Application Timeline & Guidance",
+    "subtitle": "Dosage guides and seasonal recommendations",
+    "dosageTitle": "Recommended Dosage",
+    "dosageText": "Apply 2-3 tons per acre for open fields, or 10-15% by volume in nursery and garden soils.",
+    "cropAITitle": "Crop Advisor (API Integrated)",
+    "cropAIText": "Get dynamic, real-time dosage calculations tailored to your exact crop and soil type. Our model is preparing for AI crop recommendations."
+  },
+  "comparison": {
+    "title": "Traditional Soil vs BIO CHAR Enhanced Soil",
+    "headers": [
+      "Comparison Area",
+      "Traditional Soil",
+      "KHAAD BHARAT BIO CHAR Soil"
+    ],
+    "rows": [
+      {
+        "area": "Water Retention",
+        "traditional": "Low - dries out in 2-3 days",
+        "biochar": "High - retains moisture up to 7-10 days"
+      },
+      {
+        "area": "Fertilizer Dependency",
+        "traditional": "High - requires frequent dosing",
+        "biochar": "Reduced - holds nutrients in the root zone"
+      },
+      {
+        "area": "Crop Resilience",
+        "traditional": "Weak - plants wilt quickly in dry spells",
+        "biochar": "Strong - plants survive dry spells better"
+      },
+      {
+        "area": "Soil Fertility",
+        "traditional": "Degrades over time with chemicals",
+        "biochar": "Permanently improves soil carbon and biology"
+      },
+      {
+        "area": "Irrigation Frequency",
+        "traditional": "Every 3-4 days in summer",
+        "biochar": "Every 6-8 days, saving energy & labor"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to common queries about BIO CHAR",
+    "items": [
+      {
+        "q": "What is BIO CHAR?",
+        "a": "BIO CHAR is a highly stable carbon-rich material produced by heating organic waste under low oxygen conditions. It acts as a permanent soil enhancer."
+      },
+      {
+        "q": "How does it save water?",
+        "a": "Its highly porous structure acts like a microscopic sponge, holding water and releasing it slowly to the roots as the soil dries."
+      },
+      {
+        "q": "Is it organic?",
+        "a": "Yes! KHAAD BHARAT Biochar is 100% natural, made from agricultural and organic biomass waste without chemical additives."
+      },
+      {
+        "q": "Which crops can use it?",
+        "a": "It can be used for all crops including wheat, rice, vegetables, fruits, sugarcane, and also in nurseries, gardens, and farmhouses."
+      },
+      {
+        "q": "How long does it last in soil?",
+        "a": "Unlike compost which decomposes in months, Biochar is highly stable and remains in the soil, providing benefits for decades."
+      },
+      {
+        "q": "Does it reduce fertilizer need?",
+        "a": "Yes. Since it prevents nutrients from leaching or washing away, fertilizers stay in the soil longer, allowing you to reduce application rates."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Product & Field Gallery",
+    "subtitle": "Real visuals of Biochar applications and packaging",
+    "items": [
+      {
+        "title": "5kg Pack",
+        "category": "Packaging",
+        "desc": "Recyclable biodegradable pack for nurseries and gardens."
+      },
+      {
+        "title": "20kg Pack",
+        "category": "Packaging",
+        "desc": "Bulk farmer pack for small holdings and local dealers."
+      },
+      {
+        "title": "50kg Pack",
+        "category": "Packaging",
+        "desc": "Warehouse channel pack for large-scale fields."
+      },
+      {
+        "title": "Nursery Preparation",
+        "category": "Field Use",
+        "desc": "Mixing biochar with soil beds for healthy seed germination."
+      },
+      {
+        "title": "Drip Irrigation Support",
+        "category": "Watering",
+        "desc": "Fields using biochar paired with drip irrigation for max water savings."
+      },
+      {
+        "title": "Healthy Yields",
+        "category": "Crops",
+        "desc": "Improved crop root structure and higher productivity."
+      }
+    ]
+  },
+  "farmerImpact": {
+    "title": "Farmer Success Stories",
+    "subtitle": "Real results from fields using KHAAD BHARAT Biochar",
+    "stories": [
+      {
+        "name": "Ram Singh",
+        "location": "Bhiwani, Haryana",
+        "crop": "Cotton",
+        "result": "Yield increased by 18% with 30% fewer irrigation cycles.",
+        "waterSavings": "30% Water Saved",
+        "soilImprovement": "Soft, aerated clay soil"
+      },
+      {
+        "name": "Vijay Kumar",
+        "location": "Aligarh, Uttar Pradesh",
+        "crop": "Sugarcane",
+        "result": "Saved significantly on fertilizer costs, soil remains damp for 8 days.",
+        "waterSavings": "35% Water Saved",
+        "soilImprovement": "High microbial activity"
+      },
+      {
+        "name": "Suresh Patel",
+        "location": "Nagpur, Maharashtra",
+        "crop": "Oranges",
+        "result": "Plants survived extreme heat wave without drying out.",
+        "waterSavings": "40% Water Saved",
+        "soilImprovement": "Excellent moisture index"
+      }
+    ]
+  },
+  "distributor": {
+    "title": "Distributor & Partner Network",
+    "subtitle": "Partner with JSL Enterprises to scale organic farming",
+    "ctaTitle": "Become an Authorized Dealer",
+    "ctaText": "Join our growing network of agricultural distributors across India. Gain access to marketing brochures, wholesale margins, and direct bulk supply.",
+    "buttonText": "Apply for Dealership"
+  },
+  "cta": {
+    "title": "Start Smarter Farming with BIO CHAR",
+    "subtitle": "Improve soil carbon, reduce water costs, and secure better crop yields with KHAAD BHARAT.",
+    "btnConnect": "Connect with Team",
+    "btnPartner": "Become a Partner",
+    "btnDownload": "Download Brochure"
+  },
+  "footer": {
+    "disclaimer": "KHAAD BHARAT BIOCHAR is a registered soil amendment manufactured under the quality standards of JSL Enterprises, Delhi. Individual field results may vary depending on soil type, water quality, crop choice, and local weather conditions."
+  },
+  "certifiedInput": "JSL Enterprises Certified Input",
+  "heroVisuals": {
+    "biocharActivated": "Biochar Activated",
+    "organicCarbon": "100% Organic Carbon",
+    "waterSaver": "Water Saver",
+    "sixTimesAbsorb": "Up to 6x absorption",
+    "richMicrobes": "Rich Microbes",
+    "healthyRootzone": "Healthy Rootzone"
+  },
+  "overviewLifecycle": {
+    "lifecycleTitle": "Biochar Lifecycle",
+    "biomassTitle": "Agricultural Biomass Input",
+    "biomassDesc": "Sorted crop residue, hulls, and organic waste.",
+    "processTitle": "Controlled Thermal Process",
+    "processDesc": "Oxygen-limited pyrolysis locks carbon permanently.",
+    "matrixTitle": "Porous Organic Matrix",
+    "matrixDesc": "Pores are activated, ready to hold water and microbes."
+  },
+  "undergroundVisual": {
+    "soilPoresTitle": "Underground Soil Pores",
+    "porousSpongeTitle": "Porous Sponge",
+    "porousSpongeDesc": "Water molecules are locked in and released on demand.",
+    "nutrientCageTitle": "Nutrient Cage",
+    "nutrientCageDesc": "Fertilizers bond to carbon pores instead of washing away.",
+    "microbialSafehouseTitle": "Microbial Safehouse",
+    "microbialSafehouseDesc": "Pores act as shelters for beneficial fungi."
+  },
+  "waterSavingComparison": {
+    "traditionalSoilLabel": "Traditional Soil",
+    "traditionalSoilDesc": "Dries in 3 days",
+    "khaadSoilLabel": "KHAAD BHARAT Soil",
+    "khaadSoilDesc": "Damp up to 10 days"
+  },
+  "visual": {
+    "natural": "100% NATURAL",
+    "chemicalFree": "CHEMICAL FREE",
+    "brand": "KHAAD BHARAT",
+    "biochar": "BIO CHAR",
+    "netWeight": "NET WEIGHT",
+    "catalogTitle": "KHAAD BHARAT BIO CHAR",
+    "catalogFooter": "Send requirements on WhatsApp +91 96259 00369  •  Dealer and distributor enquiries are welcome",
+    "catalogDetail1": "Branded pack presentation",
+    "catalogDetail2": "For sales and sharing"
+  }
+}

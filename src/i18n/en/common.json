@@ -1,0 +1,687 @@
+{
+  "brand": {
+    "tagline": "Focus product of JSL Enterprises",
+    "heroProduct": "KHAAD BHARAT Biochar",
+    "focus": [
+      "Farmer trust",
+      "Organic biochar",
+      "Future farm inputs"
+    ]
+  },
+  "ui": {
+    "languageLabel": "Language",
+    "mediaLabel": "Media",
+    "readAloud": "Read aloud",
+    "autoReadOn": "Auto-read on",
+    "autoReadOff": "Auto-read off",
+    "voiceHelp": "Tap a question and listen to the answer.",
+    "shell": {
+      "phaseLabel": "Phase 3 React/Vite build",
+      "parentBrand": "Parent brand",
+      "previewLanguage": "Preview language"
+    },
+    "footer": {
+      "title": "Connect with the team",
+      "intro": "Share your details and we will route the enquiry to the right follow-up.",
+      "language": "Language",
+      "faqReady": "FAQ ready",
+      "mediaReady": "Media ready",
+      "connectNote": "Best for farmers, dealers, and buyers",
+      "faqTitle": "FAQ chatbot",
+      "faqSummary": "Quick answers for biochar, usage, and contact details.",
+      "mediaTitle": "Media library",
+      "mediaSummary": "Brochure, logo, social kit, and visual assets.",
+      "company": "Company",
+      "resources": "Resources",
+      "contactConnect": "Contact & Connect"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "product": "Product",
+      "media": "Media",
+      "faq": "FAQ",
+      "admin": "Admin",
+      "connect": "Connect",
+      "weather": "Weather",
+      "schemes": "Schemes",
+      "navigation": "Navigation"
+    },
+    "exploreProduct": "Explore product",
+    "openMedia": "Open media library",
+    "download": "Download",
+    "askBot": "Ask the bot",
+    "send": "Send",
+    "clear": "Clear",
+    "quickReplies": "Quick replies",
+    "faqQuestions": "FAQ questions",
+    "section": {
+      "aboutUs": "About us",
+      "brandPillars": "Brand pillars",
+      "nextSteps": "Next steps",
+      "nextStepsTitle": "Platform Ready for Scale",
+      "quickRead": "Quick read",
+      "keyPoints": "Key points",
+      "details": "Details",
+      "timeline": "Timeline",
+      "packaging": "Packaging",
+      "seedCatalog": "Seed catalog",
+      "requirement": "Requirement help",
+      "spotlight": "Spotlight",
+      "promise": "Promise"
+    },
+    "connect": {
+      "title": "Connect with the team",
+      "intro": "Share your details and we will route the enquiry to the right follow-up.",
+      "nameLabel": "Name",
+      "phoneLabel": "Phone / WhatsApp",
+      "interestLabel": "I am interested in",
+      "languageLabel": "Preferred language",
+      "messageLabel": "Message",
+      "submitLabel": "Send enquiry",
+      "successTitle": "Enquiry saved",
+      "successBody": "Thanks. Your enquiry is ready for the next follow-up.",
+      "noteTitle": "Best for",
+      "noteIntro": "This form is designed for quick farmer, dealer, and buyer follow-up.",
+      "noteItems": [
+        "Farmer support",
+        "Dealer onboarding",
+        "Export buyer conversations"
+      ],
+      "recentEnquiries": "Recent enquiries",
+      "recentEmpty": "Submitted enquiries will appear here on this device.",
+      "formHint": "Fill the form and we will keep the enquiry details in the page for now.",
+      "backToFaq": "FAQ",
+      "backToMedia": "Media",
+      "interests": {
+        "farmer": "Farmer support",
+        "dealer": "Dealer onboarding",
+        "export": "Export buyer enquiry"
+      }
+    },
+    "switchToEn": "Switch to English",
+    "switchToHi": "Switch to Hindi",
+    "loadingHome": "Loading Home...",
+    "loadingAbout": "Loading About...",
+    "loadingProducts": "Loading Products...",
+    "loadingMedia": "Loading Media Library...",
+    "loadingWeather": "Loading Weather Forecast...",
+    "loadingSchemes": "Loading Schemes...",
+    "loadingSchemeDetail": "Loading Scheme Details...",
+    "loadingContact": "Loading Contact Form...",
+    "loadingFaq": "Loading FAQ and Chatbot...",
+    "videoCard": {
+      "title": "Village farmers and field demo",
+      "badge": "▶ Video Ready",
+      "note": "This slot is ready for future background story videos and product demonstrations."
+    },
+    "chatbot": {
+      "poweredBy": "Khaad Bharat AI · Powered by Groq"
+    }
+  },
+  "pages": {
+    "home": {
+      "eyebrow": "Home",
+      "brandLine": "Powered by JSL Enterprises",
+      "heroQuote": "Soil strength, farmer savings",
+      "hero": "A new era of BIO CHAR for India's farmers",
+      "summary": "Khaad Bharat brings natural BIO CHAR for Indian farmers. It is a bio fertilizer that strengthens the soil, helps save water, and supports better crop yields.",
+      "intro": "Farming costs are rising every year, especially for fertilizer and water. Demand for BIO CHAR is growing quickly across the country because it helps keep soil fertile for longer and lowers overall farm input costs.",
+      "supportText": "Khaad Bharat BIO CHAR helps soil hold moisture for longer, which can reduce the need for repeated irrigation. That means savings in water, diesel, and electricity.",
+      "biocharTitle": "What is BIO CHAR?",
+      "biocharSummary": "BIO CHAR is a natural carbon-rich material made from agricultural residue that helps improve soil quality.",
+      "biocharPoints": [
+        "Improves water retention",
+        "Helps hold essential nutrients in the soil",
+        "Makes soil lighter and more aerated",
+        "Reduces the impact of heat and dry weather"
+      ],
+      "demandTitle": "Why is BIO CHAR demand growing?",
+      "demandSummary": "As chemical fertilizer costs rise and soil quality falls, more farmers are moving toward sustainable farming practices.",
+      "demandPoints": [
+        "Increasing use in organic farming",
+        "Need for low-water farming",
+        "Demand for better soil health",
+        "Support from government and agriculture projects"
+      ],
+      "marketTitle": "Market and supply",
+      "marketSummary": "Khaad Bharat is a trusted source of high-quality BIO CHAR that can reach farmers directly.",
+      "snapshotTitle": "Brand snapshot",
+      "cards": [
+        {
+          "title": "Water savings",
+          "body": "BIO CHAR helps soil retain moisture for longer, which can reduce irrigation costs."
+        },
+        {
+          "title": "Fertilizer savings",
+          "body": "Nutrients stay in the soil for longer, so chemical fertilizer use may be reduced."
+        },
+        {
+          "title": "Better yields",
+          "body": "Crop growth improves and farmers get support under real field conditions."
+        }
+      ],
+      "benefitTitle": "What do farmers gain?",
+      "benefitPoints": [
+        {
+          "title": "Water savings",
+          "body": "Irrigation costs can come down and the need for frequent watering may reduce."
+        },
+        {
+          "title": "Soil improvement",
+          "body": "Helps weak soil become more productive over time."
+        },
+        {
+          "title": "Lower costs",
+          "body": "Affects water, diesel, electricity, and chemical fertilizer spending in a practical way."
+        },
+        {
+          "title": "Support in every season",
+          "body": "Helps the soil retain moisture even during heat and dry spells."
+        }
+      ],
+      "irrigationTitle": "How does it reduce irrigation cost?",
+      "irrigationSummary": "BIO CHAR works like a sponge inside the soil, absorbing water and slowly releasing it to the plant roots.",
+      "irrigationPoints": [
+        "Less need for repeated watering",
+        "Savings in diesel and electricity",
+        "Lower use of tube wells and motors",
+        "Support for crops during dry periods"
+      ],
+      "promiseTitle": "Khaad Bharat promise",
+      "promisePoints": [
+        "Natural and reliable BIO CHAR",
+        "An affordable and useful solution for farmers",
+        "Better soil, better yields",
+        "Savings in water and farming costs"
+      ],
+      "closingLine": "Smarter farming starts with BIO CHAR.",
+      "rollout": [
+        {
+          "title": "Media ready",
+          "body": "Brochure, social kit, and logo kit are already in place."
+        },
+        {
+          "title": "React ready",
+          "body": "The structure maps cleanly to reusable React components."
+        },
+        {
+          "title": "Content ready",
+          "body": "The data model is separated so future API wiring will be easier."
+        }
+      ],
+      "platformReady": "Platform Ready for Scale"
+    },
+    "about": {
+      "title": "About JSL Enterprises",
+      "summary": "KHAAD BHARAT is the flagship product of JSL Enterprises, incorporated in Delhi in 2020 under the leadership of Mrs. NIDHI.",
+      "points": [
+        "Built on farmer trust and practical field impact",
+        "KHAAD BHARAT is the flagship biochar brand",
+        "Designed for future growth across organic farm inputs"
+      ],
+      "intro": "We are building KHAAD BHARAT as a practical, farmer-first organic brand with a clear focus on biochar, soil health, and easier decision-making for farms, fields, and farmhouses. The brand is being shaped with calm leadership, ethical standards, and a long-term growth mindset that values trust over noise.",
+      "leadership": "Young and dynamic leadership: Mrs. NIDHI guides the brand with discipline, clarity, and a farmer-first intent.",
+      "founderQuote": "We want KHAAD BHARAT to feel simple, useful, and honest in every farmer conversation.",
+      "visionTitle": "Our vision",
+      "visionPoints": [
+        "Serve farmers with a practical biochar product",
+        "Build trust through clear language and reliable follow-up",
+        "Grow into seeds, spices, and allied organic products"
+      ],
+      "photoLabel": "Founder portrait - Mrs. NIDHI",
+      "photoNote": "Mrs. NIDHI leads KHAAD BHARAT with practical vision, professional focus, and a commitment to farmer trust, sustainable growth, and clear communication.",
+      "timeline": [
+        {
+          "year": "2020",
+          "title": "Company formed in Delhi",
+          "body": "JSL Enterprises began with a plan to build a practical organic brand with long-term value."
+        },
+        {
+          "year": "2021",
+          "title": "Biochar focus sharpened",
+          "body": "KHAAD BHARAT was positioned as the flagship biochar product for farmers and future buyers."
+        },
+        {
+          "year": "2026",
+          "title": "Multilingual digital build",
+          "body": "The brand moved into a modern website with language support, media, FAQ, and inquiry flow."
+        }
+      ],
+      "cards": [
+        {
+          "title": "Why we started",
+          "body": "To give farmers a practical organic input that feels simple, useful, and trustworthy."
+        },
+        {
+          "title": "What it stands for",
+          "body": "Biochar made from bio-waste, with a focus on soil support and long-term farm value."
+        },
+        {
+          "title": "Where it can grow",
+          "body": "The same brand can later extend to seeds, spices, and allied organic products."
+        },
+        {
+          "title": "How it should feel",
+          "body": "A calm, dependable brand that respects farmers and speaks in plain words."
+        }
+      ],
+      "storyLabel": "Field story",
+      "storyTitle": "Village farmers, irrigation, and healthy soil",
+      "storySummary": "This visual direction keeps the brand close to the land and shows how the product supports real farm life.",
+      "storyPoints": [
+        "Warm sunrise and rural optimism",
+        "Healthy field and irrigation cues",
+        "Farmer-first storytelling for the homepage"
+      ],
+      "spotlight": [
+        "Made for soil health, water retention, and better farm input use",
+        "Built from bio-waste with a practical farmer-first approach",
+        "A brand foundation for future organic products and wider market growth"
+      ]
+    },
+    "product": {
+      "title": "KHAAD BHARAT Biochar",
+      "summary": "The defining organic product and brand anchor, now presented with pack sizes and seed catalog support.",
+      "points": [
+        "Made from kitchen, agricultural, and dung waste",
+        "Useful for farms, gardens, nurseries, and farmhouses",
+        "Available in 5kg, 20kg, and 50kg recyclable biodegradable bags"
+      ],
+      "intro": "KHAAD BHARAT Biochar is made from bio-waste and positioned as a practical soil-support input. It is designed for farmer use, dealer conversations, and future export buyers who want a simple, credible organic story. The product line is shown in three easy pack sizes with eco-friendly bag styling and label space for product details.",
+      "usageTitle": "How to use it",
+      "usageSteps": [
+        "Mix with compost or recommended soil inputs as per local crop guidance.",
+        "Apply around the root zone so the soil can hold moisture and nutrients better.",
+        "Use it as part of a long-term soil improvement plan, not as a one-time fix."
+      ],
+      "benefitTitle": "Key benefits",
+      "benefitPoints": [
+        {
+          "title": "Supports soil health",
+          "body": "Helps improve soil structure and long-term field value."
+        },
+        {
+          "title": "Helps hold moisture",
+          "body": "Can support moisture retention so the soil stays active for longer."
+        },
+        {
+          "title": "Cost conscious choice",
+          "body": "May help reduce repeated input pressure over time with better planning."
+        },
+        {
+          "title": "Farmer-friendly story",
+          "body": "Simple to explain, simple to share, and easy to position with dealers."
+        }
+      ],
+      "packagingIntro": "The packaging below is ready for digital sharing, sales presentations, WhatsApp enquiries, and print catalog use.",
+      "cards": [
+        {
+          "title": "Simple use",
+          "body": "Use it as part of a soil plan with compost or other recommended inputs, based on local crop guidance."
+        },
+        {
+          "title": "Cost conscious",
+          "body": "Designed to help farmers think about long-term input value and smarter spending."
+        },
+        {
+          "title": "Farmhouse friendly",
+          "body": "Useful in farms, gardens, nurseries, and household green spaces."
+        },
+        {
+          "title": "Future ready",
+          "body": "The same brand can later expand into seeds, spices, and allied organic products."
+        }
+      ],
+      "packages": [
+        {
+          "title": "5kg pack",
+          "image": "/images/khaad-bharat-pack-5kg.png",
+          "size": "5 kg",
+          "bag": "Recyclable biodegradable bag",
+          "details": [
+            "Organic biochar",
+            "Net weight label",
+            "Batch / MRP area",
+            "Usage and storage note"
+          ]
+        },
+        {
+          "title": "20kg pack",
+          "image": "/images/khaad-bharat-pack-20kg.png",
+          "size": "20 kg",
+          "bag": "Recyclable biodegradable bag",
+          "details": [
+            "Bulk farmer pack",
+            "Dealer label space",
+            "QR / batch area",
+            "Eco brand print"
+          ]
+        },
+        {
+          "title": "50kg pack",
+          "image": "/images/khaad-bharat-pack-50kg.png",
+          "size": "50 kg",
+          "bag": "Recyclable biodegradable bag",
+          "details": [
+            "Channel pack",
+            "Warehouse ready",
+            "Product element details",
+            "Brand logo print"
+          ]
+        }
+      ],
+      "seedCatalog": [
+        {
+          "title": "Tomato hybrid seeds",
+          "image": "/images/hybrid-seeds-tomato.svg",
+          "note": "Vegetable seed catalog card",
+          "details": [
+            "Hybrid seed presentation",
+            "Dealer-friendly pack art",
+            "Label space for sowing note"
+          ]
+        },
+        {
+          "title": "Chilli hybrid seeds",
+          "image": "/images/hybrid-seeds-chilli.svg",
+          "note": "Vegetable seed catalog card",
+          "details": [
+            "Strong catalog visual",
+            "Easy to share on WhatsApp",
+            "Brand-ready layout"
+          ]
+        },
+        {
+          "title": "Brinjal hybrid seeds",
+          "image": "/images/hybrid-seeds-brinjal.svg",
+          "note": "Vegetable seed catalog card",
+          "details": [
+            "Hybrid seed look and feel",
+            "Clear product identity",
+            "Photo-style catalog card"
+          ]
+        },
+        {
+          "title": "Cucumber hybrid seeds",
+          "image": "/images/hybrid-seeds-cucumber.svg",
+          "note": "Vegetable seed catalog card",
+          "details": [
+            "Fresh green catalog card",
+            "Dealer display use",
+            "Easy future expansion"
+          ]
+        }
+      ],
+      "storyLabel": "Sales catalog",
+      "storyTitle": "Branded product catalog for digital and print use",
+      "storySummary": "A polished sales board showing the 5kg, 20kg, and 50kg packs for WhatsApp, social sharing, and printed catalog pages.",
+      "storyPoints": [
+        "Brand logo print and label-ready presentation",
+        "Recyclable biodegradable pack visuals",
+        "Easy to share with dealers, buyers, and print partners"
+      ],
+      "whatsapp": {
+        "number": "919625900369",
+        "label": "Send requirement on WhatsApp",
+        "message": "Hello KHAAD BHARAT, I want to know more about Biochar packs (5kg, 20kg, 50kg) and vegetable hybrid seed catalog options."
+      },
+      "promise": [
+        "Organic and farmer-friendly",
+        "Built for practical soil use",
+        "Ready for the KHAAD BHARAT growth story"
+      ]
+    },
+    "media": {
+      "title": "Media library",
+      "summary": "Brochure, social kit, logo kit, and visual assets.",
+      "noteTitle": "Library note",
+      "noteBody": "These assets are wired into the public folder so the gallery can grow without dead links.",
+      "downloadsTitle": "Downloads",
+      "downloadsIntro": "Downloadable assets for dealers, farmers, and buyers.",
+      "assetsTitle": "Visual assets",
+      "assetSummary": "Ready for gallery, brochure, and brand kit use."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "summary": "Starter answers for farmers, dealers, and buyers.",
+      "quickTitle": "Ask the FAQ chatbot",
+      "quickIntro": "Type a question or choose one of the suggested prompts. Tap a card to hear the answer out loud."
+    },
+    "weather": {
+      "title": "Farmer Weather Advice",
+      "eyebrow": "Weather Forecasting",
+      "description": "Access real-time weather analytics designed to support smart fertilization, seed sowing schedules, and water irrigation budgets.",
+      "selectLabel": "Select Agricultural Region",
+      "detailsLabel": "Current Field Metrics",
+      "tempLabel": "Air Temperature",
+      "humidityLabel": "Humidity",
+      "moistureLabel": "Soil Moisture Index",
+      "rainLabel": "Rain Probability",
+      "windLabel": "Wind Speed",
+      "forecastLabel": "5-Day Sowing Forecast",
+      "warningLabel": "Biochar Sowing Guide & Warnings",
+      "regions": {
+        "delhi": {
+          "label": "North - New Delhi (NCR)",
+          "advice": "Dry soil. Prioritize deep irrigation before applying Biochar. Ideal for soil preparation.",
+          "forecast": [
+            {
+              "day": "Mon",
+              "temp": "39°C",
+              "icon": "☀️"
+            },
+            {
+              "day": "Tue",
+              "temp": "40°C",
+              "icon": "☀️"
+            },
+            {
+              "day": "Wed",
+              "temp": "38°C",
+              "icon": "⛅"
+            },
+            {
+              "day": "Thu",
+              "temp": "37°C",
+              "icon": "⛅"
+            },
+            {
+              "day": "Fri",
+              "temp": "39°C",
+              "icon": "☀️"
+            }
+          ]
+        },
+        "bhopal": {
+          "label": "Central - Bhopal (MP)",
+          "advice": "Moderate humidity. Excellent window to blend Biochar with compost for root enrichment.",
+          "forecast": [
+            {
+              "day": "Mon",
+              "temp": "33°C",
+              "icon": "⛅"
+            },
+            {
+              "day": "Tue",
+              "temp": "31°C",
+              "icon": "🌧️"
+            },
+            {
+              "day": "Wed",
+              "temp": "30°C",
+              "icon": "🌧️"
+            },
+            {
+              "day": "Thu",
+              "temp": "32°C",
+              "icon": "⛅"
+            },
+            {
+              "day": "Fri",
+              "temp": "34°C",
+              "icon": "☀️"
+            }
+          ]
+        },
+        "patna": {
+          "label": "East - Patna (Bihar)",
+          "advice": "Heavy rain expected. Postpone open field Biochar application to prevent nutrient runoff.",
+          "forecast": [
+            {
+              "day": "Mon",
+              "temp": "29°C",
+              "icon": "🌧️"
+            },
+            {
+              "day": "Tue",
+              "temp": "28°C",
+              "icon": "⛈️"
+            },
+            {
+              "day": "Wed",
+              "temp": "29°C",
+              "icon": "🌧️"
+            },
+            {
+              "day": "Thu",
+              "temp": "31°C",
+              "icon": "⛅"
+            },
+            {
+              "day": "Fri",
+              "temp": "32°C",
+              "icon": "⛅"
+            }
+          ]
+        },
+        "amritsar": {
+          "label": "North-West - Amritsar (Punjab)",
+          "advice": "Good wind conditions. Safe for broadcasting Biochar. Ensure proper soil covering.",
+          "forecast": [
+            {
+              "day": "Mon",
+              "temp": "35°C",
+              "icon": "☀️"
+            },
+            {
+              "day": "Tue",
+              "temp": "36°C",
+              "icon": "☀️"
+            },
+            {
+              "day": "Wed",
+              "temp": "34°C",
+              "icon": "⛅"
+            },
+            {
+              "day": "Thu",
+              "temp": "33°C",
+              "icon": "🌧️"
+            },
+            {
+              "day": "Fri",
+              "temp": "34°C",
+              "icon": "⛅"
+            }
+          ]
+        },
+        "nagpur": {
+          "label": "West-Central - Nagpur (Maharashtra)",
+          "advice": "Dry conditions. Mix Biochar with cow dung or compost before root zone application.",
+          "forecast": [
+            {
+              "day": "Mon",
+              "temp": "36°C",
+              "icon": "☀️"
+            },
+            {
+              "day": "Tue",
+              "temp": "35°C",
+              "icon": "⛅"
+            },
+            {
+              "day": "Wed",
+              "temp": "33°C",
+              "icon": "🌧️"
+            },
+            {
+              "day": "Thu",
+              "temp": "34°C",
+              "icon": "⛅"
+            },
+            {
+              "day": "Fri",
+              "temp": "36°C",
+              "icon": "☀️"
+            }
+          ]
+        },
+        "lucknow": {
+          "label": "North-Central - Lucknow (UP)",
+          "advice": "Scattered showers predicted. Focus on mixing Biochar with soil blocks in nursery beds.",
+          "forecast": [
+            {
+              "day": "Mon",
+              "temp": "34°C",
+              "icon": "⛅"
+            },
+            {
+              "day": "Tue",
+              "temp": "32°C",
+              "icon": "🌧️"
+            },
+            {
+              "day": "Wed",
+              "temp": "31°C",
+              "icon": "🌧️"
+            },
+            {
+              "day": "Thu",
+              "temp": "33°C",
+              "icon": "⛅"
+            },
+            {
+              "day": "Fri",
+              "temp": "35°C",
+              "icon": "☀️"
+            }
+          ]
+        }
+      }
+    },
+    "admin": {
+      "title": "Admin dashboard",
+      "summary": "Manage content, media, languages, FAQ updates, and product catalogs from one dashboard.",
+      "points": [
+        "Content and media management",
+        "Regional language control",
+        "Lead and inquiry workflow"
+      ]
+    },
+    "connect": {
+      "title": "Connect with us",
+      "summary": "Use this contact route for farmers, dealers, and export buyers who want quick follow-up.",
+      "points": [
+        "Farmer inquiries",
+        "Dealer onboarding",
+        "International buyer and importer leads"
+      ]
+    }
+  },
+  "bot": {
+    "title": "FAQ chatbot",
+    "intro": "A simple local FAQ helper for farmers, dealers, and buyers.",
+    "placeholder": "Ask about biochar, usage, or contact details",
+    "greeting": "Hello. Ask me anything from the FAQ section, and I will answer in a simple way.",
+    "quickTitle": "Quick replies",
+    "quickPrompts": [
+      "What is biochar?",
+      "How can it save cost?",
+      "Can it help production?",
+      "How do I contact you?"
+    ],
+    "fallback": "I can help with biochar basics, product use, cost questions, or contact details. Try one of the FAQ questions.",
+    "voiceHelp": "Tap a question and listen to the answer."
+  }
+}

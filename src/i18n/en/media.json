@@ -1,0 +1,340 @@
+{
+  "hero": {
+    "badge": "KHAAD BHARAT MEDIA",
+    "title": "Stories, Knowledge & Farmer Impact",
+    "subtitle": "Explore videos, farmer stories, brochures, campaigns, and BIO CHAR awareness resources.",
+    "paragraph": "Khaad Bharat shares real agricultural stories, product awareness content, educational material, and sustainable farming knowledge for Indian farmers.",
+    "watchStories": "Watch Stories",
+    "downloadBrochure": "Download Brochure",
+    "altVillage": "Farmer village visualization",
+    "altField": "Biochar soil field",
+    "altProcess": "Farm production sorting process",
+    "organicBadge": "100% Organic Biochar"
+  },
+  "tabs": {
+    "videos": "Videos",
+    "stories": "Farmer Stories",
+    "gallery": "Gallery",
+    "brochures": "Brochures",
+    "campaigns": "Campaigns",
+    "press": "Press",
+    "resources": "Brand Resources"
+  },
+  "videos": {
+    "featuredTitle": "Featured Broadcast",
+    "sectionTitle": "Educational Videos & Broadcasts",
+    "sectionSubtitle": "Watch how biochar is produced, its application in fields, and live demonstrations of soil improvements.",
+    "featured": {
+      "id": "feat-1",
+      "title": "KHAAD BHARAT Biochar: Direct Soil Application Guide",
+      "desc": "An in-depth guide demonstrating batch preparation, water mixing ratios, and application techniques directly into the root zone of crops.",
+      "duration": "12:45",
+      "category": "Product Guide",
+      "thumbnail": "/images/video-poster.svg",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    "supporting": [
+      {
+        "id": "sup-1",
+        "title": "Reducing Water Costs by 30% with Biochar",
+        "desc": "How local village farmers utilized bio-waste organic inputs to preserve soil moisture during drought cycles.",
+        "duration": "05:22",
+        "category": "Case Study",
+        "thumbnail": "/images/hero-village.svg",
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      },
+      {
+        "id": "sup-2",
+        "title": "Biochar Mixing in Nursery Beds",
+        "desc": "A step-by-step tutorial for nursery managers on blending biochar with cocopeat and compost.",
+        "duration": "08:14",
+        "category": "Tutorial",
+        "thumbnail": "/images/field-hero.svg",
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      },
+      {
+        "id": "sup-3",
+        "title": "JSL Enterprises Corporate Journey",
+        "desc": "The origin story of KHAAD BHARAT and our mission to restore organic vitality to Indian farms.",
+        "duration": "04:50",
+        "category": "Corporate Story",
+        "thumbnail": "/images/logo-vector.svg",
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    ]
+  },
+  "stories": {
+    "sectionTitle": "Real Stories from Real Fields",
+    "sectionSubtitle": "Listen to the experiences of farmers who integrated KHAAD BHARAT Biochar into their agricultural workflows.",
+    "viewStory": "View Success Story",
+    "closeStory": "Close",
+    "cropLabel": "Crop Type",
+    "locationLabel": "Village / Location",
+    "impactLabel": "Biochar Impact",
+    "items": [
+      {
+        "id": "story-1",
+        "name": "Ramesh Kumar",
+        "location": "Bhiwani, Haryana",
+        "crop": "Paddy & Cotton",
+        "impact": "35% less irrigation, improved grain density",
+        "summary": "Saved immense pumping cost and achieved rich cotton yields.",
+        "story": "Ramesh Kumar integrated KHAAD BHARAT Biochar into his 5-acre farm. By holding soil moisture during critical heat waves, he reduced his diesel pump irrigation runs from twice a week to once every ten days. His cotton fibers showed superior length and density.",
+        "image": "/images/founder-nidhi.png"
+      },
+      {
+        "id": "story-2",
+        "name": "Savitri Devi",
+        "location": "Alwar, Rajasthan",
+        "crop": "Mustard & Vegetables",
+        "impact": "20% higher yield, lower chemical fertilizer reliance",
+        "summary": "Transformed dry sandy patches into fertile vegetable beds.",
+        "story": "Savitri Devi manages a vegetable nursery. Mixing biochar with traditional compost allowed her sandy soil to retain vital nitrogen nutrients. She observed faster root development in tomato and chili saplings and decreased spending on urea inputs.",
+        "image": "/images/field-hero.svg"
+      },
+      {
+        "id": "story-3",
+        "name": "Gurpreet Singh",
+        "location": "Bathinda, Punjab",
+        "crop": "Wheat & Potatoes",
+        "impact": "Enhanced soil carbon, reduced fertilizer run-off",
+        "summary": "Prevented nutrient leaching in sandy potato soils.",
+        "story": "Gurpreet realized his fertilizer spends were rising while soil yields plateued. Adding KHAAD BHARAT Biochar created a porous carbon sponge that locked in soil nutrients. His potato size remained uniform, commanding top prices in the market.",
+        "image": "/images/hero-village.svg"
+      }
+    ]
+  },
+  "gallery": {
+    "sectionTitle": "Visualizing Organic Growth",
+    "sectionSubtitle": "Snapshots of biochar processing, packaging, distributor dealer meets, and field applications across India.",
+    "viewPhoto": "View Photo",
+    "items": [
+      {
+        "id": "gal-1",
+        "title": "Organic Raw Materials Sorting",
+        "category": "Production",
+        "image": "/images/farm-process.svg"
+      },
+      {
+        "id": "gal-2",
+        "title": "Distributor Packaging & Ready Stock",
+        "category": "Packaging",
+        "image": "/images/khaad-bharat-pack-50kg.png"
+      },
+      {
+        "id": "gal-3",
+        "title": "Tomato Seedlings in Biochar Mix",
+        "category": "Nursery",
+        "image": "/images/hybrid-seeds-tomato.svg"
+      },
+      {
+        "id": "gal-4",
+        "title": "Biochar Field Broadcasting Demonstration",
+        "category": "Field Work",
+        "image": "/images/field-hero.svg"
+      },
+      {
+        "id": "gal-5",
+        "title": "Farmer Village Outreach Session",
+        "category": "Outreach",
+        "image": "/images/hero-village.svg"
+      },
+      {
+        "id": "gal-6",
+        "title": "Corporate Logo Board Display",
+        "category": "Corporate",
+        "image": "/images/logo-vector.svg"
+      },
+      {
+        "id": "gal-7",
+        "title": "Tomato Crop Growth Tracking",
+        "category": "Results",
+        "image": "/images/hybrid-seeds-chilli.svg"
+      },
+      {
+        "id": "gal-8",
+        "title": "Water-saving Irrigation Layout",
+        "category": "Outreach",
+        "image": "/images/network-route.svg"
+      }
+    ]
+  },
+  "brochures": {
+    "sectionTitle": "Resource Library & Guides",
+    "sectionSubtitle": "Download official PDFs, user manuals, and specifications to share with farmers and dealers.",
+    "download": "Download PDF",
+    "items": [
+      {
+        "id": "doc-1",
+        "title": "KHAAD BHARAT Product Brochure",
+        "desc": "Overview of Biochar production, key chemical properties, and benefits for commercial crop growers.",
+        "fileType": "PDF",
+        "fileSize": "2.4 MB",
+        "fileUrl": "/downloads/product-brochure.pdf"
+      },
+      {
+        "id": "doc-2",
+        "title": "Farmer Biochar Application Guide",
+        "desc": "A simple pictorial handbook detailing recommended mixing ratios, seasonal application rules, and crop guides.",
+        "fileType": "PDF",
+        "fileSize": "1.8 MB",
+        "fileUrl": "/downloads/farmer-guide.pdf"
+      },
+      {
+        "id": "doc-3",
+        "title": "Distributor & Dealer Onboarding Kit",
+        "desc": "Pricing details, logistics guidelines, dealership criteria, and marketing material specifications for JSL Enterprises partners.",
+        "fileType": "PDF",
+        "fileSize": "3.1 MB",
+        "fileUrl": "/downloads/distributor-kit.pdf"
+      },
+      {
+        "id": "doc-4",
+        "title": "Soil Moisture Preservation Manual",
+        "desc": "Scientific evaluation showing water absorption metrics and soil carbon health charts using biochar organic inputs.",
+        "fileType": "PDF",
+        "fileSize": "1.5 MB",
+        "fileUrl": "/downloads/soil-manual.pdf"
+      }
+    ]
+  },
+  "campaigns": {
+    "sectionTitle": "Active Village Campaigns",
+    "sectionSubtitle": "Join our organic farming and soil conservation awareness programs happening near you.",
+    "items": [
+      {
+        "id": "camp-1",
+        "title": "Biochar Krishi Awareness Run",
+        "desc": "Outreach meets educating gram panchayats on using agricultural residue biochar instead of stubble burning.",
+        "tag": "Awareness Drive",
+        "image": "/images/farm-process.svg"
+      },
+      {
+        "id": "camp-2",
+        "title": "Smarter Water, Richer Soil",
+        "desc": "Direct workshops explaining moisture retention to combat dry summer spells using natural soil amendments.",
+        "tag": "Water Conservation",
+        "image": "/images/network-route.svg"
+      },
+      {
+        "id": "camp-3",
+        "title": "Nursery Soil Enrichment Camps",
+        "desc": "Interactive training in nurseries showing optimal composition rates for raising premium flower and vegetable beds.",
+        "tag": "Training Session",
+        "image": "/images/hero-village.svg"
+      }
+    ]
+  },
+  "press": {
+    "sectionTitle": "Press Releases & News Updates",
+    "sectionSubtitle": "Stay updated with KHAAD BHARAT in agricultural forums, national publications, and JSL Enterprises news.",
+    "readMore": "Read Press Release",
+    "items": [
+      {
+        "id": "press-1",
+        "title": "JSL Enterprises Expands Biochar Production Facilities",
+        "summary": "Scaling up organic processing capacity to meet growing demand from agricultural dealers across North India.",
+        "date": "May 12, 2026",
+        "source": "AgriBusiness Today",
+        "url": "#"
+      },
+      {
+        "id": "press-2",
+        "title": "Farmer Studies Show 30% reduction in water dependency",
+        "summary": "Scientific testing boards verify positive water holding capacities when mixing biochar with compost in dry soil fields.",
+        "date": "April 28, 2026",
+        "source": "Krishi Patrika",
+        "url": "#"
+      },
+      {
+        "id": "press-3",
+        "title": "Empowering Women in Agriculture under New Leadership",
+        "summary": "Highlighting JSL Enterprises' leadership focus on women-friendly training tools and community crop support groups.",
+        "date": "March 15, 2026",
+        "source": "Community Voice",
+        "url": "#"
+      }
+    ]
+  },
+  "resources": {
+    "sectionTitle": "Brand Kit & Media Resources",
+    "sectionSubtitle": "Official vectors, product renders, and presentation tools for authorized JSL Enterprises distribution networks.",
+    "filterAll": "All Resources",
+    "filterLogos": "Logos & Vectors",
+    "filterPacks": "Product Packs",
+    "filterBanners": "Banners & Media",
+    "download": "Download",
+    "items": [
+      {
+        "id": "res-1",
+        "title": "Corporate Logo Vector",
+        "category": "Logos & Vectors",
+        "fileType": "SVG",
+        "fileSize": "12 KB",
+        "fileUrl": "/images/logo-vector.svg"
+      },
+      {
+        "id": "res-2",
+        "title": "Official Brand Icon Mark",
+        "category": "Logos & Vectors",
+        "fileType": "SVG",
+        "fileSize": "8 KB",
+        "fileUrl": "/images/logo-mark.svg"
+      },
+      {
+        "id": "res-3",
+        "title": "KHAAD BHARAT 5kg Pack Render",
+        "category": "Product Packs",
+        "fileType": "PNG",
+        "fileSize": "2.4 MB",
+        "fileUrl": "/images/khaad-bharat-pack-5kg.png"
+      },
+      {
+        "id": "res-4",
+        "title": "KHAAD BHARAT 20kg Pack Render",
+        "category": "Product Packs",
+        "fileType": "PNG",
+        "fileSize": "2.9 MB",
+        "fileUrl": "/images/khaad-bharat-pack-20kg.png"
+      },
+      {
+        "id": "res-5",
+        "title": "KHAAD BHARAT 50kg Pack Render",
+        "category": "Product Packs",
+        "fileType": "PNG",
+        "fileSize": "3.1 MB",
+        "fileUrl": "/images/khaad-bharat-pack-50kg.png"
+      },
+      {
+        "id": "res-6",
+        "title": "Social Campaign Share Card",
+        "category": "Banners & Media",
+        "fileType": "PNG",
+        "fileSize": "580 KB",
+        "fileUrl": "/images/share-card.svg"
+      },
+      {
+        "id": "res-7",
+        "title": "Regional Sales Catalog Board",
+        "category": "Banners & Media",
+        "fileType": "PNG",
+        "fileSize": "2.6 MB",
+        "fileUrl": "/images/khaad-bharat-catalog-board.png"
+      },
+      {
+        "id": "res-8",
+        "title": "Brochure Cover Display Vector",
+        "category": "Banners & Media",
+        "fileType": "SVG",
+        "fileSize": "15 KB",
+        "fileUrl": "/images/brochure-cover.svg"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Join the Future of Smarter Farming",
+    "subtitle": "Connect with our technical support team or sign up as an authorized regional dealer to begin today.",
+    "connectBtn": "Connect with Team",
+    "partnerBtn": "Become a Partner"
+  }
+}

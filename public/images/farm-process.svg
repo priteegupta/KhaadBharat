@@ -1,0 +1,36 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Farm process illustration">
+  <defs>
+    <linearGradient id="processBg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8EC"/>
+      <stop offset="1" stop-color="#E8DBB3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="44" fill="url(#processBg)"/>
+  <g transform="translate(104 190)" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="120" width="180" height="230" rx="36" fill="#FFF" stroke="#B48E42" stroke-width="8"/>
+    <text x="36" y="235" font-size="34" font-family="Trebuchet MS, sans-serif" fill="#385629">1</text>
+    <text x="32" y="280" font-size="26" font-family="Trebuchet MS, sans-serif" fill="#5A6852">Waste</text>
+    <path d="M88 168C110 146 133 144 148 158C132 172 128 193 128 214C128 238 133 260 147 284C121 286 97 278 82 262C68 248 66 221 74 198C78 187 83 177 88 168Z" fill="#7E552A"/>
+    <circle cx="100" cy="184" r="12" fill="#8AB03A"/>
+    <circle cx="124" cy="208" r="12" fill="#8AB03A"/>
+  </g>
+  <g transform="translate(510 190)" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="120" width="180" height="230" rx="36" fill="#FFF" stroke="#B48E42" stroke-width="8"/>
+    <text x="36" y="235" font-size="34" font-family="Trebuchet MS, sans-serif" fill="#385629">2</text>
+    <text x="18" y="280" font-size="26" font-family="Trebuchet MS, sans-serif" fill="#5A6852">Process</text>
+    <rect x="58" y="168" width="66" height="96" rx="18" fill="#385629"/>
+    <path d="M58 190H124" stroke="#B4D83A" stroke-width="8"/>
+    <path d="M58 220H124" stroke="#B4D83A" stroke-width="8"/>
+  </g>
+  <g transform="translate(916 190)" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="120" width="180" height="230" rx="36" fill="#FFF" stroke="#B48E42" stroke-width="8"/>
+    <text x="36" y="235" font-size="34" font-family="Trebuchet MS, sans-serif" fill="#385629">3</text>
+    <text x="14" y="280" font-size="26" font-family="Trebuchet MS, sans-serif" fill="#5A6852">Apply</text>
+    <path d="M58 255C58 212 79 175 106 160C133 175 154 212 154 255C154 285 128 308 106 320C84 308 58 285 58 255Z" fill="#8AB03A"/>
+    <path d="M106 160V305" stroke="#385629" stroke-width="8"/>
+  </g>
+  <path d="M304 298H484" stroke="#385629" stroke-width="10"/>
+  <path d="M710 298H890" stroke="#385629" stroke-width="10"/>
+  <path d="M476 282L496 298L476 314" stroke="#385629" stroke-width="10"/>
+  <path d="M882 282L902 298L882 314" stroke="#385629" stroke-width="10"/>
+</svg>

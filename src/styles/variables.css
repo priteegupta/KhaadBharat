@@ -1,0 +1,16 @@
+:root {
+  color-scheme: light;
+  --bg: #f6edd8;
+  --bg-deep: #e8dcb7;
+  --panel: rgba(255, 251, 242, 0.88);
+  --line: rgba(54, 90, 43, 0.16);
+  --text: #1f2f1b;
+  --muted: #5a6852;
+  --primary: #5c7f2f;
+  --primary-deep: #385629;
+  --accent: #cd8a1d;
+  --accent-soft: rgba(205, 138, 29, 0.14);
+  --shadow: 0 28px 70px rgba(47, 75, 37, 0.14);
+  --radius-xl: 30px;
+  --radius-lg: 22px;
+}

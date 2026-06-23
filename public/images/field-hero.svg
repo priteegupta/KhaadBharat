@@ -1,0 +1,28 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Field hero illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6DE"/>
+      <stop offset="1" stop-color="#E8D8AE"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="370" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AB03A"/>
+      <stop offset="1" stop-color="#436329"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="44" fill="url(#sky)"/>
+  <circle cx="940" cy="158" r="74" fill="#FFD96A"/>
+  <circle cx="940" cy="158" r="120" fill="#FFD96A" fill-opacity="0.18"/>
+  <path d="M0 500C150 430 290 392 430 392C600 392 760 460 1200 356V800H0V500Z" fill="url(#field)"/>
+  <path d="M0 566C162 500 300 478 430 478C590 478 760 536 1200 440" stroke="#D5E96A" stroke-opacity="0.65" stroke-width="10"/>
+  <path d="M0 640C150 584 300 566 430 566C598 566 768 610 1200 520" stroke="#B4D83A" stroke-opacity="0.42" stroke-width="10"/>
+  <g transform="translate(414 250)">
+    <ellipse cx="186" cy="360" rx="146" ry="34" fill="#20301B" fill-opacity="0.2"/>
+    <rect x="92" y="118" width="188" height="220" rx="28" fill="#F7E7BF" stroke="#C98A1F" stroke-width="8"/>
+    <path d="M120 170C132 152 154 138 187 138C218 138 240 152 252 170C243 190 236 211 232 232C228 257 229 283 235 318H139C145 283 146 257 142 232C138 211 131 190 120 170Z" fill="#D9B15D" opacity="0.86"/>
+    <circle cx="188" cy="82" r="48" fill="#fff2a8" fill-opacity="0.7"/>
+    <path d="M188 20V88" stroke="#5E7B2B" stroke-width="10" stroke-linecap="round"/>
+    <path d="M188 54C156 42 134 26 122 6" stroke="#8AB03A" stroke-width="8" stroke-linecap="round"/>
+    <path d="M188 54C218 42 242 26 252 6" stroke="#8AB03A" stroke-width="8" stroke-linecap="round"/>
+    <text x="140" y="383" font-size="24" font-family="Trebuchet MS, sans-serif" fill="#385629" letter-spacing="1">BIOCHAR</text>
+  </g>
+</svg>

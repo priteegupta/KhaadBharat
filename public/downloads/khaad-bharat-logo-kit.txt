@@ -1,0 +1,13 @@
+KHAAD BHARAT LOGO KIT
+
+Included files:
+- logo-mark.svg
+- logo-vector.svg
+- favicon.png
+- social-preview.png
+
+Suggested usage:
+- Use logo-mark.svg for compact placements
+- Use logo-vector.svg for headers, brochure covers, and scalable print
+- Use favicon.png for browser tabs and app-like surfaces
+- Use social-preview.png for social cards and share previews

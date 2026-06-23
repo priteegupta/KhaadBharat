@@ -1,0 +1,26 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Brochure cover illustration">
+  <defs>
+    <linearGradient id="coverBg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7E9"/>
+      <stop offset="1" stop-color="#E9DBB6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="44" fill="url(#coverBg)"/>
+  <rect x="106" y="98" width="988" height="604" rx="36" fill="#FDFBF5" stroke="#C98A1F" stroke-width="8"/>
+  <rect x="160" y="148" width="336" height="516" rx="24" fill="#385629"/>
+  <rect x="520" y="148" width="520" height="84" rx="18" fill="#F6E2AA"/>
+  <text x="560" y="204" font-size="34" font-family="Trebuchet MS, sans-serif" fill="#385629" letter-spacing="2">KHAAD BHARAT BROCHURE</text>
+  <text x="560" y="280" font-size="56" font-family="Georgia, serif" font-weight="700" fill="#1F2F1B">Biochar for Bharat and Beyond</text>
+  <text x="560" y="352" font-size="24" font-family="Trebuchet MS, sans-serif" fill="#5A6852">Farmer-first product overview, use cases, and brand story.</text>
+  <rect x="560" y="418" width="148" height="148" rx="26" fill="#F6E2AA" stroke="#C98A1F" stroke-width="5"/>
+  <rect x="730" y="418" width="148" height="148" rx="26" fill="#E5F0B7" stroke="#8AB03A" stroke-width="5"/>
+  <rect x="900" y="418" width="96" height="148" rx="26" fill="#D7E9B9" stroke="#8AB03A" stroke-width="5"/>
+  <text x="584" y="500" font-size="26" font-family="Trebuchet MS, sans-serif" fill="#385629">Product</text>
+  <text x="766" y="500" font-size="26" font-family="Trebuchet MS, sans-serif" fill="#385629">Media</text>
+  <text x="914" y="500" font-size="26" font-family="Trebuchet MS, sans-serif" fill="#385629">Grow</text>
+  <circle cx="328" cy="410" r="112" fill="#FFD96A" fill-opacity="0.78"/>
+  <path d="M278 438C278 396 304 366 328 346C352 366 378 396 378 438C378 470 353 494 328 508C303 494 278 470 278 438Z" fill="#8AB03A"/>
+  <path d="M328 346V500" stroke="#385629" stroke-width="10"/>
+  <path d="M328 386C304 374 285 362 275 342" stroke="#D4EA71" stroke-width="8"/>
+  <path d="M328 386C352 374 371 362 381 342" stroke="#D4EA71" stroke-width="8"/>
+</svg>

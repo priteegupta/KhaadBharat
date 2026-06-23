@@ -1,0 +1,16 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Video poster illustration">
+  <defs>
+    <linearGradient id="videoBg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6E7"/>
+      <stop offset="1" stop-color="#E7D8AC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="44" fill="url(#videoBg)"/>
+  <rect x="96" y="96" width="1008" height="608" rx="44" fill="#1F2F1B"/>
+  <circle cx="600" cy="400" r="170" fill="#FFF4C1" fill-opacity="0.12"/>
+  <path d="M526 320L526 480L666 400L526 320Z" fill="#F6E2AA"/>
+  <text x="122" y="182" font-size="28" font-family="Trebuchet MS, sans-serif" fill="#D7E9B9" letter-spacing="3">VIDEO PREVIEW</text>
+  <text x="122" y="248" font-size="58" font-family="Georgia, serif" font-weight="700" fill="#FFF6DE">Field story and product demo</text>
+  <rect x="122" y="548" width="266" height="72" rx="20" fill="#8AB03A"/>
+  <text x="178" y="596" font-size="26" font-family="Trebuchet MS, sans-serif" fill="#10200C">Watch later</text>
+</svg>

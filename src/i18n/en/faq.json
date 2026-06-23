@@ -1,0 +1,265 @@
+{
+  "hero": {
+    "badge": "KHAAD BHARAT HELP CENTER",
+    "headline": "Frequently Asked Questions",
+    "subheadline": "Find answers about BIO CHAR, farming benefits, weather insights, government schemes, and partnership opportunities.",
+    "description": "Explore common questions from farmers, distributors, and agricultural partners. Our goal is to help you make informed farming decisions.",
+    "btnBrowse": "Browse FAQs",
+    "btnSupport": "Contact Support"
+  },
+  "search": {
+    "placeholder": "Search your question...",
+    "examplesLabel": "Try searching:",
+    "examples": [
+      "What is BIO CHAR?",
+      "How does it save water?",
+      "How do I become a distributor?"
+    ],
+    "noResults": "No results found for \"{{query}}\". Try searching for different keywords or browse categories.",
+    "searchResultsTitle": "Search Results",
+    "clearSearch": "Clear Search"
+  },
+  "categories": {
+    "product": "Product",
+    "biochar": "BIO CHAR",
+    "benefits": "Farming Benefits",
+    "weather": "Weather",
+    "schemes": "Schemes",
+    "distributors": "Distributors"
+  },
+  "sections": {
+    "product": {
+      "title": "Product FAQs",
+      "subtitle": "Learn about KHAAD BHARAT BIOCHAR quality and crop compatibility.",
+      "items": [
+        {
+          "q": "What is KHAAD BHARAT BIOCHAR?",
+          "a": "KHAAD BHARAT BIOCHAR is a premium, carbon-rich soil conditioner made from agricultural residue. It works at the root level to improve soil structure, enhance water retention, and foster beneficial microbial growth."
+        },
+        {
+          "q": "Is it organic?",
+          "a": "Yes, it is 100% organic and natural. It contains no synthetic chemicals or additives, making it perfectly safe for organic farming, home gardens, nurseries, and sustainable agriculture."
+        },
+        {
+          "q": "How is it different from regular fertilizer?",
+          "a": "Regular fertilizers provide immediate chemical nutrients but can deplete soil quality over time. BIO CHAR acts as a permanent soil sponge and habitat for nutrients, improving the physical structure of the soil for years rather than feeding the plant once."
+        },
+        {
+          "q": "Which crops can use BIO CHAR?",
+          "a": "BIO CHAR is highly versatile and can be used for all types of crops including wheat, paddy, cotton, vegetables (tomato, chilli, brinjal, cucumber), fruit orchards, sugarcane, pulses, and ornamental plants."
+        },
+        {
+          "q": "How often should it be applied?",
+          "a": "Unlike chemical fertilizers that must be applied every season, a single application of BIO CHAR remains effective in the soil for years. It is best applied during soil preparation or root-zone blending once a year or once every few seasons."
+        }
+      ]
+    },
+    "biochar": {
+      "title": "BIO CHAR FAQs",
+      "subtitle": "Discover the science behind BIO CHAR and how it interacts with the soil.",
+      "items": [
+        {
+          "q": "What is BIO CHAR made from?",
+          "a": "KHAAD BHARAT BIOCHAR is produced through the controlled thermo-chemical conversion (pyrolysis) of high-quality organic agricultural residues, dung waste, and biomass under low-oxygen conditions."
+        },
+        {
+          "q": "How does BIO CHAR improve soil?",
+          "a": "It increases soil aeration, reduces soil compaction, lowers nutrient leaching, and creates a highly porous microstructure that houses beneficial soil microbes, enhancing natural soil fertility."
+        },
+        {
+          "q": "Does it help retain moisture?",
+          "a": "Absolutely. The high porosity of BIO CHAR allows it to act like a micro-sponge, absorbing water and holding it in the root zone. This prevents water from draining away too quickly, keeping soil moist longer."
+        },
+        {
+          "q": "Is BIO CHAR environmentally friendly?",
+          "a": "Yes, it is a powerful carbon-sequestration tool. By locking carbon in a stable solid form inside the soil for hundreds of years, it prevents agricultural waste from decomposing into greenhouse gases."
+        },
+        {
+          "q": "How long does it remain effective in soil?",
+          "a": "Because of its highly stable carbon structure, BIO CHAR does not easily decompose. It remains active and beneficial in the soil for decades, offering a long-term investment in soil health."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Farming Benefits FAQs",
+      "subtitle": "See how BIO CHAR lowers farming expenses and boosts crop output.",
+      "items": [
+        {
+          "q": "Does BIO CHAR reduce irrigation needs?",
+          "a": "Yes. By retaining soil moisture, BIO CHAR can reduce the frequency of irrigation by 20% to 30%. This directly saves diesel, water, and electricity costs for tube wells."
+        },
+        {
+          "q": "Can it lower fertilizer usage?",
+          "a": "Yes, BIO CHAR holds onto chemical and organic fertilizers in the root zone, preventing them from washing away during rains or irrigation. This improves fertilizer efficiency and allows you to reduce overall usage."
+        },
+        {
+          "q": "Will it improve crop yields?",
+          "a": "By maintaining consistent soil moisture and nutrient availability, crops grow stronger, resist diseases better, and produce healthier, higher-quality yields."
+        },
+        {
+          "q": "Is it suitable for dry regions?",
+          "a": "It is exceptionally beneficial for dry, arid, and water-stressed regions because it maximizes the utility of every drop of water and prevents soil from drying out rapidly under intense heat."
+        },
+        {
+          "q": "Can small farmers benefit from it?",
+          "a": "Yes, small farmers benefit the most as it reduces their cash outlays on expensive fertilizers, irrigation fuel, and frequent crop watering, resulting in immediate savings and better returns."
+        }
+      ]
+    },
+    "weather": {
+      "title": "Weather FAQs",
+      "subtitle": "Understand how the weather features help you plan farming activities.",
+      "items": [
+        {
+          "q": "How accurate is the weather information?",
+          "a": "Our weather advice is highly reliable, utilizing state-of-the-art regional forecasting APIs tailored specifically for agricultural zones in India."
+        },
+        {
+          "q": "How is weather data collected?",
+          "a": "We aggregate meteorological data from satellite observations, ground radar networks, and agricultural weather stations to analyze air temperature, humidity, wind, and rain probability."
+        },
+        {
+          "q": "Does weather update in real time?",
+          "a": "Yes, our field metrics and regional forecasts are updated dynamically using real-time API integrations, ensuring you get the latest alerts."
+        },
+        {
+          "q": "Can I search weather by location?",
+          "a": "The platform provides instant selectors for major agricultural regions and will support auto-geolocation in the near future to deliver localized advice directly to your phone."
+        },
+        {
+          "q": "Will weather alerts be available?",
+          "a": "Yes, we display critical agricultural warnings (like high winds or heavy rainfall) alongside advice on whether it is safe to broadcast BIO CHAR or if you should irrigate."
+        }
+      ]
+    },
+    "schemes": {
+      "title": "Schemes FAQs",
+      "subtitle": "Learn about agricultural subsidies, organic schemes, and government support.",
+      "items": [
+        {
+          "q": "What schemes are shown on the platform?",
+          "a": "We list key central and state government agricultural schemes, such as organic farming subsidies, soil health card support, and micro-irrigation subvention programs."
+        },
+        {
+          "q": "Are government schemes updated regularly?",
+          "a": "Yes, we keep track of official government announcements and update the schemes listing regularly to ensure you have the latest eligibility and subsidy rates."
+        },
+        {
+          "q": "Can I apply directly from the website?",
+          "a": "Our platform provides detailed application guides, eligibility checkers, and direct links to official government application portals."
+        },
+        {
+          "q": "How do I check eligibility?",
+          "a": "Each scheme listed in our Schemes page has a simple eligibility breakdown based on landholding, state, category of farmer, and crop type."
+        },
+        {
+          "q": "Are schemes state-specific?",
+          "a": "Yes, many schemes are state-sponsored, while others are central initiatives (like PM-KISAN or PKVY). The platform labels each scheme with its state and crop applicability."
+        }
+      ]
+    },
+    "distributors": {
+      "title": "Distributor FAQs",
+      "subtitle": "Grow your business by partnering with KHAAD BHARAT.",
+      "items": [
+        {
+          "q": "How can I become a distributor?",
+          "a": "To become an authorized distributor, fill out the enquiry form on our Connect page or reach out via our dealer support hotline. Our sales team will review your application within 2-3 business days."
+        },
+        {
+          "q": "Are dealership opportunities available?",
+          "a": "Yes, we offer dealership opportunities at the sub-district (tehsil) and district levels across major farming states, with attractive margins and marketing support."
+        },
+        {
+          "q": "What support is provided?",
+          "a": "We provide promotional brochures, banner kits, regional advertising support, soil-testing training, and direct customer leads generated from our digital platform."
+        },
+        {
+          "q": "How can I contact the team?",
+          "a": "You can connect with us using the form on the website, email us, call our partner line, or message our direct WhatsApp business support at +91 96259 00369."
+        },
+        {
+          "q": "Are training resources available?",
+          "a": "Yes, we conduct online workshops and on-field demonstrations for dealers and farmers to educate them on biochar application rates, soil blending, and organic benefits."
+        }
+      ]
+    }
+  },
+  "support": {
+    "title": "Still Need Help?",
+    "subtitle": "Our team is ready to assist farmers, distributors, and partners.",
+    "btnConnect": "Connect with Team",
+    "btnContact": "Contact Support",
+    "cards": [
+      {
+        "title": "Product Support",
+        "description": "Have questions about packaging, prices, or application dosage for specific crops?"
+      },
+      {
+        "title": "Farming Guidance",
+        "description": "Need expert advice on blending BIO CHAR with soil, compost, or under special weather conditions?"
+      },
+      {
+        "title": "Partnership Support",
+        "description": "Want to apply for dealership, explore export inquiries, or bulk orders?"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Helping Farmers Make Better Decisions",
+    "btnProduct": "Explore Product",
+    "btnContact": "Contact Team"
+  },
+  "heroVisuals": {
+    "soilMoistureHeader": "SOIL MOISTURE",
+    "healthySponge": "Healthy Sponge Zone",
+    "retained": "+28% Retained",
+    "realtimeForecast": "REAL-TIME FORECAST",
+    "idealSowing": "Ideal sowing window active",
+    "delhiRegion": "Delhi (NCR) Region",
+    "trustVerified": "TRUST VERIFIED",
+    "organicCarbon": "100% Organic Carbon"
+  },
+  "visuals": {
+    "product": {
+      "title": "Available Packing Sizes",
+      "description": "KHAAD BHARAT is distributed in three major sizes tailored for small gardens up to commercial farms:",
+      "packHome": "Home Gardens",
+      "packMedium": "Medium Farms",
+      "packBulk": "Bulk / Distributors"
+    },
+    "biochar": {
+      "title": "Biochar Sponge Action",
+      "waterLockText": "Biochar Sponge Locks Water",
+      "description": "Pyrolyzed agricultural waste carbon creates micro-pores that lock moisture and release it gradually to root networks."
+    },
+    "benefits": {
+      "title": "Farming Impact Metrics",
+      "metricWaterCost": "-30% Water Cost",
+      "detailWaterCost": "Sponging retains water, lowering fuel and pumping costs.",
+      "metricChemical": "-20% Chemical Inputs",
+      "detailChemical": "Locks nitrogen/phosphorus at root-zones, minimizing runoff.",
+      "metricYield": "+15% Higher Crop Yield",
+      "detailYield": "Maintains optimal moisture through extreme dry summer spells."
+    },
+    "weather": {
+      "title": "Agri-Weather Forecast Hub",
+      "description": "Integrated real-time API forecasts help plan soil dressing schedules:",
+      "soilMoisture": "Soil Moisture Index",
+      "optimal": "Optimal",
+      "recommendation": "✓ Safe broadcasting weather recommended today."
+    },
+    "schemes": {
+      "title": "Subsidy Eligibility",
+      "description": "We sync with local departments to support farmers in verifying qualifications:",
+      "pkvy": "Supported under Paramparagat Krishi Vikas Yojana (PKVY)",
+      "soilHealth": "Registered with Soil Health Card recommendations"
+    },
+    "distributors": {
+      "title": "Business Partner Network",
+      "description": "Authorized dealers receive complete point-of-sale support kits:",
+      "hotline": "Direct Dealer Hotline",
+      "whatsapp": "WhatsApp Business"
+    }
+  }
+}

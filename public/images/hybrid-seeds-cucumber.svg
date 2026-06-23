@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Cucumber hybrid seed catalog card</title>
+  <desc id="desc">Hybrid cucumber seed packet card for the vegetable seed catalog.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#effaf0"/>
+      <stop offset="100%" stop-color="#d3f0d7"/>
+    </linearGradient>
+    <linearGradient id="pack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f9b59"/>
+      <stop offset="100%" stop-color="#1f6343"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <ellipse cx="600" cy="1370" rx="250" ry="45" fill="#3a7b52" opacity="0.16"/>
+  <rect x="380" y="220" width="440" height="1160" rx="42" fill="url(#pack)"/>
+  <rect x="414" y="260" width="372" height="110" rx="24" fill="#fff6ea"/>
+  <text x="600" y="330" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="56" font-weight="800" fill="#2f9b59">CUCUMBER</text>
+  <text x="600" y="412" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="28" fill="#fff">Hybrid Seeds Catalog</text>
+  <path d="M520 700 C520 640 560 570 635 545 C700 523 760 558 770 620 C780 688 736 760 664 792 C590 825 520 780 520 700 Z" fill="#8bd76b"/>
+  <path d="M560 600 C592 560 630 540 676 540 C664 575 646 605 610 620 Z" fill="#5c7f2f"/>
+  <circle cx="610" cy="655" r="18" fill="#d7ffcf" opacity="0.9"/>
+  <rect x="430" y="915" width="340" height="220" rx="26" fill="#fff6ea"/>
+  <text x="600" y="968" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="34" font-weight="800" fill="#1f2f1b">Fresh green variety</text>
+  <text x="600" y="1020" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="28" fill="#5a6852">Clean space for seed notes and pack information</text>
+  <text x="600" y="1070" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="28" fill="#5a6852">Useful for catalog and dealer display</text>
+</svg>

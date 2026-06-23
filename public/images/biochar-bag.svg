@@ -1,0 +1,21 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Biochar bag illustration">
+  <defs>
+    <linearGradient id="bagBg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDF6E7"/>
+      <stop offset="1" stop-color="#E7D5A9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="44" fill="url(#bagBg)"/>
+  <circle cx="212" cy="148" r="56" fill="#FFD96A"/>
+  <path d="M288 556C352 520 438 492 598 492C758 492 844 520 908 556C858 616 760 664 598 664C436 664 338 616 288 556Z" fill="#2A3821" fill-opacity="0.17"/>
+  <g transform="translate(390 142)">
+    <rect x="64" y="76" width="292" height="430" rx="44" fill="#F7E7BF" stroke="#C98A1F" stroke-width="10"/>
+    <path d="M122 80C124 38 149 12 210 12C271 12 296 38 298 80" stroke="#855B22" stroke-width="14" stroke-linecap="round"/>
+    <path d="M100 150C148 182 180 208 196 236C212 208 244 182 292 150" stroke="#8AB03A" stroke-width="12" stroke-linecap="round"/>
+    <path d="M106 294C150 276 177 270 196 270C215 270 242 276 286 294" stroke="#385629" stroke-width="12" stroke-linecap="round"/>
+    <path d="M122 400C156 382 176 374 196 374C216 374 236 382 270 400" stroke="#7C5324" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="196" cy="512" r="22" fill="#385629"/>
+    <text x="126" y="228" font-size="34" font-family="Georgia, serif" font-weight="700" fill="#385629">KHAAD BHARAT</text>
+    <text x="126" y="268" font-size="22" font-family="Trebuchet MS, sans-serif" fill="#5C6854">Biochar input</text>
+  </g>
+</svg>

@@ -1,0 +1,168 @@
+{
+  "hero": {
+    "badge": "KHAAD BHARAT CONNECT",
+    "title": "Let's Build Smarter Farming Together",
+    "subtitle": "Connect with our team for product information, partnerships, dealership opportunities, and farmer support.",
+    "description": "Our team is here to support farmers, distributors, partners, and organizations working toward sustainable agriculture.",
+    "contactBtn": "Contact Team",
+    "partnerBtn": "Become a Partner"
+  },
+  "quickContact": {
+    "farmer": {
+      "title": "Farmer Support",
+      "desc": "Get expert advice on how to use biochar, water budgeting, and seed selection.",
+      "btn": "Get Support"
+    },
+    "product": {
+      "title": "Product Information",
+      "desc": "Learn about our 5kg, 20kg, and 50kg biochar packs, specifications, and prices.",
+      "btn": "View Details"
+    },
+    "distributor": {
+      "title": "Distributor Inquiry",
+      "desc": "Explore retail and dealership opportunities to distribute KHAAD BHARAT in your region.",
+      "btn": "Inquire Now"
+    },
+    "partnership": {
+      "title": "Business Partnership",
+      "desc": "Collaborate with us on sustainable agriculture, institutional supply, and community outreach.",
+      "btn": "Explore Partnerships"
+    }
+  },
+  "form": {
+    "title": "Send a Message",
+    "subtitle": "Fill out the form below and our team will get back to you within 24-48 hours.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "Enter your 10-digit number",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "name@example.com",
+    "stateLabel": "State",
+    "stateSelect": "Select your State",
+    "interestLabel": "Inquiry Type",
+    "interestSelect": "Select inquiry type",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "How can we help you? Feel free to ask about products, pricing, or support.",
+    "submitBtn": "Submit Inquiry",
+    "submitting": "Submitting...",
+    "successTitle": "Thank you for reaching out!",
+    "successDesc": "Your inquiry has been received. Our team will contact you shortly.",
+    "sendAnother": "Send Another Message",
+    "errorTitle": "Submission Failed",
+    "errorDesc": "Something went wrong. Please check your network and try again.",
+    "validation": {
+      "nameRequired": "Full name is required",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Please enter a valid 10-digit phone number",
+      "emailInvalid": "Please enter a valid email address",
+      "stateRequired": "Please select your state",
+      "messageRequired": "Please write your message"
+    },
+    "interests": {
+      "product": "Product Information",
+      "farmer": "Farmer Support",
+      "dealer": "Distributor Inquiry",
+      "partnership": "Partnership",
+      "media": "Media",
+      "other": "Other"
+    }
+  },
+  "partnership": {
+    "title": "Partner with KHAAD BHARAT",
+    "subtitle": "We collaborate with organizations to scale sustainable farming solutions.",
+    "business": {
+      "title": "Business Partnership",
+      "desc": "Scale retail, bulk supply, and commercial organic agricultural operations."
+    },
+    "collab": {
+      "title": "Agriculture Collaboration",
+      "desc": "Join forces with agronomy research, seed companies, and technology providers."
+    },
+    "outreach": {
+      "title": "Community Outreach",
+      "desc": "Work with NGOs, self-help groups, and cooperatives to train local farmers."
+    },
+    "sustainability": {
+      "title": "Sustainability Projects",
+      "desc": "Partner with us for corporate ESG initiatives, carbon sequestering, and green projects."
+    }
+  },
+  "distributor": {
+    "title": "Become a Distributor",
+    "desc": "Partner with KHAAD BHARAT and bring natural soil nutrition solutions to your regional dealer networks.",
+    "benefits": {
+      "market": {
+        "title": "Growing Market",
+        "desc": "Tap into the high demand for biochar and organic agricultural inputs."
+      },
+      "product": {
+        "title": "Premium Product",
+        "desc": "Distribute a high-quality, eco-friendly, and certified organic biochar."
+      },
+      "training": {
+        "title": "Marketing Support",
+        "desc": "Get promotional materials, training programs, and direct leads in your area."
+      },
+      "network": {
+        "title": "Reliable Logistics",
+        "desc": "Benefit from robust supply pipelines and timely product deliveries."
+      }
+    },
+    "cta": "Apply for Distribution"
+  },
+  "office": {
+    "title": "Our Offices & Support",
+    "subtitle": "Get in touch with our locations or reach out directly to department managers.",
+    "corporate": {
+      "title": "Corporate Office",
+      "address": "JSL Enterprises, Delhi, India",
+      "contact": "contact@khaadbharat.com"
+    },
+    "support": {
+      "title": "Customer Support",
+      "phone": "+91 9625900369",
+      "hours": "Mon - Sat: 9 AM - 6 PM"
+    },
+    "business": {
+      "title": "Business Inquiries",
+      "email": "partnerships@khaadbharat.com",
+      "hours": "Response within 24 hours"
+    },
+    "hours": {
+      "title": "Working Hours",
+      "days": "Monday to Saturday",
+      "timings": "9:00 AM to 6:00 PM (IST)"
+    }
+  },
+  "faq": {
+    "title": "Quick Help & FAQ",
+    "subtitle": "Common questions about KHAAD BHARAT products, dealer terms, and farm support.",
+    "cta": "View All FAQs",
+    "q1": "How can I contact support?",
+    "a1": "You can reach our support team via phone at +91 9625900369, by filling the contact form, or emailing contact@khaadbharat.com.",
+    "q2": "How long does it take to get a response?",
+    "a2": "Our typical response time is within 24 hours for business inquiries and 24 to 48 hours for general farm support.",
+    "q3": "Can I become a distributor?",
+    "a3": "Yes, we are actively onboarding distributors. Select 'Distributor Inquiry' in the contact form, and our onboarding team will follow up.",
+    "q4": "How can I request product information?",
+    "a4": "You can download our digital brochures from the Media page, or fill out the form specifying the pack size (5kg, 20kg, 50kg) you are interested in."
+  },
+  "social": {
+    "title": "Connect on Social Media",
+    "subtitle": "Follow our channels for updates on biochar usage, farming tips, and distributor news."
+  },
+  "map": {
+    "title": "Find Us on the Map",
+    "subtitle": "Visit our corporate headquarters or distribution centers.",
+    "placeholder": "Interactive Google Map Coming Soon",
+    "addressText": "Registered Corporate Office: JSL Enterprises, New Delhi, India"
+  },
+  "cta": {
+    "title": "Ready to Connect with KHAAD BHARAT?",
+    "subtitle": "Join our community of farmers, partners, and dealers building sustainable agriculture.",
+    "btnContact": "Contact Team",
+    "btnPartner": "Become a Partner",
+    "btnProduct": "Explore Product"
+  }
+}

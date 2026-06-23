@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "title": "Smart Weather for Smarter Farming",
+    "subtitle": "Real-time weather insights designed for Indian farmers. Track rainfall, moisture indices, and irrigation advisories.",
+    "features": [
+      "Accurate Local Forecasts",
+      "Evaporation & Evapotranspiration Tracking",
+      "Pesticide Spray Alerts",
+      "Irrigation Schedule Assistance"
+    ]
+  },
+  "current": {
+    "title": "Current Field Conditions",
+    "tempFeelsLike": "Feels like",
+    "humidity": "Air Humidity",
+    "windSpeed": "Wind Speed",
+    "pressure": "Barometric Pressure",
+    "uvIndex": "UV Radiation Index",
+    "sunrise": "Sunrise Time",
+    "sunset": "Sunset Time",
+    "soilMoisture": "Est. Soil Moisture",
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "uvLevels": {
+      "low": "Low",
+      "moderate": "Moderate",
+      "high": "High",
+      "veryHigh": "Very High"
+    }
+  },
+  "hourly": {
+    "title": "24-Hour Sowing Window",
+    "tempLabel": "Temp",
+    "rainLabel": "Rain",
+    "windLabel": "Wind"
+  },
+  "weekly": {
+    "title": "7-Day Sowing Forecast",
+    "suitability": "Sowing Suitability",
+    "suitabilityStatus": {
+      "excellent": "Excellent",
+      "good": "Good",
+      "fair": "Fair",
+      "poor": "Poor"
+    }
+  },
+  "rain": {
+    "title": "Precipitation & Rainfall Analytics",
+    "expectedRain": "Expected Rainfall",
+    "heavyAlert": "Heavy Rain Alert",
+    "dryWarning": "Dry Spell Warning",
+    "chartTitle": "Rain Probability by Day",
+    "irrigationSugg": "Evaporation Loss"
+  },
+  "insights": {
+    "title": "Agricultural Advisories",
+    "subtitle": "Dynamic field guidelines computed from current weather parameters.",
+    "sprayOk": "Wind conditions are excellent. Safe to spray pesticides and liquid compost.",
+    "sprayWarning": "High wind speeds detected. Postpone pesticide spraying to avoid drift.",
+    "humidityHigh": "High humidity detected. Watch out for fungal infections in vegetable crops.",
+    "rainSoon": "Heavy rain forecast within 24 hours. Postpone fertilizer broadcasting.",
+    "normalConditions": "Stable weather conditions. Good window for general weeding and bed maintenance."
+  },
+  "irrigation": {
+    "title": "Smart Irrigation Planner",
+    "warningLowMoisture": "Low Soil Moisture: Plan full irrigation cycle. Mix Biochar to improve absorption.",
+    "rainExpected": "Rain Expected Soon: Hold irrigation today to prevent soil leaching.",
+    "evapWarning": "High Evaporation Rate: Water early in the morning or late evening to prevent loss.",
+    "normalAdvice": "Normal Moisture Level: Apply light watering to root zones. Maintain biochar coverage.",
+    "titleMoisture": "Soil Moisture Index",
+    "soilStatus": "Soil Status"
+  },
+  "alerts": {
+    "title": "Active Weather Alerts",
+    "stormAlert": "Thunderstorm Warning: Safe storage of harvested grains required.",
+    "windWarning": "High Wind Warning: Secure nursery plastic covers and greenhouse sheets.",
+    "rainWarning": "Flood Warning: Clear field drainage channels to prevent root rot.",
+    "heatWarning": "Extreme Heat: Increase watering frequency to protect young saplings."
+  },
+  "location": {
+    "searchPlaceholder": "Search city or enter 6-digit pincode...",
+    "autoDetectBtn": "Auto-Detect GPS Location",
+    "selectDistrict": "Default Agricultural Districts",
+    "errorGeoDenied": "GPS permission denied. Please search for your city manually above.",
+    "errorFetchFailed": "Failed to fetch weather data. Please check your internet connection or search again.",
+    "tryAgain": "Try Again",
+    "noSuggestions": "No cities found. Try another search term.",
+    "detecting": "Detecting location..."
+  }
+}

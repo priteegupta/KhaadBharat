@@ -1,0 +1,280 @@
+{
+  "title": "Government Schemes & Subsidies",
+  "eyebrow": "Subsidies Guide",
+  "description": "Discover active Indian government agricultural programs, direct income supports, and soil wellness subsidies.",
+  "hero": {
+    "badge": "KHAAD BHARAT FARMER SUPPORT",
+    "title": "Government Schemes for Smarter Farming",
+    "subtitle": "Discover subsidies, support programs, and agricultural opportunities designed for Indian farmers.",
+    "description": "KHAAD BHARAT helps farmers stay informed about government schemes, organic farming programs, irrigation support, and sustainable agriculture initiatives.",
+    "exploreBtn": "Explore Schemes",
+    "checkEligibilityBtn": "Check Eligibility"
+  },
+  "filters": {
+    "searchPlaceholder": "Search schemes...",
+    "allStates": "All States",
+    "allCategories": "All Categories",
+    "allFarmerTypes": "All Farmer Types",
+    "allSubsidyTypes": "All Subsidy Types",
+    "allBenefitTypes": "All Benefit Types",
+    "reset": "Reset Filters",
+    "categoryLabel": "Category",
+    "stateLabel": "State",
+    "farmerTypeLabel": "Farmer Type",
+    "subsidyTypeLabel": "Subsidy Type",
+    "benefitTypeLabel": "Benefit Type",
+    "filterDrawerTitle": "Filters",
+    "closeFilters": "Close"
+  },
+  "categories": {
+    "central-government": "Central Government Schemes",
+    "state-government": "State Government Schemes",
+    "irrigation-water": "Irrigation & Water Support",
+    "organic-farming": "Organic Farming Support",
+    "soil-health": "Soil Health Programs",
+    "equipment-machinery": "Equipment & Machinery Subsidies",
+    "solar-energy": "Solar & Energy Support",
+    "crop-insurance": "Crop Insurance & Risk Protection",
+    "women-farmer": "Women Farmer Programs",
+    "young-farmer": "Young Farmer Programs"
+  },
+  "states": {
+    "all": "National / Central",
+    "delhi": "Delhi (NCR)",
+    "punjab": "Punjab",
+    "uttar pradesh": "Uttar Pradesh",
+    "bihar": "Bihar",
+    "maharashtra": "Maharashtra",
+    "madhya pradesh": "Madhya Pradesh"
+  },
+  "farmerTypes": {
+    "small": "Small Farmers",
+    "marginal": "Marginal Farmers",
+    "women": "Women Farmers",
+    "organic": "Organic Farmers",
+    "all": "All Farmers",
+    "fpo": "FPOs",
+    "entrepreneur": "Agriculture Entrepreneurs"
+  },
+  "benefitTypes": {
+    "cash": "Direct Cash / Income",
+    "input": "Input Subsidy / Support",
+    "insurance": "Crop Insurance",
+    "loan": "Credit / Loan Subvention",
+    "equipment": "Equipment & Machinery",
+    "solar": "Solar & Energy Support",
+    "training": "Training & Skill",
+    "services": "Free Services / Testing",
+    "grant": "Startup Grant"
+  },
+  "subsidyTypes": {
+    "dbt": "Direct Benefit Transfer (DBT)",
+    "subsidy": "Financial Subsidy",
+    "free": "Free Services/Products"
+  },
+  "sections": {
+    "featured": {
+      "title": "Featured Schemes",
+      "subtitle": "Top opportunities selected for high impact and direct benefits."
+    },
+    "central": {
+      "title": "Central Government Schemes",
+      "subtitle": "National programs funded and administered by the Union Government."
+    },
+    "state": {
+      "title": "State Government Schemes",
+      "subtitle": "Select your state to explore localized support programs."
+    },
+    "organic": {
+      "title": "Organic Farming Initiatives",
+      "subtitle": "Special initiatives promoting eco-friendly agriculture and biochar adoption."
+    },
+    "irrigation": {
+      "title": "Irrigation & Water Conservation",
+      "subtitle": "Subsidies for modern water-saving micro-irrigation tools and solar pumps."
+    },
+    "soil": {
+      "title": "Soil Health & Nutrient Programs",
+      "subtitle": "Schemes focused on soil testing, health cards, and organic enrichment."
+    },
+    "subsidyHighlight": {
+      "title": "Subsidy Highlights",
+      "subtitle": "Direct incentives on inputs like fertilizers, quality seeds, and equipment."
+    },
+    "eligibility": {
+      "title": "Eligibility Guide",
+      "subtitle": "Check the requirements before applying for agricultural support."
+    },
+    "process": {
+      "title": "Application Timeline",
+      "subtitle": "Follow these simple steps to claim scheme benefits."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Got questions about farm subsidies? We have answers."
+    },
+    "help": {
+      "title": "Farmer Assistance Desk",
+      "subtitle": "Need personalized help with registrations or application forms?"
+    },
+    "cta": {
+      "title": "Stay Updated with Farmer Opportunities",
+      "subtitle": "Get real-time updates and guidance on upcoming schemes."
+    }
+  },
+  "eligibilityGuide": {
+    "steps": [
+      {
+        "title": "Who Can Apply",
+        "description": "Landowning farmers, sharecroppers, and tenant farmers are eligible based on specific program rules."
+      },
+      {
+        "title": "Required Documents",
+        "description": "Aadhaar Card, Land Ownership Proof (Khata/Khasra), Bank Passbook, Passport Photo, and Mobile Number."
+      },
+      {
+        "title": "Land Conditions",
+        "description": "Different schemes cater to dryland farming, irrigated fields, and organic zones under specific size limits."
+      },
+      {
+        "title": "Farmer Categories",
+        "description": "Special support structures optimized for marginal, small-scale, and female farmers."
+      },
+      {
+        "title": "Registration Requirements",
+        "description": "Aadhaar-linked active bank account is mandatory for direct benefit transfers (DBT)."
+      }
+    ]
+  },
+  "processSteps": [
+    {
+      "title": "Choose Scheme",
+      "description": "Browse our database to select schemes that align with your current crop cycle or infrastructure needs."
+    },
+    {
+      "title": "Verify Eligibility",
+      "description": "Use our quick criteria checklist or visit the local agriculture coordinator to verify your land records."
+    },
+    {
+      "title": "Collect Documents",
+      "description": "Gather your land registry docs, Aadhaar card, bank details, and organic certifications (if applicable)."
+    },
+    {
+      "title": "Apply Online/Offline",
+      "description": "Submit applications via PM Kisan Portal, state DBTs, or offline through local Kisan Seva Kendras."
+    },
+    {
+      "title": "Track Approval",
+      "description": "Receive SMS alerts on your registered mobile number and monitor disbursement status on the DBT dashboard."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I apply?",
+      "answer": "You can apply online through official portals like PM-KISAN, State DBT portals, or offline by visiting the nearest Common Service Centre (CSC) or local block agriculture office with your land records and Aadhaar card."
+    },
+    {
+      "question": "Are schemes state-specific?",
+      "answer": "Yes, while some schemes are central (funded by the Union Government and active nationwide), many are launched by individual state governments to cater specifically to regional soil, water, and crop conditions."
+    },
+    {
+      "question": "Can small farmers apply?",
+      "answer": "Absolutely! In fact, most agricultural schemes prioritize small and marginal farmers (owning less than 2 hectares of land) to provide maximum income and fertilizer support."
+    },
+    {
+      "question": "Is subsidy direct?",
+      "answer": "Yes, almost all modern subsidies are distributed via Direct Benefit Transfer (DBT) directly into the Aadhaar-seeded bank account of the registered farmer to prevent leakages and delays."
+    },
+    {
+      "question": "What documents are needed?",
+      "answer": "Generally, you need land ownership proof (RoR/Khatauni), Aadhaar card, a bank account passbook, mobile number, and passport-sized photographs. Organic schemes may also require certification or soil testing records."
+    },
+    {
+      "question": "Are organic schemes available?",
+      "answer": "Yes, schemes like Paramparagat Krishi Vikas Yojana (PKVY) and state-level organic missions offer direct financial assistance and training to farmers adopting organic practices, biochar, and bio-fertilizers."
+    }
+  ],
+  "helpDesk": {
+    "contactTitle": "Block Agriculture Office",
+    "contactDesc": "Visit your local block office for physical form submissions and document verification.",
+    "buttonText": "Find Office",
+    "phoneTitle": "Kisan Call Centre",
+    "phoneDesc": "Call the national agriculture toll-free helpline for direct query resolutions.",
+    "chatTitle": "Khaad Bharat WhatsApp",
+    "chatPlaceholder": "Subscribe to daily updates and crop advisory notifications on WhatsApp.",
+    "callText": "Call 1800-180-1551",
+    "soonBadge": "Soon",
+    "smsAlerts": "SMS Alerts"
+  },
+  "ctaSection": {
+    "exploreMore": "Explore More Support",
+    "getGuidance": "Get Guidance",
+    "connectBtn": "Connect with Team"
+  },
+  "cardLabels": {
+    "benefitLabel": "Benefit Summary",
+    "eligibilityLabel": "Eligibility Summary",
+    "supportTypeLabel": "Support Type",
+    "deadlineLabel": "Deadline",
+    "processLabel": "Application Process",
+    "referenceLabel": "Official Reference Area",
+    "learnMoreBtn": "Learn More",
+    "applyNowBtn": "Apply Now",
+    "closeBtn": "Close Details",
+    "officialSourceBadge": "Official Source",
+    "comingSoonBtn": "Coming Soon",
+    "visitOfficialBtn": "Visit Official Source",
+    "lastUpdatedLabel": "Last Updated",
+    "trustNote": "Applications are processed only through official government portals.",
+    "disclaimer": "KHAAD BHARAT does not process scheme applications and is not affiliated with the approval process.",
+    "statusActive": "Active",
+    "statusUpcoming": "Upcoming",
+    "statusExpired": "Expired",
+    "statusReview": "Under Review",
+    "govCentral": "Central Government",
+    "govState": "State Government",
+    "verifiedBy": "Verified by KHAAD BHARAT",
+    "verifiedOn": "Verified on:",
+    "fullPage": "Full Page",
+    "infoOnly": "Info Only"
+  },
+  "noStateSchemes": "No state government schemes registered for this region yet. Check back soon for localized updates.",
+  "discoveryEngine": "Discovery Engine",
+  "searchTitle": "Search All Agriculture Schemes",
+  "searchDesc": "Refine by category, state, subsidy model, benefit type, and land holding size to find matching options.",
+  "noSchemesFound": "No Schemes Found",
+  "noSchemesDesc": "No registered central or state schemes match your active filter combinations. Try resetting filters.",
+  "inputIncentives": "Input Incentives",
+  "requirements": "Requirements",
+  "stepFlow": "Step-by-step Flow",
+  "assistance": "Assistance",
+  "helpDeskLabel": "Help Desk",
+  "showArchived": "Show Archived Schemes",
+  "detailLabels": {
+    "notFound": "Scheme Not Found",
+    "notFoundDesc": "Sorry, the scheme you are looking for does not exist in our database or has been removed.",
+    "backToList": "Back to Schemes List",
+    "schemeBenefits": "Scheme Benefits",
+    "supportCategory": "Support Category:",
+    "eligibilityCriteria": "Eligibility Criteria",
+    "targetFarmerTypes": "Target Farmer Types:",
+    "requiredDocuments": "Required Documents",
+    "documentsPrepareNote": "Please prepare scanned copies of these documents before starting your application:",
+    "applicationProcess": "Application Process",
+    "schemeFaqs": "Frequently Asked Questions",
+    "applicationCenter": "Application Center",
+    "applicationsPortalNote": "Applications are accepted only directly through official government portals.",
+    "officialPortal": "Official Portal",
+    "verifiedSource": "Verified Source",
+    "applyOnPortal": "Apply on Official Portal",
+    "securityDisclaimer": "Security & Disclaimer",
+    "portalProcessNote": "Applications are processed only through official government portals.",
+    "trustNoteDesc": "KHAAD BHARAT does not process applications, and we do not influence approval decisions. Our mission is to guide farmers with verified, clean instructions.",
+    "needAssistance": "Need Assistance?",
+    "assistanceDesc": "If you need assistance registering or collecting the required certificates, contact our helpdesk.",
+    "contactHelpDesk": "Contact Help Desk",
+    "verifiedScheme": "This scheme is verified by KHAAD BHARAT.",
+    "lastVerified": "Last Verified:",
+    "backToSchemes": "Back to Schemes"
+  }
+}
