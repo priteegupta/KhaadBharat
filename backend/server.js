@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 // ─── Middleware ───────────────────────────────────────────────
 app.use(express.json());
 app.use(cors({ origin: '*', methods: ['POST', 'GET'] }));
-app.use(express.static(path.join(__dirname, 'widgets')));
+// app.use(express.static(path.join(__dirname, 'widgets')));
 
 // Rate limiting
 const limiter = rateLimit({
@@ -128,9 +128,9 @@ app.post('/chat', async (req, res) => {
 // ─── Start ────────────────────────────────────────────────────
 app.listen(PORT, () => {
   console.log(`✅ Chatbot API running on http://localhost:${PORT}`);
-  console.log(`📁 Widgets available at:`);
-  console.log(`   http://localhost:${PORT}/khaad-bharat-widget.html`);
-  console.log(`   http://localhost:${PORT}/erp-widget.html`);
+  // console.log(`📁 Widgets available at:`);
+  // console.log(`   http://localhost:${PORT}/khaad-bharat-widget.html`);
+  
 
   if (!process.env.GROQ_API_KEY || process.env.GROQ_API_KEY === 'YOUR_GROQ_API_KEY_HERE') {
     console.warn('⚠️  WARNING: GROQ_API_KEY not set in .env file!');
