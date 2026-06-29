@@ -9,9 +9,7 @@ import styles from "./KhaadChat.module.css";
 // During development:  http://localhost:3000
 // After deployment:    https://your-app.onrender.com
 const API_BASE =
-  import.meta.env.VITE_CHATBOT_API_URL || "http://localhost:3000";
-
-console.log("API_BASE =", API_BASE);
+  (import.meta.env.VITE_CHATBOT_API_URL || "http://localhost:3000").replace(/\/$/, "");
 // ─────────────────────────────────────────────────────────────
 
 const LANG_CONFIG = {
