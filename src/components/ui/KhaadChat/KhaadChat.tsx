@@ -11,8 +11,7 @@ import styles from "./KhaadChat.module.css";
 const API_BASE =
   import.meta.env.VITE_CHATBOT_API_URL || "http://localhost:3000";
 
-  console.log("API_BASE =", API_BASE);
-  console.log("VITE_CHATBOT_API_URL =", import.meta.env.VITE_CHATBOT_API_URL);
+console.log("API_BASE =", API_BASE);
 // ─────────────────────────────────────────────────────────────
 
 const LANG_CONFIG = {
