@@ -34,7 +34,7 @@ export const IrrigationCard: React.FC<IrrigationCardProps> = ({ irrigation }) =>
           {t("weather.irrigation.title")}
         </h3>
         <p className="text-xs text-brand-text-muted font-bold">
-          Water management recommendations designed for smart field scaling.
+          {t("weather.irrigation.subtitle", "Water management recommendations designed for smart field scaling.")}
         </p>
       </div>
 

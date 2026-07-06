@@ -125,7 +125,14 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({ onSelectLoca
         <div className="flex items-center gap-2 pl-2 mt-1">
           <Globe className="w-3.5 h-3.5 text-brand-brown-warm" />
           <span className="text-xs text-brand-text-muted font-semibold">
-            Active Field: <span className="font-extrabold text-brand-green-deep">{currentLocationName}</span>
+            {t("weather.location.activeField", "Active Field")}:{" "}
+            <span className="font-extrabold text-brand-green-deep">
+              {currentLocationName === "New Delhi"
+                ? t("weather.location.newDelhi", "New Delhi")
+                : currentLocationName === "Detected Field"
+                ? t("weather.location.detectedField", "Detected Field")
+                : currentLocationName}
+            </span>
           </span>
         </div>
 

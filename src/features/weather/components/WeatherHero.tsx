@@ -24,7 +24,7 @@ export const WeatherHero: React.FC = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-green/10 border border-brand-green/20 text-brand-green-deep font-extrabold text-xs tracking-wider uppercase w-fit">
             <CloudSun className="w-3.5 h-3.5" />
-            WEATHER INTELLIGENCE
+            {t("weather.hero.badge", "WEATHER INTELLIGENCE")}
           </div>
 
           {/* Title & Subheadline */}

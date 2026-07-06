@@ -82,7 +82,7 @@ export const WeatherPage: React.FC = () => {
       initial="hidden"
       animate="visible"
     >
-      <SEO title={t("weather.hero.title")} description="Accurate agricultural weather intelligence." />
+      <SEO title={t("weather.hero.title")} description={t("weather.hero.subtitle")} />
 
       {/* 1. Cinematic Weather Hero Banner */}
       <WeatherHero />

@@ -34,6 +34,18 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({ current, soilMoistureV
     return t("weather.current.uvLevels.veryHigh");
   };
 
+  const getLocalizedConditionText = (code: number, text: string) => {
+    if (code === 0 || code === 800) return t("weather.conditions.clear", "Clear Sky");
+    if ((code >= 1 && code <= 3) || (code >= 801 && code <= 804)) return t("weather.conditions.cloudy", "Partly Cloudy");
+    if (code === 45 || code === 48) return t("weather.conditions.fog", "Foggy");
+    if ((code >= 51 && code <= 55) || (code >= 300 && code <= 321)) return t("weather.conditions.drizzle", "Light Drizzle");
+    if ((code >= 61 && code <= 65) || (code >= 500 && code <= 531)) return t("weather.conditions.rain", "Rain");
+    if ((code >= 71 && code <= 77) || (code >= 600 && code <= 622)) return t("weather.conditions.snow", "Snow");
+    if (code >= 80 && code <= 82) return t("weather.conditions.showers", "Showers");
+    if ((code >= 95 && code <= 99) || (code >= 200 && code <= 232)) return t("weather.conditions.storm", "Thunderstorm");
+    return t("weather.conditions.overcast", text);
+  };
+
   return (
     <section className="p-6 md:p-8 rounded-3xl bg-gradient-to-br from-brand-beige-cream to-white border border-brand-green/10 shadow-premium mb-8 text-left">
       <div className="flex flex-col gap-6">
@@ -63,7 +75,7 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({ current, soilMoistureV
                 {current.temp}°C
               </span>
               <span className="text-base font-extrabold text-brand-text/80 mt-1 uppercase tracking-wide">
-                {current.conditionText}
+                {getLocalizedConditionText(current.conditionCode, current.conditionText)}
               </span>
             </div>
           </div>
@@ -150,7 +162,7 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({ current, soilMoistureV
                 {t("weather.current.windSpeed")}
               </span>
               <strong className="text-lg font-black text-brand-green-deep">
-                {current.windSpeed} km/h
+                {current.windSpeed} {t("weather.current.windUnit", "km/h")}
               </strong>
             </div>
           </div>
@@ -165,7 +177,7 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({ current, soilMoistureV
                 {t("weather.current.pressure")}
               </span>
               <strong className="text-lg font-black text-brand-green-deep">
-                {current.pressure} hPa
+                {current.pressure} {t("weather.current.pressureUnit", "hPa")}
               </strong>
             </div>
           </div>

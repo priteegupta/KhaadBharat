@@ -1,5 +1,6 @@
 {
   "hero": {
+    "badge": "Weather Intelligence",
     "title": "Smart Weather for Smarter Farming",
     "subtitle": "Real-time weather insights designed for Indian farmers. Track rainfall, moisture indices, and irrigation advisories.",
     "features": [
@@ -27,7 +28,9 @@
       "moderate": "Moderate",
       "high": "High",
       "veryHigh": "Very High"
-    }
+    },
+    "windUnit": "km/h",
+    "pressureUnit": "hPa"
   },
   "hourly": {
     "title": "24-Hour Sowing Window",
@@ -51,7 +54,10 @@
     "heavyAlert": "Heavy Rain Alert",
     "dryWarning": "Dry Spell Warning",
     "chartTitle": "Rain Probability by Day",
-    "irrigationSugg": "Evaporation Loss"
+    "irrigationSugg": "Evaporation Loss",
+    "subtitle": "Predictive rainfall statistics to plan fertilizer broadcasting schedules.",
+    "postpone": "Postpone Broadcasting",
+    "safeToApply": "Safe to Apply Biochar"
   },
   "insights": {
     "title": "Agricultural Advisories",
@@ -69,7 +75,8 @@
     "evapWarning": "High Evaporation Rate: Water early in the morning or late evening to prevent loss.",
     "normalAdvice": "Normal Moisture Level: Apply light watering to root zones. Maintain biochar coverage.",
     "titleMoisture": "Soil Moisture Index",
-    "soilStatus": "Soil Status"
+    "soilStatus": "Soil Status",
+    "subtitle": "Water management recommendations designed for smart field scaling."
   },
   "alerts": {
     "title": "Active Weather Alerts",
@@ -86,6 +93,29 @@
     "errorFetchFailed": "Failed to fetch weather data. Please check your internet connection or search again.",
     "tryAgain": "Try Again",
     "noSuggestions": "No cities found. Try another search term.",
-    "detecting": "Detecting location..."
+    "detecting": "Detecting location...",
+    "activeField": "Active Field",
+    "newDelhi": "New Delhi",
+    "detectedField": "Detected Field"
+  },
+  "days": {
+    "sunday": "SUN",
+    "monday": "MON",
+    "tuesday": "TUE",
+    "wednesday": "WED",
+    "thursday": "THU",
+    "friday": "FRI",
+    "saturday": "SAT"
+  },
+  "conditions": {
+    "clear": "Clear Sky",
+    "cloudy": "Partly Cloudy",
+    "fog": "Foggy",
+    "drizzle": "Light Drizzle",
+    "rain": "Rain",
+    "snow": "Snow",
+    "showers": "Showers",
+    "storm": "Thunderstorm",
+    "overcast": "Cloudy"
   }
 }

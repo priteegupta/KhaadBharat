@@ -120,77 +120,77 @@ export const Navbar: React.FC = () => {
             </div>
           </div>
         </div>
+      </nav>
 
-        {/* Mobile Navigation Drawer */}
-        <AnimatePresence>
-          {isOpen && (
+      {/* Mobile Navigation Drawer */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="xl:hidden fixed inset-0 top-[73px] bg-brand-text/50 backdrop-blur-sm z-50"
+            onClick={() => setIsOpen(false)}
+          >
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="xl:hidden fixed inset-0 top-[73px] bg-brand-text/50 backdrop-blur-sm z-40"
-              onClick={() => setIsOpen(false)}
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", bounce: 0.1, duration: 0.4 }}
+              className="absolute right-0 top-0 bottom-0 w-80 bg-brand-beige-panel shadow-2xl p-6 flex flex-col justify-between overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
             >
-              <motion.div
-                initial={{ x: "100%" }}
-                animate={{ x: 0 }}
-                exit={{ x: "100%" }}
-                transition={{ type: "spring", bounce: 0.1, duration: 0.4 }}
-                className="absolute right-0 top-0 bottom-0 w-80 bg-brand-beige-panel shadow-2xl p-6 flex flex-col justify-between overflow-y-auto"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <div className="flex flex-col gap-6">
-                  <div className="flex items-center justify-between border-b border-brand-green/10 pb-4">
-                    <span className="font-extrabold text-brand-green-deep uppercase tracking-wider">
-                      {t("ui.nav.navigation")}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => setIsOpen(false)}
-                      className="p-1 rounded-full text-brand-text/60 hover:bg-brand-green/5"
-                    >
-                      <X className="w-5 h-5" />
-                    </button>
-                  </div>
-
-                  <div className="flex flex-col gap-2">
-                    {navItems.map((item) => (
-                      <NavLink
-                        key={item.key}
-                        to={item.path}
-                        onClick={() => setIsOpen(false)}
-                        className={({ isActive }) =>
-                          `px-4 py-3 rounded-xl text-base font-bold transition-all ${
-                            isActive
-                              ? "bg-brand-green text-white"
-                              : "text-brand-text hover:bg-brand-green/5 hover:text-brand-green"
-                          }`
-                        }
-                      >
-                        {item.label}
-                      </NavLink>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="mt-8 border-t border-brand-green/10 pt-6">
+              <div className="flex flex-col gap-6">
+                <div className="flex items-center justify-between border-b border-brand-green/10 pb-4">
+                  <span className="font-extrabold text-brand-green-deep uppercase tracking-wider">
+                    {t("ui.nav.navigation")}
+                  </span>
                   <button
-                    onClick={() => {
-                      setIsOpen(false);
-                      navigate("/contact");
-                    }}
-                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-base font-extrabold text-white bg-brand-green-deep hover:bg-brand-green shadow-lg transition-all duration-300"
+                    type="button"
+                    onClick={() => setIsOpen(false)}
+                    className="p-1 rounded-full text-brand-text/60 hover:bg-brand-green/5"
                   >
-                    {t("ui.connect.title", "Connect with Team")}
-                    <ArrowRight className="w-5 h-5" />
+                    <X className="w-5 h-5" />
                   </button>
                 </div>
-              </motion.div>
+
+                <div className="flex flex-col gap-2">
+                  {navItems.map((item) => (
+                    <NavLink
+                      key={item.key}
+                      to={item.path}
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) =>
+                        `px-4 py-3 rounded-xl text-base font-bold transition-all ${
+                          isActive
+                            ? "bg-brand-green text-white"
+                            : "text-brand-text hover:bg-brand-green/5 hover:text-brand-green"
+                        }`
+                      }
+                    >
+                      {item.label}
+                    </NavLink>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-8 border-t border-brand-green/10 pt-6">
+                <button
+                  onClick={() => {
+                    setIsOpen(false);
+                    navigate("/contact");
+                  }}
+                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-base font-extrabold text-white bg-brand-green-deep hover:bg-brand-green shadow-lg transition-all duration-300"
+                >
+                  {t("ui.connect.title", "Connect with Team")}
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+              </div>
             </motion.div>
-          )}
-        </AnimatePresence>
-      </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
       {/* Spacer to push content below sticky navbar */}
       <div className="h-20" />
     </>

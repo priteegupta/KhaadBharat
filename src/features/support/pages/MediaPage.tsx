@@ -126,7 +126,7 @@ export const MediaPage: React.FC = () => {
 
   // Filtered resources based on sub-tabs
   const filteredResources = brandResources.filter((item) => {
-    if (resourceFilter === "All") return true;
+    if (resourceFilter === "All" || resourceFilter === t("media.resources.filterAll")) return true;
     return item.category === resourceFilter;
   });
 
@@ -334,10 +334,10 @@ export const MediaPage: React.FC = () => {
                 {/* Sub-filters for resources */}
                 <div className="flex flex-wrap items-center justify-center gap-2 mb-2">
                   {[
-                    { id: "All", label: t("media.resources.filterAll") },
-                    { id: "Logos & Vectors", label: t("media.resources.filterLogos") },
-                    { id: "Product Packs", label: t("media.resources.filterPacks") },
-                    { id: "Banners & Media", label: t("media.resources.filterBanners") }
+                    { id: t("media.resources.filterAll"), label: t("media.resources.filterAll") },
+                    { id: t("media.resources.filterLogos"), label: t("media.resources.filterLogos") },
+                    { id: t("media.resources.filterPacks"), label: t("media.resources.filterPacks") },
+                    { id: t("media.resources.filterBanners"), label: t("media.resources.filterBanners") }
                   ].map((filter) => {
                     const isSelected = resourceFilter === filter.id;
                     return (

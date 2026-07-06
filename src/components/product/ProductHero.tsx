@@ -76,6 +76,16 @@ export const ProductHero: React.FC = () => {
   const [tiltStyle, setTiltStyle] = useState<React.CSSProperties>({});
   const isHi = i18n.language === "hi";
 
+  const getLocalizedCrop = (cropName: string) => {
+    const cropMap: Record<string, string> = {
+      wheat: isHi ? "गेहूं" : "Wheat",
+      rice: isHi ? "धान" : "Rice",
+      sugarcane: isHi ? "गन्ना" : "Sugarcane",
+      cotton: isHi ? "कपास" : "Cotton"
+    };
+    return cropMap[cropName] || cropName;
+  };
+
   const [downloadUrl, setDownloadUrl] = useState("/downloads/Khaad_Bharat_Biochar_Photo_Guide.pdf");
   const [downloadName, setDownloadName] = useState("Khaad_Bharat_Biochar_Photo_Guide.pdf");
 
@@ -372,7 +382,7 @@ export const ProductHero: React.FC = () => {
                           : "text-brand-green-deep hover:bg-brand-green/10"
                       }`}
                     >
-                      {crop}
+                      {getLocalizedCrop(crop)}
                     </button>
                   ))}
                 </div>

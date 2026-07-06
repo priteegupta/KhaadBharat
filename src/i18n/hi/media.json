@@ -18,7 +18,7 @@
     "brochures": "ब्रोशर",
     "campaigns": "अभियान",
     "press": "प्रेस",
-    "resources": "ब्रांड रिसोर्स"
+    "resources": "ब्रांड संसाधन"
   },
   "videos": {
     "featuredTitle": "मुख्य प्रसारण",
@@ -45,7 +45,7 @@
       },
       {
         "id": "sup-2",
-        "title": "Biochar क्या है और नर्सरी मिट्टी में मिलाने का सही तरीका",
+        "title": "बायोचार क्या है और नर्सरी मिट्टी में मिलाने का सही तरीका",
         "desc": "नर्सरी प्रबंधकों और बागवानी के लिए बायोचार को कोकोपीट और मिट्टी के साथ मिलाने का व्यावहारिक ट्यूटोरियल।",
         "duration": "04:35",
         "category": "ट्यूटोरियल",
@@ -105,56 +105,56 @@
     ]
   },
   "gallery": {
-    "sectionTitle": "Visualizing Organic Growth",
-    "sectionSubtitle": "Snapshots of biochar processing, packaging, distributor dealer meets, and field applications across India.",
-    "viewPhoto": "View Photo",
+    "sectionTitle": "जैविक विकास का दृश्य प्रदर्शन",
+    "sectionSubtitle": "भारत भर में बायोचार प्रसंस्करण, पैकेजिंग, वितरक-डीलर बैठकों और खेतों में व्यावहारिक उपयोग के चित्र।",
+    "viewPhoto": "फोटो देखें",
     "items": [
       {
         "id": "gal-1",
-        "title": "Traditional Rice Seedling Planting",
-        "category": "Field Work",
+        "title": "पारंपरिक धान की रोपाई",
+        "category": "कृषि कार्य",
         "image": "/images/rice-planting-mud.jpg"
       },
       {
         "id": "gal-2",
-        "title": "Distributor Packaging & Ready Stock",
-        "category": "Packaging",
+        "title": "वितरक पैकेजिंग और तैयार स्टॉक",
+        "category": "पैकेजिंग",
         "image": "/images/product-pack-50kg.png"
       },
       {
         "id": "gal-3",
-        "title": "Tomato Seedlings in Biochar Mix",
-        "category": "Nursery",
+        "title": "बायोचार मिश्रण में टमाटर के पौधे",
+        "category": "नर्सरी",
         "image": "/images/nursery-crops.jpg"
       },
       {
         "id": "gal-4",
         "title": "महिला किसान - खाद का छिड़काव",
-        "category": "Field Work",
+        "category": "कृषि कार्य",
         "image": "/images/woman-broadcasting.jpg"
       },
       {
         "id": "gal-5",
-        "title": "Farmer Tending Crops with Hoe",
-        "category": "Field Work",
+        "title": "कुदाल से फसल की देखभाल करता किसान",
+        "category": "कृषि कार्य",
         "image": "/images/farmer-hoe-field.jpg"
       },
       {
         "id": "gal-6",
-        "title": "Traditional Ploughing & Soil Preparation",
-        "category": "Field Work",
+        "title": "पारंपरिक हल-बैलों से खेत की जुताई",
+        "category": "कृषि कार्य",
         "image": "/images/farmer-plow-ox.jpg"
       },
       {
         "id": "gal-7",
-        "title": "Tomato Crop Growth Tracking",
-        "category": "Results",
+        "title": "टमाटर की फसल में विकास का आकलन",
+        "category": "परिणाम",
         "image": "/images/tomato-crops-growth.png"
       },
       {
         "id": "gal-8",
-        "title": "Modern Mechanized Land Tilling",
-        "category": "Field Work",
+        "title": "ट्रैक्टर से आधुनिक मशीनीकृत खेत की जुताई",
+        "category": "कृषि कार्य",
         "image": "/images/tractor-plowing-dry.jpg"
       }
     ]
@@ -235,15 +235,15 @@
         "title": "हिमाचल प्रदेश ने हमीरपुर में शुरू किया पहला स्वदेशी बायोचार संयंत्र",
         "summary": "राज्य वन विभाग और नौनी विश्वविद्यालय ने चीड़ की पत्तियों और कृषि अवशेषों को जैविक बायोचार में बदलने के लिए साझेदारी की, जिससे कार्बन क्रेडिट उत्पन्न होगा।",
         "date": "अगस्त 2025",
-        "source": "Times of India",
+        "source": "टाइम्स ऑफ इंडिया",
         "url": "https://www.google.com/search?q=Himachal+Pradesh+indigenous+biochar+plant+Neri+Hamirpur"
       },
       {
         "id": "press-2",
-        "title": "NITK सुरथकल ने विकसित किया अभिनव बायोचार-माइक्रोब सिस्टम",
+        "title": "एनआईटीके सुरथकल ने विकसित किया अभिनव बायोचार-माइक्रोब सिस्टम",
         "summary": "शोधकर्ताओं ने फसलों को बढ़ावा देने के साथ-साथ मिट्टी से भारी धातुओं और कीटनाशकों को साफ करने के लिए एक जैविक बायोचार कॉम्प्लेक्स तैयार किया है।",
         "date": "जून 2026",
-        "source": "Times of India",
+        "source": "टाइम्स ऑफ इंडिया",
         "url": "https://www.google.com/search?q=NITK+Surathkal+biochar+microbe+system+Times+of+India"
       },
       {
@@ -251,13 +251,13 @@
         "title": "नितिन गडकरी ने बायोचार को भारतीय मिट्टी के लिए 'काला सोना' बताया",
         "summary": "मिट्टी के कार्बन को खेती के लिए संजीवनी बताते हुए, केंद्रीय मंत्री ने किसानों से कृषि अवशेषों को बायोचार में बदलने के लिए कम लागत वाले पायरोलाइज़र अपनाने का आग्रह किया।",
         "date": "मार्च 2026",
-        "source": "Times of India",
+        "source": "टाइम्स ऑफ इंडिया",
         "url": "https://www.google.com/search?q=Nitin+Gadkari+biochar+black+gold+Times+of+India"
       }
     ]
   },
   "resources": {
-    "sectionTitle": "ब्रांड किट और मीडिया रिसोर्स",
+    "sectionTitle": "ब्रांड किट और मीडिया संसाधन",
     "sectionSubtitle": "अधिकृत वितरक नेटवर्क और डीलरों के लिए आधिकारिक लोगो, उत्पाद पैकेजिंग और प्रेजेंटेशन टूल्स।",
     "filterAll": "सभी ब्रांड सामग्री",
     "filterLogos": "लोगो और वेक्टर्स",
@@ -269,64 +269,64 @@
         "id": "res-1",
         "title": "कॉरपोरेट लोगो वेक्टर",
         "category": "लोगो और वेक्टर्स",
-        "fileType": "SVG",
-        "fileSize": "12 KB",
+        "fileType": "एसवीजी",
+        "fileSize": "१२ केबी",
         "fileUrl": "/images/logo-vector.svg"
       },
       {
         "id": "res-2",
         "title": "ब्रांड आइकन मार्क",
         "category": "लोगो और वेक्टर्स",
-        "fileType": "SVG",
-        "fileSize": "8 KB",
+        "fileType": "एसवीजी",
+        "fileSize": "८ केबी",
         "fileUrl": "/images/logo-mark.png"
       },
       {
         "id": "res-3",
         "title": "खाद भारत 5 किलो पैक",
         "category": "उत्पाद पैकेजेस",
-        "fileType": "PNG",
-        "fileSize": "2.4 MB",
+        "fileType": "पीएनजी",
+        "fileSize": "२.४ एमबी",
         "fileUrl": "/images/product-pack-5kg.png"
       },
       {
         "id": "res-4",
         "title": "खाद भारत 20 किलो पैक",
         "category": "उत्पाद पैकेजेस",
-        "fileType": "PNG",
-        "fileSize": "2.9 MB",
+        "fileType": "पीएनजी",
+        "fileSize": "२.९ एमबी",
         "fileUrl": "/images/product-pack-20kg.png"
       },
       {
         "id": "res-5",
         "title": "खाद भारत 50 किलो पैक",
         "category": "उत्पाद पैकेजेस",
-        "fileType": "PNG",
-        "fileSize": "3.1 MB",
+        "fileType": "पीएनजी",
+        "fileSize": "३.१ एमबी",
         "fileUrl": "/images/product-pack-50kg.png"
       },
       {
         "id": "res-6",
         "title": "सोशल अभियान शेयरिंग कार्ड",
         "category": "बैनर और मीडिया",
-        "fileType": "PNG",
-        "fileSize": "580 KB",
+        "fileType": "पीएनजी",
+        "fileSize": "५८० केबी",
         "fileUrl": "/images/share-card.svg"
       },
       {
         "id": "res-7",
         "title": "क्षेत्रीय बिक्री कैटलॉग बोर्ड",
         "category": "बैनर और मीडिया",
-        "fileType": "PNG",
-        "fileSize": "2.6 MB",
+        "fileType": "पीएनजी",
+        "fileSize": "२.६ एमबी",
         "fileUrl": "/images/product-catalog-board.png"
       },
       {
         "id": "res-8",
         "title": "ब्रोशर कवर वेक्टर",
         "category": "बैनर और मीडिया",
-        "fileType": "SVG",
-        "fileSize": "15 KB",
+        "fileType": "एसवीजी",
+        "fileSize": "१५ केबी",
         "fileUrl": "/images/brochure-cover.svg"
       }
     ]

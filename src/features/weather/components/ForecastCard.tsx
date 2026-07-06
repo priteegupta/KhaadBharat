@@ -11,6 +11,19 @@ interface ForecastCardProps {
 export const ForecastCard: React.FC<ForecastCardProps> = ({ hourly, daily }) => {
   const { t } = useTranslation();
 
+  const getLocalizedDay = (dayName: string) => {
+    const dayMap: Record<string, string> = {
+      Sunday: t("weather.days.sunday", "SUN"),
+      Monday: t("weather.days.monday", "MON"),
+      Tuesday: t("weather.days.tuesday", "TUE"),
+      Wednesday: t("weather.days.wednesday", "WED"),
+      Thursday: t("weather.days.thursday", "THU"),
+      Friday: t("weather.days.friday", "FRI"),
+      Saturday: t("weather.days.saturday", "SAT")
+    };
+    return dayMap[dayName] || dayName;
+  };
+
   // Helper to map WMO code to emoji
   const getConditionEmoji = (code: number) => {
     if (code === 0 || code === 800) return "☀️";
@@ -88,7 +101,7 @@ export const ForecastCard: React.FC<ForecastCardProps> = ({ hourly, daily }) => 
               className="flex flex-col justify-between items-center gap-2.5 p-4 rounded-2xl bg-white border border-brand-green/10 shadow-sm hover:border-brand-green/35 hover:-translate-y-0.5 transition-all duration-300"
             >
               <span className="text-xs font-black text-brand-text-muted uppercase">
-                {d.day.substring(0, 3)}
+                {getLocalizedDay(d.day)}
               </span>
               <span className="text-3.5xl filter drop-shadow-sm my-1">
                 {getConditionEmoji(d.conditionCode)}

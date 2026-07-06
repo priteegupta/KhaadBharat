@@ -48,7 +48,15 @@ const setStoredItem = (key: string, value: string) => {
 };
 
 export const useAppStore = create<AppState>((set) => ({
-  lang: (getStoredItem("khaad-bharat-lang-v2", "hi") as "en" | "hi") || "hi",
+  lang: (() => {
+    const stored = getStoredItem("khaad-bharat-lang-v2", "");
+    if (stored === "en" || stored === "hi") {
+      return stored;
+    }
+    // Auto default to Hindi and save it to storage
+    setStoredItem("khaad-bharat-lang-v2", "hi");
+    return "hi";
+  })(),
   setLang: (lang) => {
     set({ lang });
     setStoredItem("khaad-bharat-lang-v2", lang);

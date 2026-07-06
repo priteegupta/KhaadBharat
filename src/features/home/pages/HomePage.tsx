@@ -118,7 +118,7 @@ export const HomePage: React.FC = () => {
         </div>
 
         {/* Tab Navigation Menu */}
-        <div className="relative flex justify-center border-b border-brand-green/15 pb-2 overflow-x-auto no-scrollbar">
+        <div className="relative flex justify-start md:justify-center border-b border-brand-green/15 pb-2 overflow-x-auto no-scrollbar px-4 md:px-0">
           <div className="flex gap-2 p-1 rounded-2xl bg-brand-green-light/25 border border-brand-green/10 shrink-0">
             {[
               { id: "soil", label: isHi ? "मृदा स्वास्थ्य" : "Soil Health", icon: <Sprout className="w-4 h-4" /> },
@@ -220,7 +220,7 @@ export const HomePage: React.FC = () => {
                     onMouseMove={handleMouseMove}
                     onMouseLeave={handleMouseLeave}
                     style={tiltStyle}
-                    className="relative rounded-2xl bg-white p-4 border border-brand-green/10 shadow-premium overflow-hidden aspect-[4/3] w-full flex flex-col justify-between"
+                    className="relative rounded-2xl bg-white p-4 border border-brand-green/10 shadow-premium overflow-hidden sm:aspect-[4/3] w-full flex flex-col justify-between"
                   >
                     <div className="relative flex-grow rounded-xl overflow-hidden mb-3 bg-brand-beige-deep h-48 sm:h-56">
                       <AnimatePresence mode="wait">

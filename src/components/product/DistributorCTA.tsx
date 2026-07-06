@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Handshake, ShieldAlert, BadgePercent, MapPinned } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface DistributorCTAProps {
   title: string;
@@ -18,6 +19,7 @@ export const DistributorCTA: React.FC<DistributorCTAProps> = ({
   ctaText,
   buttonText
 }) => {
+  const { t } = useTranslation("product");
   const navigate = useNavigate();
 
   const handleApplyClick = () => {
@@ -25,23 +27,30 @@ export const DistributorCTA: React.FC<DistributorCTAProps> = ({
     navigate("/contact?interest=dealer");
   };
 
-  const benefits = [
-    {
-      icon: BadgePercent,
-      label: "Wholesale Margins",
-      desc: "Competitive bulk pricing and seasonal distributor bonuses."
-    },
-    {
-      icon: MapPinned,
-      label: "Exclusive Regions",
-      desc: "Exclusive distribution rights in allocated agricultural districts."
-    },
-    {
-      icon: ShieldAlert,
-      label: "Co-Marketing Support",
-      desc: "Printed pamphlets, product banners, and digital marketing materials."
-    }
-  ];
+  const benefitsData = t("distributor.benefits", {
+    returnObjects: true,
+    defaultValue: [
+      {
+        label: "Wholesale Margins",
+        desc: "Competitive bulk pricing and seasonal distributor bonuses."
+      },
+      {
+        label: "Exclusive Regions",
+        desc: "Exclusive distribution rights in allocated agricultural districts."
+      },
+      {
+        label: "Co-Marketing Support",
+        desc: "Printed pamphlets, product banners, and digital marketing materials."
+      }
+    ]
+  }) as Array<{ label: string; desc: string }>;
+
+  const icons = [BadgePercent, MapPinned, ShieldAlert];
+
+  const benefits = benefitsData.map((item, idx) => ({
+    ...item,
+    icon: icons[idx] || ShieldAlert
+  }));
 
   return (
     <section className="py-16 border-t border-brand-green/10">
@@ -58,7 +67,7 @@ export const DistributorCTA: React.FC<DistributorCTAProps> = ({
             >
               <Handshake className="w-4 h-4 text-brand-brown-warm" />
               <span className="text-[10px] font-black text-brand-brown-warm uppercase tracking-wider">
-                Partner Program
+                {t("distributor.partnerBadge", "Partner Program")}
               </span>
             </motion.div>
 

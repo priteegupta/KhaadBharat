@@ -283,7 +283,22 @@
     "subtitle": "Partner with JSL Enterprises to scale organic farming",
     "ctaTitle": "Become an Authorized Dealer",
     "ctaText": "Join our growing network of agricultural distributors across India. Gain access to marketing brochures, wholesale margins, and direct bulk supply.",
-    "buttonText": "Apply for Dealership"
+    "buttonText": "Apply for Dealership",
+    "partnerBadge": "Partner Program",
+    "benefits": [
+      {
+        "label": "Healthy Profit Margins",
+        "desc": "Lucrative margin structures on volume orders with direct dispatch options."
+      },
+      {
+        "label": "Exclusive Territories",
+        "desc": "Tehsil and District level monopoly contracts to ensure non-compete safety."
+      },
+      {
+        "label": "Co-Marketing Support",
+        "desc": "Printed pamphlets, product banners, and digital marketing materials."
+      }
+    ]
   },
   "cta": {
     "title": "Start Smarter Farming with BIO CHAR",

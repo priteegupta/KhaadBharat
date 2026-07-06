@@ -11,6 +11,19 @@ interface RainChartProps {
 export const RainChart: React.FC<RainChartProps> = ({ daily, expectedRainVal }) => {
   const { t } = useTranslation();
 
+  const getLocalizedDay = (dayName: string) => {
+    const dayMap: Record<string, string> = {
+      Sunday: t("weather.days.sunday", "SUN"),
+      Monday: t("weather.days.monday", "MON"),
+      Tuesday: t("weather.days.tuesday", "TUE"),
+      Wednesday: t("weather.days.wednesday", "WED"),
+      Thursday: t("weather.days.thursday", "THU"),
+      Friday: t("weather.days.friday", "FRI"),
+      Saturday: t("weather.days.saturday", "SAT")
+    };
+    return dayMap[dayName] || dayName;
+  };
+
   // Find the maximum rainfall probability in the forecast to show context
   const maxProb = daily.length > 0 ? Math.max(...daily.map(d => d.rainProb)) : 0;
 
@@ -25,7 +38,7 @@ export const RainChart: React.FC<RainChartProps> = ({ daily, expectedRainVal }) 
               {t("weather.rain.title")}
             </h3>
             <p className="text-xs text-brand-text-muted font-bold">
-              Predictive rainfall statistics to plan fertilizer broadcasting schedules.
+              {t("weather.rain.subtitle", "Predictive rainfall statistics to plan fertilizer broadcasting schedules.")}
             </p>
           </div>
 
@@ -46,7 +59,7 @@ export const RainChart: React.FC<RainChartProps> = ({ daily, expectedRainVal }) 
                 {t("weather.rain.irrigationSugg")}
               </span>
               <strong className="text-base font-black text-brand-green-deep">
-                {maxProb >= 60 ? "Postpone Broadcasting" : "Safe to Apply Biochar"}
+                {maxProb >= 60 ? t("weather.rain.postpone", "Postpone Broadcasting") : t("weather.rain.safeToApply", "Safe to Apply Biochar")}
               </strong>
             </div>
           </div>
@@ -99,7 +112,7 @@ export const RainChart: React.FC<RainChartProps> = ({ daily, expectedRainVal }) 
             <div className="flex justify-around px-2 sm:px-8 border-t border-brand-green/10 pt-2 relative z-10">
               {daily.map((d, i) => (
                 <span key={i} className="text-[10px] font-black text-brand-text-muted uppercase w-8 text-center">
-                  {d.day.substring(0, 3)}
+                  {getLocalizedDay(d.day)}
                 </span>
               ))}
             </div>
