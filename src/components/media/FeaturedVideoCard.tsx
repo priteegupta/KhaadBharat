@@ -21,8 +21,28 @@ export const FeaturedVideoCard: React.FC<FeaturedVideoCardProps> = ({ video, isF
 
   // Helper to extract embedded URL query parameters or auto-play
   const getEmbedUrl = (url: string) => {
-    if (url.includes("youtube.com/embed/")) {
-      return `${url}?autoplay=1&mute=0&rel=0`;
+    let videoId = "";
+    try {
+      if (url.includes("youtube.com/embed/")) {
+        const parts = url.split("embed/");
+        if (parts[1]) {
+          videoId = parts[1].split("?")[0];
+        }
+      } else if (url.includes("youtube.com/watch?v=")) {
+        const urlObj = new URL(url);
+        videoId = urlObj.searchParams.get("v") || "";
+      } else if (url.includes("youtu.be/")) {
+        const parts = url.split("youtu.be/");
+        if (parts[1]) {
+          videoId = parts[1].split("?")[0];
+        }
+      }
+    } catch (e) {
+      console.error("Error parsing video URL:", e);
+    }
+
+    if (videoId) {
+      return `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&rel=0`;
     }
     return url;
   };
@@ -62,8 +82,9 @@ export const FeaturedVideoCard: React.FC<FeaturedVideoCardProps> = ({ video, isF
 
             {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <span className="flex items-center justify-center w-16 h-16 rounded-full bg-brand-green-deep text-white shadow-lg group-hover:bg-brand-green group-hover:scale-110 transition-all duration-300">
-                <Play className="w-6 h-6 fill-white ml-1" />
+              <span className="flex items-center justify-center w-16 h-16 rounded-full bg-brand-green-deep text-white shadow-lg group-hover:bg-brand-green group-hover:scale-110 group-hover:shadow-[0_0_25px_rgba(92,127,47,0.6)] transition-all duration-300 relative">
+                <span className="absolute inset-0 rounded-full bg-brand-green opacity-0 group-hover:opacity-30 pointer-events-none animate-ping" />
+                <Play className="w-6 h-6 fill-white ml-1 relative z-10" />
               </span>
             </div>
 

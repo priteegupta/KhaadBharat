@@ -296,9 +296,19 @@
 }
 
 /* ── Mobile ─────────────────────────────── */
-@media (max-width: 400px) {
+@media (max-width: 576px) {
+  .widget {
+    right: 12px;
+    bottom: 12px;
+  }
+  .bubble {
+    width: 54px;
+    height: 54px;
+  }
   .window {
-    width: calc(100vw - 20px);
-    right: -10px;
+    width: calc(100vw - 24px);
+    right: 0;
+    bottom: 66px;
+    height: 480px;
   }
 }

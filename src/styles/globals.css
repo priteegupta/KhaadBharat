@@ -7,7 +7,11 @@
 
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 body {
   margin: 0;
   font-family:
@@ -1133,4 +1137,13 @@ a {
   .weather-forecast-row {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* Hide scrollbars for scrollable touch menus */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

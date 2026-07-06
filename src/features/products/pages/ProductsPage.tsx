@@ -6,9 +6,7 @@ import SEO from "../../../components/common/SEO";
 
 // Import custom reusable components
 import ProductHero from "../../../components/product/ProductHero";
-import BenefitCard from "../../../components/product/BenefitCard";
 import FeatureGrid from "../../../components/product/FeatureGrid";
-import SoilComparison from "../../../components/product/SoilComparison";
 import UsageStepCard from "../../../components/product/UsageStepCard";
 import FAQAccordion from "../../../components/product/FAQAccordion";
 import ProductGallery from "../../../components/product/ProductGallery";
@@ -78,7 +76,6 @@ export const ProductsPage: React.FC = () => {
 
   // Load translations as lists/objects
   const overviewPoints = t("overview.points", { returnObjects: true }) as string[];
-  const benefitsItems = t("benefits.items", { returnObjects: true }) as BenefitItem[];
   const featureItems = t("features.items", { returnObjects: true }) as FeatureItem[];
   const usageSteps = t("usageGuide.steps", { returnObjects: true }) as UsageStep[];
   const comparisonRows = t("comparison.rows", { returnObjects: true }) as ComparisonRow[];
@@ -161,29 +158,7 @@ export const ProductsPage: React.FC = () => {
         </div>
       </motion.section>
 
-      {/* 3. Product Benefits Section */}
-      <section id="benefits-section" className="py-8 border-t border-brand-green/10">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl font-black text-brand-green-deep mb-3">
-            {t("benefits.title")}
-          </h2>
-          <p className="text-sm font-bold text-brand-brown-warm uppercase tracking-wider">
-            {t("benefits.subtitle")}
-          </p>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {benefitsItems && benefitsItems.map((item, index) => (
-            <BenefitCard
-              key={index}
-              title={item.title}
-              description={item.description}
-              iconName={item.icon}
-              index={index}
-            />
-          ))}
-        </div>
-      </section>
 
       {/* 4. Biochar Explanation Section */}
       <motion.section variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center py-8 border-t border-brand-green/10">
@@ -246,65 +221,7 @@ export const ProductsPage: React.FC = () => {
         />
       )}
 
-      {/* 6. Water Saving Section */}
-      <motion.section variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center py-8 border-t border-brand-green/10">
-        <div className="lg:col-span-7 text-left">
-          <h2 className="text-3xl font-black text-brand-green-deep mb-6">
-            {t("waterSaving.title")}
-          </h2>
-          <p className="text-sm font-bold text-brand-brown-warm uppercase tracking-wider mb-4">
-            {t("waterSaving.subtitle")}
-          </p>
-          <p className="text-sm font-semibold text-brand-text-muted leading-relaxed mb-6">
-            {t("waterSaving.desc1")}
-          </p>
-          <p className="text-sm font-semibold text-brand-text-muted leading-relaxed">
-            {t("waterSaving.desc2")}
-          </p>
-        </div>
 
-        {/* Visual watering comparison */}
-        <div className="lg:col-span-5 w-full bg-white border border-brand-green/10 rounded-3xl p-8 shadow-premium text-left">
-          <span className="text-[10px] font-black text-brand-brown-warm uppercase tracking-widest block mb-6">
-            {t("waterSaving.comparisonLabel")}
-          </span>
-
-          <div className="flex flex-col gap-6">
-            <div>
-              <div className="flex justify-between text-[10px] font-black text-brand-green-deep uppercase tracking-wider mb-2">
-                <span>{t("waterSavingComparison.traditionalSoilLabel")}</span>
-                <span className="text-red-500">{t("waterSavingComparison.traditionalSoilDesc")}</span>
-              </div>
-              <div className="w-full h-3 rounded-full bg-red-100 overflow-hidden">
-                <div className="w-1/3 h-full bg-red-500" />
-              </div>
-            </div>
-
-            <div>
-              <div className="flex justify-between text-[10px] font-black text-brand-green-deep uppercase tracking-wider mb-2">
-                <span>{t("waterSavingComparison.khaadSoilLabel")}</span>
-                <span className="text-brand-green">{t("waterSavingComparison.khaadSoilDesc")}</span>
-              </div>
-              <div className="w-full h-3 rounded-full bg-brand-green-light overflow-hidden">
-                <div className="w-5/6 h-full bg-brand-green" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* 7. Soil Health Section */}
-      <SoilComparison
-        title={t("soilHealth.title")}
-        subtitle={t("soilHealth.subtitle")}
-        text={t("soilHealth.text")}
-        weakTitle={t("soilHealth.weakSoilTitle")}
-        weakPoints={t("soilHealth.weakSoilDetails", { returnObjects: true }) as string[]}
-        improvedTitle={t("soilHealth.improvedSoilTitle")}
-        improvedPoints={t("soilHealth.improvedSoilDetails", { returnObjects: true }) as string[]}
-        spongeTitle={t("soilHealth.spongeEffectTitle")}
-        spongeDesc={t("soilHealth.spongeEffectDesc")}
-      />
 
       {/* 8. Usage Guide Section */}
       <section className="py-8 border-t border-brand-green/10">

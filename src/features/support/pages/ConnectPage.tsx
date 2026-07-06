@@ -136,22 +136,25 @@ export const ConnectPage: React.FC = () => {
       </motion.section>
 
       {/* 7. FAQ QUICK HELP SECTION */}
-      <motion.section variants={itemVariants} className="bg-brand-beige-cream/20 border border-brand-green/10 rounded-3xl p-6 md:p-8 mb-12 shadow-sm">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6">
+      <motion.section variants={itemVariants} className="bg-gradient-to-br from-brand-beige-cream/35 to-white border border-brand-green/10 rounded-[32px] p-6 md:p-10 mb-12 shadow-premium relative overflow-hidden">
+        {/* Glow effect */}
+        <div className="absolute -top-12 -right-12 w-64 h-64 bg-brand-green/5 rounded-full blur-[60px] pointer-events-none" />
+
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 relative z-10">
           <div>
-            <span className="inline-block px-3 py-1 text-[10px] md:text-xs font-black tracking-widest text-brand-green uppercase bg-brand-green/10 rounded-full mb-3">
-              KNOWLEDGE BASE
+            <span className="inline-block px-3 py-1.5 text-[10px] md:text-xs font-black tracking-widest text-brand-green uppercase bg-brand-green/10 rounded-full mb-3 border border-brand-green/15 shadow-sm">
+              {t("faq.badge")}
             </span>
-            <h3 className="text-xl md:text-2xl font-extrabold text-brand-green-deep tracking-tight">
+            <h3 className="text-xl md:text-2xl font-black text-brand-green-deep tracking-tight">
               {t("faq.title")}
             </h3>
-            <p className="text-xs md:text-sm text-brand-text-muted font-bold mt-1">
+            <p className="text-xs md:text-sm text-brand-text-muted font-bold mt-1.5">
               {t("faq.subtitle")}
             </p>
           </div>
           <button
             onClick={() => navigate("/faq")}
-            className="self-start md:self-auto inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-black text-brand-green-deep bg-white border border-brand-green/20 hover:bg-brand-green-light hover:border-brand-green/45 shadow-sm transition-all duration-200"
+            className="self-start md:self-auto inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-black text-brand-green-deep bg-white border border-brand-green/20 hover:bg-brand-green-light hover:border-brand-green/45 shadow-sm hover:shadow transition-all duration-200"
           >
             {t("faq.cta")}
             <ArrowRight className="w-3.5 h-3.5" />
@@ -159,30 +162,48 @@ export const ConnectPage: React.FC = () => {
         </div>
 
         {/* FAQ Accordion list */}
-        <div className="flex flex-col gap-3 max-w-4xl">
+        <div className="flex flex-col gap-4 max-w-4xl relative z-10">
           {[0, 1, 2, 3].map((index) => {
             const isOpen = openFaqIndex === index;
             return (
               <div
                 key={index}
-                className="rounded-2xl border border-brand-green/10 bg-white overflow-hidden shadow-sm hover:border-brand-green/20 transition-all duration-200"
+                className={`rounded-2xl border transition-all duration-350 overflow-hidden relative ${
+                  isOpen
+                    ? "border-brand-green/30 bg-gradient-to-br from-brand-green-light/10 to-white shadow-md shadow-brand-green/5 scale-[1.005]"
+                    : "border-brand-green/10 bg-white hover:border-brand-green/25 hover:shadow-md hover:-translate-y-0.5"
+                }`}
               >
+                {/* Active indicator bar */}
+                <div className={`absolute left-0 top-0 bottom-0 w-1 bg-brand-green transition-transform duration-300 origin-top ${
+                  isOpen ? "scale-y-100" : "scale-y-0"
+                }`} />
+
                 <button
                   onClick={() => toggleFaq(index)}
-                  className={`w-full flex items-center justify-between p-4 text-left transition-colors ${
-                    isOpen ? "bg-brand-green-light/40" : "hover:bg-brand-green-light/10"
-                  }`}
+                  className="w-full flex items-center justify-between p-5 text-left transition-colors"
                 >
-                  <span className="text-xs md:text-sm font-extrabold text-brand-green-deep flex items-center gap-2">
-                    <HelpCircle className="w-4 h-4 text-brand-green shrink-0" />
-                    {t(`faq.q${index + 1}`)}
+                  <span className="text-xs md:text-sm font-extrabold text-brand-green-deep flex items-center gap-3.5">
+                    {/* Visual icon badge */}
+                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 transition-colors duration-300 ${
+                      isOpen ? "bg-brand-green text-white shadow-sm" : "bg-brand-green-light text-brand-green"
+                    }`}>
+                      <HelpCircle className="w-4.5 h-4.5" />
+                    </div>
+                    <span className={`transition-colors duration-300 ${isOpen ? "text-brand-green-deep" : "text-brand-green-deep/90"}`}>
+                      {t(`faq.q${index + 1}`)}
+                    </span>
                   </span>
-                  {isOpen ? (
-                    <ChevronUp className="w-4 h-4 text-brand-green shrink-0 ml-4" />
-                  ) : (
-                    <ChevronDown className="w-4 h-4 text-brand-green-deep shrink-0 ml-4" />
-                  )}
+
+                  <div className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 ml-4 transition-all duration-300 ${
+                    isOpen ? "bg-brand-green/10 rotate-180" : "bg-brand-beige-cream/40"
+                  }`}>
+                    <ChevronDown className={`w-4 h-4 transition-colors duration-300 ${
+                      isOpen ? "text-brand-green" : "text-brand-green-deep/70"
+                    }`} />
+                  </div>
                 </button>
+
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
@@ -191,7 +212,7 @@ export const ConnectPage: React.FC = () => {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.25, ease: "easeInOut" }}
                     >
-                      <div className="p-4 text-[11px] md:text-xs font-bold text-brand-text leading-relaxed border-t border-brand-green/10 bg-white">
+                      <div className="pl-[52px] pr-6 pb-6 text-xs md:text-[13px] font-bold text-brand-text-muted leading-relaxed">
                         {t(`faq.a${index + 1}`)}
                       </div>
                     </motion.div>

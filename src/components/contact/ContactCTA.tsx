@@ -22,9 +22,9 @@ export const ContactCTA: React.FC = () => {
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-brand-brown/10 rounded-full blur-3xl pointer-events-none -mr-20 -mb-20" />
 
       <div className="relative z-10 flex flex-col items-center max-w-2xl mx-auto">
-        <span className="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-full text-[10px] md:text-xs font-black tracking-widest text-brand-accent-sunlight uppercase bg-white/10 mb-6 border border-white/5">
+        <span className="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-full text-[10px] md:text-xs font-black tracking-widest text-brand-accent-sunlight uppercase bg-white/10 mb-6 border border-white/10 shadow-sm animate-pulse">
           <Sparkles className="w-3 h-3" />
-          Ready to Grow
+          {t("cta.badge")}
         </span>
 
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight mb-4 leading-tight">

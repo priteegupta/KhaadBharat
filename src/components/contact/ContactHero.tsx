@@ -14,10 +14,10 @@ export const ContactHero: React.FC = () => {
   };
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-brand-green-light/80 via-white to-brand-beige-cream/40 rounded-3xl border border-brand-green/10 p-8 md:p-12 lg:p-16 mb-12 shadow-sm">
-      {/* Decorative background vectors */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-brand-green/5 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-brown/5 rounded-full blur-3xl pointer-events-none -ml-20 -mb-20" />
+    <div className="relative overflow-hidden bg-gradient-to-br from-brand-green-light/90 via-white to-brand-beige-cream/50 rounded-3xl border border-brand-green/15 p-8 md:p-12 lg:p-16 mb-12 shadow-premium">
+      {/* Decorative ambient glowing backdrops */}
+      <div className="absolute -top-12 -right-12 w-[350px] h-[350px] bg-brand-green/10 rounded-full blur-[80px] pointer-events-none" />
+      <div className="absolute -bottom-12 -left-12 w-[350px] h-[350px] bg-brand-brown-warm/8 rounded-full blur-[80px] pointer-events-none" />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
         {/* Text Area */}
@@ -25,18 +25,18 @@ export const ContactHero: React.FC = () => {
           className="lg:col-span-7 flex flex-col items-start text-left"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-black tracking-widest text-brand-green bg-brand-green/10 uppercase mb-6 border border-brand-green/20">
+          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-black tracking-widest text-brand-green bg-brand-green/10 uppercase mb-6 border border-brand-green/20 shadow-sm animate-pulse">
             <Leaf className="w-3.5 h-3.5" />
             {t("hero.badge")}
           </span>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-green-deep tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-green-deep tracking-tight leading-tight drop-shadow-sm">
             {t("hero.title")}
           </h1>
 
-          <p className="mt-4 text-base sm:text-lg text-brand-text font-semibold leading-relaxed max-w-xl">
+          <p className="mt-4 text-base sm:text-lg text-brand-text font-bold leading-relaxed max-w-xl">
             {t("hero.subtitle")}
           </p>
 
@@ -47,7 +47,7 @@ export const ContactHero: React.FC = () => {
           <div className="mt-8 flex flex-wrap gap-4">
             <button
               onClick={() => scrollToSection("contact-form-section")}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-extrabold text-white bg-brand-green-deep hover:bg-brand-green hover:scale-[1.02] active:scale-[0.98] shadow-md transition-all duration-200"
+              className="inline-flex items-center gap-2 px-7 py-4 rounded-full text-sm font-extrabold text-white bg-brand-green-deep hover:bg-brand-green hover:shadow-lg hover:shadow-brand-green/20 hover:scale-[1.03] active:scale-[0.98] shadow-md transition-all duration-300"
             >
               {t("hero.contactBtn")}
               <ArrowRight className="w-4 h-4" />
@@ -55,7 +55,7 @@ export const ContactHero: React.FC = () => {
 
             <button
               onClick={() => scrollToSection("distributor-section")}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-extrabold text-brand-text bg-white border border-brand-green/25 hover:bg-brand-green-light hover:border-brand-green/50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-sm"
+              className="inline-flex items-center gap-2 px-7 py-4 rounded-full text-sm font-extrabold text-brand-text bg-white border border-brand-green/20 hover:bg-brand-green-light hover:border-brand-green/40 hover:shadow-md hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 shadow-sm"
             >
               {t("hero.partnerBtn")}
             </button>
@@ -65,11 +65,11 @@ export const ContactHero: React.FC = () => {
         {/* Visual Illustration Area */}
         <motion.div
           className="lg:col-span-5 flex justify-center items-center"
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <div className="relative w-full max-w-[380px] aspect-square rounded-2xl bg-white border border-brand-green/10 shadow-premium p-6 flex items-center justify-center overflow-hidden group">
+          <div className="relative w-full max-w-[380px] aspect-square rounded-3xl bg-white border border-brand-green/10 shadow-premium p-6 flex items-center justify-center overflow-hidden group hover:border-brand-green/30 transition-all duration-300">
             {/* Animated SVG illustration */}
             <svg
               viewBox="0 0 200 200"
@@ -124,7 +124,6 @@ export const ContactHero: React.FC = () => {
               </g>
 
               {/* Farmers / Collaboration Icons */}
-              {/* Support hands representation */}
               <path
                 d="M45 130 C45 120 55 110 65 115 L60 120 C55 122 50 127 52 132"
                 className="stroke-brand-green-deep/40 stroke-2"
@@ -141,10 +140,10 @@ export const ContactHero: React.FC = () => {
             </svg>
 
             {/* Float tag */}
-            <div className="absolute bottom-4 left-4 right-4 bg-brand-green-light/95 border border-brand-green/20 px-3.5 py-2 rounded-xl flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" />
+            <div className="absolute bottom-4 left-4 right-4 bg-brand-green-light/95 border border-brand-green/20 backdrop-blur-md px-3.5 py-2.5 rounded-2xl flex items-center gap-2 shadow-md">
+              <span className="w-2.5 h-2.5 rounded-full bg-brand-green animate-pulse" />
               <span className="text-[10px] md:text-xs font-black text-brand-green-deep uppercase tracking-wider">
-                Active Farmer Network Support
+                {t("hero.activeSupport")}
               </span>
             </div>
           </div>

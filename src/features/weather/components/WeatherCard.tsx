@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 import { Thermometer, Droplets, Wind, Gauge, Sun, Sunset, Sunrise, Milestone } from "lucide-react";
 import { CurrentWeather } from "../services/weatherTypes";
 
@@ -9,7 +10,8 @@ interface WeatherCardProps {
 }
 
 export const WeatherCard: React.FC<WeatherCardProps> = ({ current, soilMoistureVal }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isHi = i18n.language === "hi";
 
   // Helper to resolve WMO/Weather code to appropriate emoji
   const getWeatherEmoji = (code: number) => {
@@ -33,7 +35,7 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({ current, soilMoistureV
   };
 
   return (
-    <section className="p-6 md:p-8 rounded-3xl bg-gradient-to-br from-brand-beige-cream to-white border border-brand-green/10 shadow-premium mb-8">
+    <section className="p-6 md:p-8 rounded-3xl bg-gradient-to-br from-brand-beige-cream to-white border border-brand-green/10 shadow-premium mb-8 text-left">
       <div className="flex flex-col gap-6">
         {/* Header Row */}
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-brand-green/10 pb-4">
@@ -49,9 +51,13 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({ current, soilMoistureV
         {/* Core Temperature Box */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 bg-brand-green-light/40 border border-brand-green/10 rounded-2xl p-6">
           <div className="flex items-center gap-5">
-            <span className="text-6xl md:text-7xl filter drop-shadow-md select-none">
+            <motion.span
+              animate={{ scale: [1, 1.06, 1], rotate: [0, 2, -2, 0] }}
+              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+              className="text-6xl md:text-7xl filter drop-shadow-md select-none inline-block"
+            >
               {getWeatherEmoji(current.conditionCode)}
-            </span>
+            </motion.span>
             <div className="flex flex-col">
               <span className="text-4xl md:text-5xl font-black text-brand-green-deep">
                 {current.temp}°C
@@ -61,19 +67,58 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({ current, soilMoistureV
               </span>
             </div>
           </div>
-          
+
           {/* Estimated Soil Moisture block */}
-          <div className="flex items-center gap-3 p-4 rounded-xl bg-white border border-brand-green/10 shadow-sm w-full sm:w-auto">
-            <div className="w-10 h-10 rounded-full bg-brand-green/10 flex items-center justify-center text-brand-green">
-              <Droplets className="w-5 h-5" />
+          <div className="flex flex-col sm:flex-row items-center gap-4 p-4 rounded-xl bg-white border border-brand-green/10 shadow-sm w-full sm:w-auto">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-brand-green/10 flex items-center justify-center text-brand-green relative overflow-hidden">
+                <motion.div
+                  animate={{ y: [3, -3, 3] }}
+                  transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
+                >
+                  <Droplets className="w-5 h-5 text-brand-green" />
+                </motion.div>
+              </div>
+              <div className="flex flex-col text-left">
+                <span className="text-xs text-brand-text-muted font-bold">
+                  {t("weather.current.soilMoisture")}
+                </span>
+                <strong className="text-sm font-black text-brand-green-deep">
+                  {soilMoistureVal}
+                </strong>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <span className="text-xs text-brand-text-muted font-bold">
-                {t("weather.current.soilMoisture")}
+
+            {/* Irrigation Level Gauge bar */}
+            <div className="flex flex-col gap-1 w-full sm:w-28 mt-2 sm:mt-0 border-t sm:border-t-0 sm:border-l border-brand-green/10 pt-2 sm:pt-0 sm:pl-3 text-left">
+              <span className="text-[9px] font-black text-brand-green uppercase tracking-wider">{isHi ? "सिंचाई आवश्यकता" : "Irrigation Need"}</span>
+              <div className="w-full h-2.5 rounded-full bg-gray-100 overflow-hidden relative border border-gray-200">
+                <motion.div
+                  initial={{ width: "20%" }}
+                  animate={{
+                    width: soilMoistureVal.toLowerCase().includes("low") || soilMoistureVal.includes("कम")
+                      ? "30%"
+                      : soilMoistureVal.toLowerCase().includes("high") || soilMoistureVal.includes("अधिक") || soilMoistureVal.toLowerCase().includes("rain")
+                      ? "90%"
+                      : "65%"
+                  }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                  className={`h-full rounded-full ${
+                    soilMoistureVal.toLowerCase().includes("low") || soilMoistureVal.includes("कम")
+                      ? "bg-amber-500"
+                      : soilMoistureVal.toLowerCase().includes("high") || soilMoistureVal.includes("अधिक") || soilMoistureVal.toLowerCase().includes("rain")
+                      ? "bg-brand-green"
+                      : "bg-blue-500"
+                  }`}
+                />
+              </div>
+              <span className="text-[9px] font-bold text-brand-text-muted leading-none">
+                {soilMoistureVal.toLowerCase().includes("low") || soilMoistureVal.includes("कम")
+                  ? (isHi ? "सिंचाई आवश्यक" : "Water Needed")
+                  : soilMoistureVal.toLowerCase().includes("high") || soilMoistureVal.includes("अधिक") || soilMoistureVal.toLowerCase().includes("rain")
+                  ? (isHi ? "पर्याप्त नमी" : "Optimal (Rain)")
+                  : (isHi ? "मध्यम नमी" : "Stable Moisture")}
               </span>
-              <strong className="text-base font-black text-brand-green-deep">
-                {soilMoistureVal}
-              </strong>
             </div>
           </div>
         </div>

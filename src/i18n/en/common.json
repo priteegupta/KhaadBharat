@@ -336,7 +336,7 @@
       "packages": [
         {
           "title": "5kg pack",
-          "image": "/images/khaad-bharat-pack-5kg.png",
+          "image": "/images/product-pack-5kg.png",
           "size": "5 kg",
           "bag": "Recyclable biodegradable bag",
           "details": [
@@ -348,7 +348,7 @@
         },
         {
           "title": "20kg pack",
-          "image": "/images/khaad-bharat-pack-20kg.png",
+          "image": "/images/product-pack-20kg.png",
           "size": "20 kg",
           "bag": "Recyclable biodegradable bag",
           "details": [
@@ -360,7 +360,7 @@
         },
         {
           "title": "50kg pack",
-          "image": "/images/khaad-bharat-pack-50kg.png",
+          "image": "/images/product-pack-50kg.png",
           "size": "50 kg",
           "bag": "Recyclable biodegradable bag",
           "details": [
@@ -422,7 +422,7 @@
         "Easy to share with dealers, buyers, and print partners"
       ],
       "whatsapp": {
-        "number": "919625900369",
+        "number": "919315314828",
         "label": "Send requirement on WhatsApp",
         "message": "Hello KHAAD BHARAT, I want to know more about Biochar packs (5kg, 20kg, 50kg) and vegetable hybrid seed catalog options."
       },

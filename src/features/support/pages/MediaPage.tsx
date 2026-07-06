@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Sprout, MapPin, HeartPulse, ChevronRight, FileText } from "lucide-react";
@@ -85,6 +85,17 @@ export const MediaPage: React.FC = () => {
   const [resourceFilter, setResourceFilter] = useState<string>("All");
 
   const tabsContainerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (selectedStory) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [selectedStory]);
 
   // Load arrays from translation file
   const supportingVideos = t("media.videos.supporting", { returnObjects: true, defaultValue: [] }) as VideoData[];
@@ -247,37 +258,42 @@ export const MediaPage: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {campaigns.map((camp) => (
-                    <article
+                <div className="relative border-l-2 border-brand-green/20 ml-4 md:ml-8 pl-6 md:pl-10 flex flex-col gap-8 max-w-4xl mx-auto">
+                  {campaigns.map((camp, index) => (
+                    <motion.article
                       key={camp.id}
-                      className="group rounded-3xl bg-white border border-brand-green/10 shadow-premium overflow-hidden hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      className="relative group rounded-3xl bg-white border border-brand-green/10 shadow-premium p-6 hover:shadow-premium-hover transition-all duration-300 flex flex-col md:flex-row gap-6 text-left"
                     >
+                      {/* Timeline Node dot */}
+                      <div className="absolute -left-[37px] md:-left-[51px] top-8 w-5 h-5 rounded-full bg-brand-green border-4 border-brand-beige-panel shadow group-hover:scale-110 transition-transform" />
+
                       {/* Image Thumbnail */}
-                      <div className="relative aspect-[16/10] w-full overflow-hidden bg-brand-green-light">
+                      <div className="relative aspect-[16/10] w-full md:w-60 shrink-0 overflow-hidden bg-brand-green-light rounded-2xl">
                         <img
                           src={camp.image}
                           alt={camp.title}
                           loading="lazy"
                           className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
                         />
-                        <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-brand-accent-sunlight text-brand-text text-[10px] font-black uppercase shadow-sm">
+                        <div className="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-brand-accent-sunlight text-brand-text text-[9px] font-black uppercase shadow-sm">
                           {camp.tag}
                         </div>
                       </div>
 
                       {/* Content */}
-                      <div className="p-5 flex flex-col justify-between flex-grow">
-                        <div>
-                          <h3 className="text-lg font-black text-brand-green-deep mb-2 line-clamp-2">
-                            {camp.title}
-                          </h3>
-                          <p className="text-sm text-brand-text-muted leading-relaxed font-semibold">
-                            {camp.desc}
-                          </p>
-                        </div>
+                      <div className="flex flex-col justify-center flex-grow">
+                        <h3 className="text-lg font-black text-brand-green-deep mb-2 group-hover:text-brand-green transition-colors">
+                          {camp.title}
+                        </h3>
+                        <p className="text-xs text-brand-text-muted leading-relaxed font-semibold">
+                          {camp.desc}
+                        </p>
                       </div>
-                    </article>
+                    </motion.article>
                   ))}
                 </div>
               </section>
@@ -370,7 +386,7 @@ export const MediaPage: React.FC = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ type: "spring", bounce: 0.1, duration: 0.4 }}
-              className="relative max-w-2xl w-full bg-brand-beige-panel rounded-3xl overflow-hidden border border-white/20 shadow-2xl p-6 flex flex-col gap-6"
+              className="relative max-w-2xl w-full bg-brand-beige-panel rounded-3xl border border-white/20 shadow-2xl p-6 flex flex-col gap-6 max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}

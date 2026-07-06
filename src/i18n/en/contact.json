@@ -5,7 +5,8 @@
     "subtitle": "Connect with our team for product information, partnerships, dealership opportunities, and farmer support.",
     "description": "Our team is here to support farmers, distributors, partners, and organizations working toward sustainable agriculture.",
     "contactBtn": "Contact Team",
-    "partnerBtn": "Become a Partner"
+    "partnerBtn": "Become a Partner",
+    "activeSupport": "Active Farmer Network Support"
   },
   "quickContact": {
     "farmer": {
@@ -66,9 +67,42 @@
       "partnership": "Partnership",
       "media": "Media",
       "other": "Other"
+    },
+    "states": {
+      "andhra_pradesh": "Andhra Pradesh",
+      "arunachal_pradesh": "Arunachal Pradesh",
+      "assam": "Assam",
+      "bihar": "Bihar",
+      "chhattisgarh": "Chhattisgarh",
+      "delhi_ncr": "Delhi (NCR)",
+      "goa": "Goa",
+      "gujarat": "Gujarat",
+      "haryana": "Haryana",
+      "himachal_pradesh": "Himachal Pradesh",
+      "jharkhand": "Jharkhand",
+      "karnataka": "Karnataka",
+      "kerala": "Kerala",
+      "madhya_pradesh": "Madhya Pradesh",
+      "maharashtra": "Maharashtra",
+      "manipur": "Manipur",
+      "meghalaya": "Meghalaya",
+      "mizoram": "Mizoram",
+      "nagaland": "Nagaland",
+      "odisha": "Odisha",
+      "punjab": "Punjab",
+      "rajasthan": "Rajasthan",
+      "sikkim": "Sikkim",
+      "tamil_nadu": "Tamil Nadu",
+      "telangana": "Telangana",
+      "tripura": "Tripura",
+      "uttar_pradesh": "Uttar Pradesh",
+      "uttarakhand": "Uttarakhand",
+      "west_bengal": "West Bengal",
+      "other": "Other"
     }
   },
   "partnership": {
+    "badge": "COLLABORATION CHANNELS",
     "title": "Partner with KHAAD BHARAT",
     "subtitle": "We collaborate with organizations to scale sustainable farming solutions.",
     "business": {
@@ -89,6 +123,7 @@
     }
   },
   "distributor": {
+    "badge": "DEALERSHIP OPPORTUNITIES",
     "title": "Become a Distributor",
     "desc": "Partner with KHAAD BHARAT and bring natural soil nutrition solutions to your regional dealer networks.",
     "benefits": {
@@ -112,21 +147,22 @@
     "cta": "Apply for Distribution"
   },
   "office": {
+    "badge": "OFFICE CHANNELS",
     "title": "Our Offices & Support",
     "subtitle": "Get in touch with our locations or reach out directly to department managers.",
     "corporate": {
       "title": "Corporate Office",
       "address": "JSL Enterprises, Delhi, India",
-      "contact": "contact@khaadbharat.com"
+      "contact": "Jslgourav@gmail.com"
     },
     "support": {
       "title": "Customer Support",
-      "phone": "+91 9625900369",
+      "phone": "+91 93153 14828",
       "hours": "Mon - Sat: 9 AM - 6 PM"
     },
     "business": {
       "title": "Business Inquiries",
-      "email": "partnerships@khaadbharat.com",
+      "email": "Jslgourav@gmail.com",
       "hours": "Response within 24 hours"
     },
     "hours": {
@@ -136,11 +172,12 @@
     }
   },
   "faq": {
+    "badge": "KNOWLEDGE BASE",
     "title": "Quick Help & FAQ",
     "subtitle": "Common questions about KHAAD BHARAT products, dealer terms, and farm support.",
     "cta": "View All FAQs",
     "q1": "How can I contact support?",
-    "a1": "You can reach our support team via phone at +91 9625900369, by filling the contact form, or emailing contact@khaadbharat.com.",
+    "a1": "You can reach our support team via phone at +91 93153 14828, by filling the contact form, or emailing Jslgourav@gmail.com.",
     "q2": "How long does it take to get a response?",
     "a2": "Our typical response time is within 24 hours for business inquiries and 24 to 48 hours for general farm support.",
     "q3": "Can I become a distributor?",
@@ -149,16 +186,20 @@
     "a4": "You can download our digital brochures from the Media page, or fill out the form specifying the pack size (5kg, 20kg, 50kg) you are interested in."
   },
   "social": {
+    "badge": "SOCIAL CHANNELS",
     "title": "Connect on Social Media",
     "subtitle": "Follow our channels for updates on biochar usage, farming tips, and distributor news."
   },
   "map": {
+    "badge": "LOCATION MAP & NETWORK",
+    "ctaGoogleMaps": "Open in Google Maps",
     "title": "Find Us on the Map",
     "subtitle": "Visit our corporate headquarters or distribution centers.",
     "placeholder": "Interactive Google Map Coming Soon",
     "addressText": "Registered Corporate Office: JSL Enterprises, New Delhi, India"
   },
   "cta": {
+    "badge": "Ready to Grow",
     "title": "Ready to Connect with KHAAD BHARAT?",
     "subtitle": "Join our community of farmers, partners, and dealers building sustainable agriculture.",
     "btnContact": "Contact Team",

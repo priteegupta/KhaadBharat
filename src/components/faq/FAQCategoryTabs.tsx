@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Sprout, Flame, Award, CloudSun, GraduationCap, Users } from "lucide-react";
 
 interface FAQCategoryTabsProps {
   selectedCategory: string;
@@ -25,6 +26,18 @@ export const FAQCategoryTabs: React.FC<FAQCategoryTabsProps> = ({
     }
   }, [selectedCategory]);
 
+  const getCategoryIcon = (categoryKey: string) => {
+    switch (categoryKey) {
+      case "product": return <Sprout className="w-3.5 h-3.5 shrink-0" />;
+      case "biochar": return <Flame className="w-3.5 h-3.5 shrink-0" />;
+      case "benefits": return <Award className="w-3.5 h-3.5 shrink-0" />;
+      case "weather": return <CloudSun className="w-3.5 h-3.5 shrink-0" />;
+      case "schemes": return <GraduationCap className="w-3.5 h-3.5 shrink-0" />;
+      case "distributors": return <Users className="w-3.5 h-3.5 shrink-0" />;
+      default: return null;
+    }
+  };
+
   return (
     <div className="w-full border-b border-brand-green/10 pb-4">
       <div
@@ -39,13 +52,14 @@ export const FAQCategoryTabs: React.FC<FAQCategoryTabsProps> = ({
               key={key}
               data-active={isActive}
               onClick={() => setSelectedCategory(key)}
-              className={`px-5 py-2.5 rounded-full text-xs font-black tracking-wide whitespace-nowrap transition-all duration-200 border shrink-0 ${
+              className={`inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-black tracking-wide whitespace-nowrap transition-all duration-200 border shrink-0 ${
                 isActive
                   ? "bg-brand-green text-white border-transparent shadow-sm scale-[1.03]"
                   : "bg-white border-brand-green/10 text-brand-green-deep hover:bg-brand-green-light/40 hover:border-brand-green/20"
               }`}
             >
-              {value}
+              {getCategoryIcon(key)}
+              <span>{value}</span>
             </button>
           );
         })}

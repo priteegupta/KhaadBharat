@@ -46,16 +46,16 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: "en",
+    fallbackLng: "hi",
     ns: ["common", "product", "schemes", "faq", "contact"],
     defaultNS: "common",
     interpolation: {
       escapeValue: false, // React already escapes values
     },
     detection: {
-      order: ["localStorage", "navigator"],
+      order: ["localStorage"],
       caches: ["localStorage"],
-      lookupLocalStorage: "khaad-bharat-language",
+      lookupLocalStorage: "khaad-bharat-lang-v2",
     },
   });
 

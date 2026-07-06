@@ -167,10 +167,10 @@ export const FAQSection: React.FC<FAQSectionProps> = ({
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-between p-2.5 rounded-xl border border-brand-green/10 bg-brand-green-light/20 text-xs font-black text-brand-green-deep">
                 <span>{t("visuals.distributors.hotline")}</span>
-                <span className="text-[10px] text-brand-green">+91 96259 00369</span>
+                <a href="tel:+919315314828" className="text-[10px] text-brand-green hover:underline">+91 93153 14828</a>
               </div>
               <a
-                href="https://wa.me/919625900369"
+                href="https://wa.me/919315314828"
                 target="_blank"
                 rel="noreferrer"
                 className="w-full py-2.5 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-black text-xs flex items-center justify-center gap-1.5 shadow-sm transition-colors text-center"

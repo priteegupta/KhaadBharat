@@ -48,10 +48,10 @@ const setStoredItem = (key: string, value: string) => {
 };
 
 export const useAppStore = create<AppState>((set) => ({
-  lang: (getStoredItem("khaad-bharat-language", "en") as "en" | "hi") || "en",
+  lang: (getStoredItem("khaad-bharat-lang-v2", "hi") as "en" | "hi") || "hi",
   setLang: (lang) => {
     set({ lang });
-    setStoredItem("khaad-bharat-language", lang);
+    setStoredItem("khaad-bharat-lang-v2", lang);
     document.documentElement.lang = lang;
     i18n.changeLanguage(lang);
   },

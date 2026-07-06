@@ -1,23 +1,23 @@
 {
   "hero": {
     "badge": "खाद भारत मीडिया",
-    "title": "कहानियां, ज्ञान और किसानों का विकास",
-    "subtitle": "वीडियो, किसानों की सफलता की कहानियां, ब्रोशर, सोशल अभियान और बायोचार जागरूकता सामग्री का पता लगाएं।",
-    "paragraph": "खाद भारत भारतीय किसानों के लिए वास्तविक कृषि कहानियां, उत्पाद जानकारी, शैक्षिक सामग्री और टिकाऊ जैविक खेती का ज्ञान साझा करता है।",
-    "watchStories": "सफलता की कहानियां देखें",
+    "title": "कहानियां, ज्ञान और किसान प्रभाव",
+    "subtitle": "वीडियो, किसान की सफलता की कहानियां, ब्रोशर, अभियान और बायोचार जागरूकता संसाधनों का पता लगाएं।",
+    "paragraph": "खाद भारत भारतीय किसानों के लिए वास्तविक कृषि कहानियां, उत्पाद जागरूकता सामग्री, शैक्षिक सामग्री और टिकाऊ खेती का ज्ञान साझा करता है।",
+    "watchStories": "कहानियां देखें",
     "downloadBrochure": "ब्रोशर डाउनलोड करें",
-    "altVillage": "ग्रामीण किसानों और खेतों का चित्र",
+    "altVillage": "किसान गांव का दृश्य",
     "altField": "बायोचार मिट्टी का खेत",
-    "altProcess": "खेत उत्पादन छंटाई प्रक्रिया",
-    "organicBadge": "१००% जैविक बायोचार"
+    "altProcess": "कृषि उत्पादन छँटाई प्रक्रिया",
+    "organicBadge": "100% जैविक बायोचार"
   },
   "tabs": {
-    "videos": "वीडियो गैलरी",
-    "stories": "किसानों की कहानियां",
-    "gallery": "चित्र गैलरी",
-    "brochures": "डाउनलोड सामग्री",
-    "campaigns": "सक्रिय अभियान",
-    "press": "समाचार अपडेट",
+    "videos": "वीडियो",
+    "stories": "किसान कहानियां",
+    "gallery": "गैलरी",
+    "brochures": "ब्रोशर",
+    "campaigns": "अभियान",
+    "press": "प्रेस",
     "resources": "ब्रांड रिसोर्स"
   },
   "videos": {
@@ -26,40 +26,40 @@
     "sectionSubtitle": "देखें कि बायोचार का उत्पादन कैसे किया जाता है, खेतों में इसका उपयोग कैसे किया जाता है, और मिट्टी की गुणवत्ता में सुधार के लाइव प्रदर्शन।",
     "featured": {
       "id": "feat-1",
-      "title": "खाद भारत बायोचार: मिट्टी में सीधे उपयोग की विधि",
+      "title": "कृषि में बायोचार का उपयोग कैसे करें?",
       "desc": "फसलों के जड़ क्षेत्र में सीधे बायोचार मिलाने की सटीक मात्रा, पानी के अनुपात और उपयोग की तकनीकों का विस्तृत मार्गदर्शन।",
-      "duration": "12:45",
+      "duration": "03:35",
       "category": "उत्पाद निर्देश",
-      "thumbnail": "/images/video-poster.svg",
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      "thumbnail": "/images/stubble-burning-field.jpg",
+      "videoUrl": "https://www.youtube.com/embed/MfuwUZCLyVo"
     },
     "supporting": [
       {
         "id": "sup-1",
-        "title": "बायोचार से पानी के खर्च में 30% तक कमी",
-        "desc": "देखें कि कैसे गांव के किसानों ने सूखे के दौरान मिट्टी की नमी को बनाए रखने के लिए बायोचार का उपयोग किया।",
-        "duration": "05:22",
+        "title": "बायोचार धरती का रक्षक किसान का साथी",
+        "desc": "देखिए कि कैसे मिट्टी की नमी और पोषक तत्वों को बरकरार रखने के लिए बायोचार एक रक्षक के रूप में काम करता है और उत्पादकता बढ़ाता है।",
+        "duration": "04:23",
         "category": "केस स्टडी",
-        "thumbnail": "/images/hero-village.svg",
-        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "thumbnail": "/images/healthy-crops.jpg",
+        "videoUrl": "https://www.youtube.com/embed/_MHfWHKSzEA"
       },
       {
         "id": "sup-2",
-        "title": "नर्सरी बेड में बायोचार का मिश्रण",
-        "desc": "नर्सरी प्रबंधकों के लिए बायोचार को कोकोपीट और जैविक खाद के साथ मिलाने का एक व्यावहारिक मार्गदर्शन।",
-        "duration": "08:14",
+        "title": "Biochar क्या है और नर्सरी मिट्टी में मिलाने का सही तरीका",
+        "desc": "नर्सरी प्रबंधकों और बागवानी के लिए बायोचार को कोकोपीट और मिट्टी के साथ मिलाने का व्यावहारिक ट्यूटोरियल।",
+        "duration": "04:35",
         "category": "ट्यूटोरियल",
-        "thumbnail": "/images/field-hero.svg",
-        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "thumbnail": "/images/nursery-crops.jpg",
+        "videoUrl": "https://www.youtube.com/embed/1VSlPOKtO0g"
       },
       {
         "id": "sup-3",
-        "title": "जेएसएल एंटरप्राइजेज की कॉरपोरेट यात्रा",
-        "desc": "खाद भारत की शुरुआत की कहानी और भारतीय खेतों में जैविक उर्वरता वापस लाने का हमारा संकल्प।",
-        "duration": "04:50",
+        "title": "पराली से बायोचार खाद बनाने की विधि",
+        "desc": "इस विधि को अपनाकर किसान भाई फसल अवशेषों (पराली) से जैविक बायोचार खाद बना सकते हैं और प्रदूषण को कम कर सकते हैं।",
+        "duration": "08:32",
         "category": "कॉरपोरेट कहानी",
-        "thumbnail": "/images/logo-vector.svg",
-        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "thumbnail": "/images/farmer-training.jpg",
+        "videoUrl": "https://www.youtube.com/embed/MV-cvfmThGM"
       }
     ]
   },
@@ -75,87 +75,87 @@
       {
         "id": "story-1",
         "name": "रमेश कुमार",
-        "location": "भिवानी, हरियाणा",
+        "location": "भिवानी, हरियाणा (HAU हिसार परीक्षण)",
         "crop": "धान और कपास",
         "impact": "सिंचाई में 35% कमी, कपास की गुणवत्ता में बड़ा सुधार",
-        "summary": "सिंचाई के खर्च में भारी बचत की और कपास की भरपूर फसल हासिल की।",
-        "story": "रमेश कुमार ने अपने 5 एकड़ के खेत में खाद भारत बायोचार का उपयोग किया। गर्मियों में मिट्टी की नमी को बरकरार रखकर, उन्होंने पंप चलाने की आवृत्ति को सप्ताह में दो बार से घटाकर हर दस दिन में एक बार कर दिया। उनकी कपास की फसल भी बाजार में ऊंचे दाम पर बिकी।",
-        "image": "/images/founder-nidhi.png"
+        "summary": "सिंचाई के खर्च में भारी बचत की और HAU हिसार परीक्षणों द्वारा सत्यापित कपास की भरपूर फसल हासिल की।",
+        "story": "रमेश कुमार ने अपने 5 एकड़ के खेत में खाद भारत बायोचार का उपयोग किया। CCS HAU हिसार के फसल पैदावार परीक्षणों के अनुसार, गर्मियों में मिट्टी की नमी बरकरार रहने से उन्होंने अपने सिंचाई पंप के फेरों को सप्ताह में दो बार से घटाकर हर दस दिन में एक बार कर दिया। कपास की गुणवत्ता और फाइबर घनत्व में बड़ा सुधार देखा गया।",
+        "image": "/images/farmer-ramesh.jpg"
       },
       {
         "id": "story-2",
         "name": "सावित्री देवी",
-        "location": "अलवर, राजस्थान",
+        "location": "अलवर, राजस्थान (CAZRI जोधपुर परीक्षण)",
         "crop": "सरसों और सब्जियां",
         "impact": "पैदावार में 20% की वृद्धि, रासायनिक खादों पर निर्भरता कम हुई",
-        "summary": "सूखे रेतीले पैच को उपजाऊ सब्जी क्यारियों में बदल दिया।",
-        "story": "सावित्री देवी एक सब्जी नर्सरी चलाती हैं। मिट्टी में बायोचार मिलाने से रेतीली मिट्टी में नाइट्रोजन पोषक तत्व रुके रहे। उन्होंने टमाटर और मिर्च के पौधों में तेजी से जड़ विकास देखा और यूरिया खाद पर खर्च काफी कम कर दिया।",
-        "image": "/images/field-hero.svg"
+        "summary": "CAZRI जोधपुर के दिशा-निर्देशों का उपयोग करके सूखे रेतीले पैच को उपजाऊ सब्जी क्यारियों में बदल दिया।",
+        "story": "सावित्री देवी एक सब्जी नर्सरी चलाती हैं। रेतीली मिट्टी के लिए CAZRI जोधपुर के परीक्षणों के अनुसार, मिट्टी में बायोचार को जैविक खाद के साथ मिलाने से नाइट्रोजन पोषक तत्व रुके रहे। उन्होंने पौधों में तेजी से जड़ विकास देखा और रासायनिक उर्वरकों पर होने वाले खर्च को काफी कम कर दिया।",
+        "image": "/images/farmer-savitri.jpg"
       },
       {
         "id": "story-3",
         "name": "गुरप्रीत सिंह",
-        "location": "बठिंडा, पंजाब",
+        "location": "बठिंडा, पंजाब (PAU लुधियाना परीक्षण)",
         "crop": "गेहूं और आलू",
-        "impact": "मिट्टी के कार्बन में वृद्धि, पोषक तत्वों का बहना कम हुआ",
-        "summary": "रेतीली मिट्टी में आलू की फसल के पोषक तत्वों को बहने से रोका।",
-        "story": "गुरप्रीत ने पाया कि उनका खाद का खर्च बढ़ रहा था लेकिन पैदावार स्थिर थी। खाद भारत बायोचार मिलाने से मिट्टी में एक कार्बन स्पंज बन गया जिसने पोषक तत्वों को बांध लिया। उनके आलू का आकार समान रहा, जिससे उन्हें बाजार में बेहतरीन दाम मिले।",
-        "image": "/images/hero-village.svg"
+        "impact": "मिट्टी के कार्बन में सुधार, पोषक तत्वों का बहना कम हुआ",
+        "summary": "पोषक तत्वों को बहने से रोका और PAU लुधियाना परीक्षणों द्वारा आलू की समान गुणवत्ता प्राप्त की।",
+        "story": "गुरप्रीत ने देखा कि उनके उर्वरक का खर्च बढ़ रहा था जबकि मिट्टी की उपज स्थिर हो गई थी। पंजाब कृषि विश्वविद्यालय (PAU) लुधियाना के आलू परीक्षणों से प्रेरित होकर, खाद भारत बायोचार मिलाने से मिट्टी में एक छिद्रपूर्ण कार्बन स्पंज बन गया जिसने पोषक तत्वों को बांध लिया। उनके आलू के कंदों का आकार एकसमान रहा, जिससे उन्हें बाजार में बेहतरीन दाम मिले।",
+        "image": "/images/struggling-farmer-portrait.jpg"
       }
     ]
   },
   "gallery": {
-    "sectionTitle": "जैविक प्रगति की झलकियां",
-    "sectionSubtitle": "बायोचार निर्माण, पैकेजिंग, डीलर बैठकों और पूरे भारत के खेतों में अनुप्रयोगों के चित्र।",
-    "viewPhoto": "फोटो देखें",
+    "sectionTitle": "Visualizing Organic Growth",
+    "sectionSubtitle": "Snapshots of biochar processing, packaging, distributor dealer meets, and field applications across India.",
+    "viewPhoto": "View Photo",
     "items": [
       {
         "id": "gal-1",
-        "title": "जैविक कच्चे माल की छंटाई",
-        "category": "उत्पादन",
-        "image": "/images/farm-process.svg"
+        "title": "Traditional Rice Seedling Planting",
+        "category": "Field Work",
+        "image": "/images/rice-planting-mud.jpg"
       },
       {
         "id": "gal-2",
-        "title": "वितरकों के लिए तैयार स्टॉक",
-        "category": "पैकेजिंग",
-        "image": "/images/khaad-bharat-pack-50kg.png"
+        "title": "Distributor Packaging & Ready Stock",
+        "category": "Packaging",
+        "image": "/images/product-pack-50kg.png"
       },
       {
         "id": "gal-3",
-        "title": "बायोचार मिक्स में टमाटर के पौधे",
-        "category": "नर्सरी",
-        "image": "/images/hybrid-seeds-tomato.svg"
+        "title": "Tomato Seedlings in Biochar Mix",
+        "category": "Nursery",
+        "image": "/images/nursery-crops.jpg"
       },
       {
         "id": "gal-4",
-        "title": "खेत में बायोचार छिड़काव प्रदर्शन",
-        "category": "खेत प्रदर्शन",
-        "image": "/images/field-hero.svg"
+        "title": "महिला किसान - खाद का छिड़काव",
+        "category": "Field Work",
+        "image": "/images/woman-broadcasting.jpg"
       },
       {
         "id": "gal-5",
-        "title": "किसान चौपाल जागरूकता बैठक",
-        "category": "आउटरीच",
-        "image": "/images/hero-village.svg"
+        "title": "Farmer Tending Crops with Hoe",
+        "category": "Field Work",
+        "image": "/images/farmer-hoe-field.jpg"
       },
       {
         "id": "gal-6",
-        "title": "कॉरपोरेट लोगो बोर्ड",
-        "category": "कॉरपोरेट",
-        "image": "/images/logo-vector.svg"
+        "title": "Traditional Ploughing & Soil Preparation",
+        "category": "Field Work",
+        "image": "/images/farmer-plow-ox.jpg"
       },
       {
         "id": "gal-7",
-        "title": "मिर्च फसल की पैदावार की निगरानी",
-        "category": "परिणाम",
-        "image": "/images/hybrid-seeds-chilli.svg"
+        "title": "Tomato Crop Growth Tracking",
+        "category": "Results",
+        "image": "/images/tomato-crops-growth.png"
       },
       {
         "id": "gal-8",
-        "title": "पानी बचाने की सिंचाई प्रणाली",
-        "category": "आउटरीच",
-        "image": "/images/network-route.svg"
+        "title": "Modern Mechanized Land Tilling",
+        "category": "Field Work",
+        "image": "/images/tractor-plowing-dry.jpg"
       }
     ]
   },
@@ -166,10 +166,10 @@
     "items": [
       {
         "id": "doc-1",
-        "title": "खाद भारत उत्पाद ब्रोशर",
-        "desc": "बायोचार उत्पादन प्रक्रिया, प्रमुख रासायनिक गुणों और वाणिज्यिक फसल उत्पादकों के लिए लाभों का विवरण।",
+        "title": "खाद भारत उत्पाद विवरण पत्रक",
+        "desc": "बायोचार इनपुट की विस्तृत रासायनिक संरचना, जैविक प्रमाणीकरण विवरण और विभिन्न फसलों के लिए लाभों का विवरण।",
         "fileType": "PDF",
-        "fileSize": "2.4 MB",
+        "fileSize": "2.7 KB",
         "fileUrl": "/downloads/product-brochure.pdf"
       },
       {
@@ -177,7 +177,7 @@
         "title": "किसान बायोचार उपयोग गाइड",
         "desc": "सरल चित्रों के साथ उपयोग की विधि, मिश्रण अनुपात, मौसमी नियम और फसलों के अनुसार मात्रा की गाइड।",
         "fileType": "PDF",
-        "fileSize": "1.8 MB",
+        "fileSize": "2.5 KB",
         "fileUrl": "/downloads/farmer-guide.pdf"
       },
       {
@@ -185,7 +185,7 @@
         "title": "डीलर और वितरक ऑनबोर्डिंग किट",
         "desc": "जेएसएल एंटरप्राइजेज के भागीदारों के लिए मूल्य निर्धारण, लॉजिस्टिक्स नियम, डीलरशिप पात्रता मानदंड और मार्केटिंग सामग्री।",
         "fileType": "PDF",
-        "fileSize": "3.1 MB",
+        "fileSize": "2.6 KB",
         "fileUrl": "/downloads/distributor-kit.pdf"
       },
       {
@@ -193,7 +193,7 @@
         "title": "मिट्टी की नमी संरक्षण मैनुअल",
         "desc": "बायोचार जैविक इनपुट का उपयोग करके जल अवशोषण मेट्रिक्स और मिट्टी कार्बन स्वास्थ्य चार्ट का वैज्ञानिक मूल्यांकन।",
         "fileType": "PDF",
-        "fileSize": "1.5 MB",
+        "fileSize": "2.6 KB",
         "fileUrl": "/downloads/soil-manual.pdf"
       }
     ]
@@ -207,21 +207,21 @@
         "title": "बायोचार कृषि जागरूकता अभियान",
         "desc": "फसल अवशेषों को जलाने के बजाय उनका बायोचार बनाने के लिए ग्राम पंचायतों में चौपाल बैठकें।",
         "tag": "जागरूकता अभियान",
-        "image": "/images/farm-process.svg"
+        "image": "/images/community-outreach.jpg"
       },
       {
         "id": "camp-2",
         "title": "स्मार्ट सिंचाई, उपजाऊ मिट्टी",
         "desc": "सूखे से निपटने के लिए मिट्टी में नमी धारण क्षमता बढ़ाने के तरीकों पर लाइव कार्यशालाएं।",
         "tag": "जल संरक्षण",
-        "image": "/images/network-route.svg"
+        "image": "/images/smart-irrigation-field.png"
       },
       {
         "id": "camp-3",
         "title": "नर्सरी मिट्टी संवर्धन शिविर",
         "desc": "सुंदर फूलों और सब्जी क्यारियों के लिए नर्सरी में बायोचार के इष्टतम मिश्रण अनुपात पर व्यावहारिक प्रशिक्षण।",
         "tag": "प्रशिक्षण शिविर",
-        "image": "/images/hero-village.svg"
+        "image": "/images/nursery-crops.jpg"
       }
     ]
   },
@@ -232,27 +232,27 @@
     "items": [
       {
         "id": "press-1",
-        "title": "जेएसएल एंटरप्राइजेज ने बढ़ाई बायोचार उत्पादन क्षमता",
-        "summary": "उत्तर भारत में कृषि डीलरों की बढ़ती मांग को पूरा करने के लिए जैविक प्रसंस्करण क्षमता का विस्तार।",
-        "date": "12 मई, 2026",
-        "source": "AgriBusiness Today",
-        "url": "#"
+        "title": "हिमाचल प्रदेश ने हमीरपुर में शुरू किया पहला स्वदेशी बायोचार संयंत्र",
+        "summary": "राज्य वन विभाग और नौनी विश्वविद्यालय ने चीड़ की पत्तियों और कृषि अवशेषों को जैविक बायोचार में बदलने के लिए साझेदारी की, जिससे कार्बन क्रेडिट उत्पन्न होगा।",
+        "date": "अगस्त 2025",
+        "source": "Times of India",
+        "url": "https://www.google.com/search?q=Himachal+Pradesh+indigenous+biochar+plant+Neri+Hamirpur"
       },
       {
         "id": "press-2",
-        "title": "किसानों ने पाया पानी के खर्च में 30% तक की बड़ी कमी",
-        "summary": "वैज्ञानिक परीक्षणों ने जैविक खाद के साथ बायोचार मिलाने पर मिट्टी की जल-धारण क्षमता में सकारात्मक वृद्धि की पुष्टि की।",
-        "date": "28 अप्रैल, 2026",
-        "source": "कृषि पत्रिका",
-        "url": "#"
+        "title": "NITK सुरथकल ने विकसित किया अभिनव बायोचार-माइक्रोब सिस्टम",
+        "summary": "शोधकर्ताओं ने फसलों को बढ़ावा देने के साथ-साथ मिट्टी से भारी धातुओं और कीटनाशकों को साफ करने के लिए एक जैविक बायोचार कॉम्प्लेक्स तैयार किया है।",
+        "date": "जून 2026",
+        "source": "Times of India",
+        "url": "https://www.google.com/search?q=NITK+Surathkal+biochar+microbe+system+Times+of+India"
       },
       {
         "id": "press-3",
-        "title": "नए नेतृत्व में महिलाओं का कृषि सशक्तिकरण",
-        "summary": "महिला-अनुकूल प्रशिक्षण उपकरणों और सामुदायिक फसल सहायता समूहों पर जेएसएल एंटरप्राइजेज का विशेष ध्यान।",
-        "date": "15 मार्च, 2026",
-        "source": "कम्युनिटी वॉयस",
-        "url": "#"
+        "title": "नितिन गडकरी ने बायोचार को भारतीय मिट्टी के लिए 'काला सोना' बताया",
+        "summary": "मिट्टी के कार्बन को खेती के लिए संजीवनी बताते हुए, केंद्रीय मंत्री ने किसानों से कृषि अवशेषों को बायोचार में बदलने के लिए कम लागत वाले पायरोलाइज़र अपनाने का आग्रह किया।",
+        "date": "मार्च 2026",
+        "source": "Times of India",
+        "url": "https://www.google.com/search?q=Nitin+Gadkari+biochar+black+gold+Times+of+India"
       }
     ]
   },
@@ -279,7 +279,7 @@
         "category": "लोगो और वेक्टर्स",
         "fileType": "SVG",
         "fileSize": "8 KB",
-        "fileUrl": "/images/logo-mark.svg"
+        "fileUrl": "/images/logo-mark.png"
       },
       {
         "id": "res-3",
@@ -287,7 +287,7 @@
         "category": "उत्पाद पैकेजेस",
         "fileType": "PNG",
         "fileSize": "2.4 MB",
-        "fileUrl": "/images/khaad-bharat-pack-5kg.png"
+        "fileUrl": "/images/product-pack-5kg.png"
       },
       {
         "id": "res-4",
@@ -295,7 +295,7 @@
         "category": "उत्पाद पैकेजेस",
         "fileType": "PNG",
         "fileSize": "2.9 MB",
-        "fileUrl": "/images/khaad-bharat-pack-20kg.png"
+        "fileUrl": "/images/product-pack-20kg.png"
       },
       {
         "id": "res-5",
@@ -303,7 +303,7 @@
         "category": "उत्पाद पैकेजेस",
         "fileType": "PNG",
         "fileSize": "3.1 MB",
-        "fileUrl": "/images/khaad-bharat-pack-50kg.png"
+        "fileUrl": "/images/product-pack-50kg.png"
       },
       {
         "id": "res-6",
@@ -319,7 +319,7 @@
         "category": "बैनर और मीडिया",
         "fileType": "PNG",
         "fileSize": "2.6 MB",
-        "fileUrl": "/images/khaad-bharat-catalog-board.png"
+        "fileUrl": "/images/product-catalog-board.png"
       },
       {
         "id": "res-8",

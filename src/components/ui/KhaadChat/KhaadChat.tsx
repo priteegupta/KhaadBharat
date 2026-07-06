@@ -3,13 +3,15 @@
 import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./KhaadChat.module.css";
+import { formatTextWithLinks } from "../../../utils/url";
 
 
 // ─── CONFIG ──────────────────────────────────────────────────
 // During development:  http://localhost:3000
 // After deployment:    https://your-app.onrender.com
-const API_BASE =
-  (import.meta.env.VITE_CHATBOT_API_URL || "http://localhost:3000").replace(/\/$/, "");
+const API_BASE = (
+  import.meta.env.VITE_CHATBOT_API_URL || "http://localhost:3000"
+).replace(/\/$/, "");
 // ─────────────────────────────────────────────────────────────
 
 const LANG_CONFIG = {
@@ -223,7 +225,7 @@ export default function KhaadChat() {
         <div className={styles.messages}>
           {messages.map((msg) => (
             <div key={msg.id} className={`${styles.msg} ${styles[msg.role]}`}>
-              {msg.content}
+              {formatTextWithLinks(msg.content)}
             </div>
           ))}
           {isTyping && (

@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { FileText, Download, FileType2 } from "lucide-react";
+import { getAssetUrl } from "../../utils/url";
 
 interface DocumentData {
   id: string;
@@ -51,8 +52,8 @@ export const DownloadCard: React.FC<DownloadCardProps> = ({ document }) => {
       {/* Button */}
       <div className="mt-6 pt-4 border-t border-brand-green/5">
         <a
-          href={document.fileUrl}
-          download
+          href={getAssetUrl(document.fileUrl)}
+          download={document.fileUrl.split("/").pop()}
           className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-extrabold text-brand-green bg-brand-green-light hover:bg-brand-green hover:text-white transition-all duration-300"
         >
           <Download className="w-4 h-4" />

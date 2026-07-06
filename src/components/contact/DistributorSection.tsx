@@ -28,8 +28,8 @@ export const DistributorSection: React.FC<DistributorSectionProps> = ({
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Left text column */}
         <div className="lg:col-span-5 flex flex-col items-start">
-          <span className="inline-block px-3 py-1 text-[10px] md:text-xs font-black tracking-widest text-brand-accent-sunlight uppercase bg-white/10 rounded-full mb-4">
-            DEALERSHIP OPPORTUNITIES
+          <span className="inline-block px-3 py-1.5 text-[10px] md:text-xs font-black tracking-widest text-brand-accent-sunlight uppercase bg-white/10 rounded-full mb-4 border border-white/10 shadow-sm">
+            {t("distributor.badge")}
           </span>
           <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-4 leading-tight">
             {t("distributor.title")}
@@ -39,7 +39,7 @@ export const DistributorSection: React.FC<DistributorSectionProps> = ({
           </p>
           <button
             onClick={onApplyClick}
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-xs md:text-sm font-black text-brand-green-deep bg-brand-accent-sunlight hover:bg-white transition-all duration-200 shadow-md"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-xs md:text-sm font-black text-brand-green-deep bg-brand-accent-sunlight hover:bg-white hover:scale-105 active:scale-95 transition-all duration-300 shadow-md"
           >
             {t("distributor.cta")}
             <ArrowRight className="w-4 h-4" />
@@ -53,9 +53,9 @@ export const DistributorSection: React.FC<DistributorSectionProps> = ({
             return (
               <div
                 key={key}
-                className="p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 flex items-start gap-4"
+                className="p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 hover:border-white/25 hover:bg-white/15 transition-all duration-350 flex items-start gap-4 group cursor-pointer"
               >
-                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-accent-sunlight shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center text-brand-accent-sunlight shrink-0 group-hover:scale-110 group-hover:bg-brand-accent-sunlight group-hover:text-brand-green-deep transition-all duration-300">
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>

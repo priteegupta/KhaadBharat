@@ -15,7 +15,7 @@ describe("Zustand app store tests", () => {
   beforeEach(() => {
     // Reset Zustand store state before each test
     useAppStore.setState({
-      lang: "en",
+      lang: "hi",
       enquiries: [],
       exportEnquiries: [],
     });
@@ -24,7 +24,7 @@ describe("Zustand app store tests", () => {
 
   it("should have correct default state", () => {
     const state = useAppStore.getState();
-    expect(state.lang).toBe("en");
+    expect(state.lang).toBe("hi");
     expect(state.enquiries).toEqual([]);
     expect(state.exportEnquiries).toEqual([]);
   });
@@ -35,7 +35,7 @@ describe("Zustand app store tests", () => {
 
     const updatedState = useAppStore.getState();
     expect(updatedState.lang).toBe("hi");
-    expect(localStorage.getItem("khaad-bharat-language")).toBe("hi");
+    expect(localStorage.getItem("khaad-bharat-lang-v2")).toBe("hi");
     expect(document.documentElement.lang).toBe("hi");
   });
 

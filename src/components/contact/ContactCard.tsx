@@ -19,24 +19,30 @@ export const ContactCard: React.FC<ContactCardProps> = ({
 }) => {
   return (
     <motion.div
-      className="flex flex-col items-start p-6 rounded-3xl bg-white border border-brand-green/10 shadow-sm hover:shadow-premium hover:border-brand-green/35 transition-all duration-300 group"
-      whileHover={{ y: -6 }}
+      className="flex flex-col items-start p-6 rounded-3xl bg-white border border-brand-green/10 shadow-sm hover:shadow-premium hover:border-brand-green/30 transition-all duration-350 group cursor-pointer relative overflow-hidden"
+      whileHover={{ y: -8, scale: 1.01 }}
+      onClick={onClick}
     >
-      <div className="w-12 h-12 rounded-2xl bg-brand-green-light flex items-center justify-center text-brand-green-deep mb-5 group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+      <div className="absolute top-0 right-0 w-24 h-24 bg-brand-green/5 rounded-bl-full transform translate-x-4 -translate-y-4 group-hover:scale-125 transition-transform duration-350" />
+      
+      <div className="w-12 h-12 rounded-2xl bg-brand-green-light flex items-center justify-center text-brand-green-deep mb-5 group-hover:bg-brand-green group-hover:text-white group-hover:rotate-6 transition-all duration-350 shadow-sm">
         <Icon className="w-6 h-6" />
       </div>
 
-      <h3 className="text-lg font-extrabold text-brand-green-deep tracking-tight mb-2">
+      <h3 className="text-lg font-extrabold text-brand-green-deep tracking-tight mb-2 group-hover:text-brand-green transition-colors duration-300">
         {title}
       </h3>
 
-      <p className="text-xs text-brand-text-muted font-bold leading-relaxed mb-6 flex-grow">
+      <p className="text-xs text-brand-text-muted font-bold leading-relaxed mb-6 flex-grow relative z-10">
         {description}
       </p>
 
       <button
-        onClick={onClick}
-        className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-full text-xs font-black text-brand-green-deep bg-brand-green-light hover:bg-brand-green hover:text-white transition-all duration-200"
+        onClick={(e) => {
+          e.stopPropagation();
+          onClick();
+        }}
+        className="w-full inline-flex items-center justify-center px-4 py-3 rounded-full text-xs font-black text-brand-green-deep bg-brand-green-light hover:bg-brand-green hover:text-white hover:scale-[1.02] active:scale-[0.98] transition-all duration-250 shadow-sm hover:shadow-md"
       >
         {buttonText}
       </button>

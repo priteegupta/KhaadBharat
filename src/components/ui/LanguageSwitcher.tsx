@@ -8,8 +8,8 @@ export const LanguageSwitcher: React.FC = () => {
   const { lang, setLang } = useAppStore();
 
   return (
-    <div className="flex items-center gap-2">
-      <Globe className="w-4 h-4 text-brand-green-deep" />
+    <div className="flex items-center gap-1.5 sm:gap-2">
+      <Globe className="hidden sm:block w-4 h-4 text-brand-green-deep" />
       <div className="inline-flex rounded-full p-0.5 bg-brand-beige-deep/40 border border-brand-green/10">
         <button
           type="button"

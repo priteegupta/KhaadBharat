@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { MessageSquare, Handshake, FileDown } from "lucide-react";
+import { getAssetUrl } from "../../utils/url";
 
 interface ProductCTAProps {
   title: string;
@@ -19,6 +21,33 @@ export const ProductCTA: React.FC<ProductCTAProps> = ({
   btnDownload
 }) => {
   const navigate = useNavigate();
+  const { i18n } = useTranslation();
+  const isHi = i18n.language === "hi";
+  const [downloadUrl, setDownloadUrl] = useState("/downloads/Khaad_Bharat_Biochar_Photo_Guide.pdf");
+  const [downloadName, setDownloadName] = useState("Khaad_Bharat_Biochar_Photo_Guide.pdf");
+
+  useEffect(() => {
+    if (isHi) {
+      const hindiUrl = "/downloads/Khaad_Bharat_Biochar_Photo_Guide_Hi.pdf";
+      fetch(getAssetUrl(hindiUrl), { method: "HEAD" })
+        .then((res) => {
+          if (res.ok) {
+            setDownloadUrl(hindiUrl);
+            setDownloadName("Khaad_Bharat_Biochar_Photo_Guide_Hi.pdf");
+          } else {
+            setDownloadUrl("/downloads/Khaad_Bharat_Biochar_Photo_Guide.pdf");
+            setDownloadName("Khaad_Bharat_Biochar_Photo_Guide.pdf");
+          }
+        })
+        .catch(() => {
+          setDownloadUrl("/downloads/Khaad_Bharat_Biochar_Photo_Guide.pdf");
+          setDownloadName("Khaad_Bharat_Biochar_Photo_Guide.pdf");
+        });
+    } else {
+      setDownloadUrl("/downloads/Khaad_Bharat_Biochar_Photo_Guide.pdf");
+      setDownloadName("Khaad_Bharat_Biochar_Photo_Guide.pdf");
+    }
+  }, [isHi]);
 
   return (
     <section className="py-16">
@@ -73,9 +102,11 @@ export const ProductCTA: React.FC<ProductCTAProps> = ({
             </button>
 
             <a
-              href="/downloads/product-brochure.pdf"
-              download
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-black text-white bg-transparent hover:bg-white/10 border border-white/20 hover:border-white/40 transition-all duration-300 transform hover:-translate-y-0.5"
+              href={getAssetUrl(downloadUrl)}
+              download={downloadName}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-black text-white bg-transparent hover:bg-white/10 border border-white/20 hover:border-white/40 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
             >
               <FileDown className="w-4 h-4" />
               <span>{btnDownload}</span>

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Play, Download, Sparkles } from "lucide-react";
 
 interface MediaHeroProps {
@@ -10,119 +10,135 @@ interface MediaHeroProps {
 
 export const MediaHero: React.FC<MediaHeroProps> = ({ onWatchStories, onDownloadBrochure }) => {
   const { t } = useTranslation();
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      url: "/images/struggling-farmer-portrait.jpg",
+      alt: "Indian Farmer Struggles"
+    },
+    {
+      url: "/images/woman-farmer-resilient.jpg",
+      alt: "Resilient Indian Woman Farmer"
+    },
+    {
+      url: "/images/farmer-couple-hope.jpg",
+      alt: "Farmer Couple Hope & Dedication"
+    },
+    {
+      url: "/images/rice-planting-mud.jpg",
+      alt: "Traditional Rice Seedling Planting"
+    },
+    {
+      url: "/images/farmer-hoe-field.jpg",
+      alt: "Farmer Tending Crops with Hoe"
+    },
+    {
+      url: "/images/farmer-plow-storm.jpg",
+      alt: "Traditional ploughing under stormy sky"
+    },
+    {
+      url: "/images/tractor-muddy-field.jpg",
+      alt: "Mechanized tilling in muddy field"
+    },
+    {
+      url: "/images/tractor-plowing-dry.jpg",
+      alt: "Modern land tilling"
+    },
+    {
+      url: "/images/farmer-broadcasting-mud.jpg",
+      alt: "Cooperative paddy cultivation"
+    }
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [slides.length]);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-brand-beige-cream to-brand-beige/30 rounded-3xl border border-brand-green/10 p-8 md:p-12 lg:p-16 mb-12 shadow-premium">
-      {/* Background ambient lighting */}
-      <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-green/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-brown-warm/5 rounded-full blur-3xl pointer-events-none" />
+    <section className="relative overflow-hidden min-h-[480px] md:min-h-[550px] rounded-3xl border border-brand-green/20 flex items-center p-8 md:p-12 lg:p-16 mb-12 shadow-premium bg-brand-green-deep">
+      {/* Background Slideshow */}
+      <div className="absolute inset-0 z-0 select-none pointer-events-none">
+        <AnimatePresence>
+          <motion.img
+            key={currentSlide}
+            src={slides[currentSlide].url}
+            alt={slides[currentSlide].alt}
+            className="absolute inset-0 w-full h-full object-cover object-center md:object-right"
+            initial={{ opacity: 0, scale: 1.03 }}
+            animate={{ opacity: 0.9, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.0, ease: "easeInOut" }}
+          />
+        </AnimatePresence>
+        
+        {/* Left-to-right gradient overlay: Dark protective background for text on the left, fading to completely clear on the right to show the raw struggle and details */}
+        <div className="absolute inset-y-0 left-0 bg-gradient-to-r from-brand-green-deep/95 via-brand-green-deep/80 to-transparent w-full md:w-[65%] z-10" />
+        <div className="absolute inset-0 bg-black/15 z-0" />
+      </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-        {/* Left Side: Headline and copy */}
-        <motion.div
-          className="lg:col-span-7 flex flex-col gap-6"
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+      {/* Foreground Content */}
+      <div className="relative z-20 max-w-2xl flex flex-col gap-6 text-left">
+        {/* Badge */}
+        <motion.div 
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-brand-accent-sunlight font-extrabold text-xs tracking-wider uppercase w-fit backdrop-blur-sm shadow-sm"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-green/10 border border-brand-green/20 text-brand-green-deep font-extrabold text-xs tracking-wider uppercase w-fit">
-            <Sparkles className="w-3.5 h-3.5" />
-            {t("media.hero.badge")}
-          </div>
-
-          {/* Headline */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-green-deep leading-tight">
-            {t("media.hero.title")}
-          </h1>
-
-          {/* Subheadline & Description */}
-          <div className="flex flex-col gap-3">
-            <p className="text-lg font-bold text-brand-brown-warm">
-              {t("media.hero.subtitle")}
-            </p>
-            <p className="text-base text-brand-text-muted leading-relaxed font-semibold">
-              {t("media.hero.paragraph")}
-            </p>
-          </div>
-
-          {/* CTAs */}
-          <div className="flex flex-wrap items-center gap-4 mt-2">
-            <button
-              onClick={onWatchStories}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-base font-extrabold text-white bg-brand-green-deep hover:bg-brand-green shadow hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
-            >
-              <Play className="w-4 h-4 fill-white" />
-              {t("media.hero.watchStories")}
-            </button>
-            <button
-              onClick={onDownloadBrochure}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-base font-extrabold text-brand-green bg-white hover:bg-brand-green-light border border-brand-green/20 hover:border-brand-green/45 shadow-sm hover:shadow transition-all duration-300"
-            >
-              <Download className="w-4 h-4" />
-              {t("media.hero.downloadBrochure")}
-            </button>
-          </div>
+          <Sparkles className="w-3.5 h-3.5" />
+          {t("media.hero.badge")}
         </motion.div>
 
-        {/* Right Side: Cinematic Collage */}
-        <motion.div
-          className="lg:col-span-5 relative w-full h-[320px] md:h-[400px] flex items-center justify-center"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        {/* Headline */}
+        <motion.h1 
+          className="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight drop-shadow-md"
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
         >
-          {/* Main big image */}
-          <motion.div
-            className="absolute w-[60%] h-[60%] rounded-2xl overflow-hidden border border-brand-green/20 shadow-lg bg-white"
-            style={{ zIndex: 3 }}
-            animate={{ y: [0, -8, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <img
-              src="/images/hero-village.svg"
-              alt="Farmer village visualization"
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
+          {t("media.hero.title")}
+        </motion.h1>
 
-          {/* Upper left image */}
-          <motion.div
-            className="absolute top-4 left-4 w-[45%] h-[40%] rounded-2xl overflow-hidden border border-brand-green/20 shadow-md bg-white"
-            style={{ zIndex: 2 }}
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <img
-              src="/images/field-hero.svg"
-              alt="Biochar soil field"
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
+        {/* Subheadline & Description */}
+        <motion.div 
+          className="flex flex-col gap-3"
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <p className="text-lg md:text-xl font-bold text-brand-accent-sunlight drop-shadow-md">
+            {t("media.hero.subtitle")}
+          </p>
+          <p className="text-sm md:text-base text-white/90 leading-relaxed font-bold max-w-2xl drop-shadow-md">
+            {t("media.hero.paragraph")}
+          </p>
+        </motion.div>
 
-          {/* Lower right image */}
-          <motion.div
-            className="absolute bottom-4 right-4 w-[50%] h-[45%] rounded-2xl overflow-hidden border border-brand-green/20 shadow-md bg-white"
-            style={{ zIndex: 1 }}
-            animate={{ x: [0, 6, 0] }}
-            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        {/* CTAs */}
+        <motion.div 
+          className="flex flex-wrap items-center gap-4 mt-2"
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <button
+            onClick={onWatchStories}
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-base font-extrabold text-brand-green-deep bg-brand-accent-sunlight hover:bg-white shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-0.5 active:scale-95 transition-all duration-300"
           >
-            <img
-              src="/images/farm-process.svg"
-              alt="Farm production sorting process"
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
-
-          {/* Subtle floating badge */}
-          <motion.div
-            className="absolute top-1/2 right-6 bg-brand-accent-sunlight text-brand-text font-black text-xs px-3 py-2 rounded-xl shadow-lg border border-white/20"
-            style={{ zIndex: 4 }}
-            animate={{ rotate: [-2, 2, -2], y: [0, -4, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            <Play className="w-4 h-4 fill-brand-green-deep" />
+            {t("media.hero.watchStories")}
+          </button>
+          <button
+            onClick={onDownloadBrochure}
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-base font-extrabold text-white bg-white/10 hover:bg-white/20 border border-white/20 shadow-sm hover:scale-105 hover:-translate-y-0.5 active:scale-95 transition-all duration-300 backdrop-blur-sm"
           >
-            100% Organic Biochar
-          </motion.div>
+            <Download className="w-4 h-4" />
+            {t("media.hero.downloadBrochure")}
+          </button>
         </motion.div>
       </div>
     </section>

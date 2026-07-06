@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, Filter, X, RotateCcw } from "lucide-react";
@@ -46,6 +46,17 @@ export const FilterBar: React.FC<FilterBarProps> = ({
 }) => {
   const { t } = useTranslation("schemes");
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    if (isDrawerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isDrawerOpen]);
 
   const activeFilterCount =
     (selectedCategory ? 1 : 0) +

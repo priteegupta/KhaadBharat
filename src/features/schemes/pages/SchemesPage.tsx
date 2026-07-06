@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { ShieldCheck, FileText, Edit3, Award, Milestone } from "lucide-react";
 import SEO from "../../../components/common/SEO";
 import SectionHeader from "../../../components/ui/SectionHeader";
 import useSchemes from "../hooks/useSchemes";
@@ -343,26 +344,41 @@ export const SchemesPage: React.FC = () => {
             {/* Connection Line on Desktop */}
             <div className="hidden lg:block absolute top-7 left-10 right-10 h-0.5 bg-gradient-to-r from-brand-green via-brand-accent-sunlight to-brand-green/30 pointer-events-none z-0" />
 
-            {processSteps.map((step, idx) => (
-              <div
-                key={idx}
-                className="flex lg:flex-col items-start lg:items-center gap-4 lg:gap-6 flex-1 text-left lg:text-center z-10 relative"
-              >
-                {/* Step Circle */}
-                <div className="flex items-center justify-center w-14 h-14 rounded-full bg-brand-green-deep border-4 border-white text-brand-beige-cream font-black text-lg shadow-md shrink-0 transition-transform duration-300 hover:scale-110">
-                  {idx + 1}
-                </div>
+            {processSteps.map((step, idx) => {
+              const getStepIcon = (i: number) => {
+                switch (i) {
+                  case 0: return <ShieldCheck className="w-5 h-5 text-white" />;
+                  case 1: return <FileText className="w-5 h-5 text-white" />;
+                  case 2: return <Edit3 className="w-5 h-5 text-white" />;
+                  case 3: return <Award className="w-5 h-5 text-white" />;
+                  default: return <Milestone className="w-5 h-5 text-white" />;
+                }
+              };
 
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-base font-black text-brand-green-deep leading-snug">
-                    {step.title}
-                  </h3>
-                  <p className="text-xs text-brand-text-muted leading-relaxed font-bold max-w-xs">
-                    {step.description}
-                  </p>
+              return (
+                <div
+                  key={idx}
+                  className="flex lg:flex-col items-start lg:items-center gap-4 lg:gap-6 flex-1 text-left lg:text-center z-10 relative group"
+                >
+                  {/* Step Circle */}
+                  <div className="flex items-center justify-center w-14 h-14 rounded-full bg-brand-green-deep border-4 border-white text-brand-beige-cream shadow-md shrink-0 transition-transform duration-300 group-hover:scale-110 relative">
+                    <span className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-brand-accent-sunlight border border-white text-[9px] font-black text-brand-green-deep rounded-full flex items-center justify-center">
+                      {idx + 1}
+                    </span>
+                    {getStepIcon(idx)}
+                  </div>
+
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-base font-black text-brand-green-deep leading-snug">
+                      {step.title}
+                    </h3>
+                    <p className="text-xs text-brand-text-muted leading-relaxed font-bold max-w-xs">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </motion.section>
       )}

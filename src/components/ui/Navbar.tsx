@@ -25,6 +25,17 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   const navItems = [
     { key: "home", label: t("ui.nav.home"), path: "/" },
     { key: "about", label: t("ui.nav.about"), path: "/about" },
@@ -51,14 +62,14 @@ export const Navbar: React.FC = () => {
             <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate("/")}>
               <img
                 className="w-10 h-10 object-contain drop-shadow"
-                src="/images/logo-mark.svg"
+                src="/images/logo-mark.png"
                 alt="KHAAD BHARAT Logo"
               />
               <div className="flex flex-col">
                 <span className="text-lg font-extrabold tracking-wide text-brand-green-deep leading-none uppercase">
                   Khaad Bharat
                 </span>
-                <span className="text-[10px] font-semibold text-brand-brown-warm tracking-tight leading-none mt-1">
+                <span className="hidden sm:block text-[10px] font-semibold text-brand-brown-warm tracking-tight leading-none mt-1">
                   {t("brand.tagline")}
                 </span>
               </div>

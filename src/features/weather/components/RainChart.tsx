@@ -73,7 +73,7 @@ export const RainChart: React.FC<RainChartProps> = ({ daily, expectedRainVal }) 
             </div>
 
             {/* Bars Column Wrapper */}
-            <div className="flex-grow flex items-end justify-around px-8 h-[140px] relative z-10">
+            <div className="flex-grow flex items-end justify-around px-2 sm:px-8 h-[140px] relative z-10">
               {daily.map((d, i) => {
                 const heightPercent = `${d.rainProb}%`;
                 return (
@@ -96,7 +96,7 @@ export const RainChart: React.FC<RainChartProps> = ({ daily, expectedRainVal }) 
             </div>
 
             {/* X-Axis labels */}
-            <div className="flex justify-around px-8 border-t border-brand-green/10 pt-2 relative z-10">
+            <div className="flex justify-around px-2 sm:px-8 border-t border-brand-green/10 pt-2 relative z-10">
               {daily.map((d, i) => (
                 <span key={i} className="text-[10px] font-black text-brand-text-muted uppercase w-8 text-center">
                   {d.day.substring(0, 3)}

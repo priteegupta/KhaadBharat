@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef } from "react";
+import React, { useState, useMemo, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -32,6 +32,22 @@ export const FaqPage: React.FC = () => {
   const browseRef = useRef<HTMLDivElement>(null);
   const supportRef = useRef<HTMLDivElement>(null);
 
+  // State
+  const [selectedCategory, setSelectedCategory] = useState("product");
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // Scroll to top on route mount
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" as any });
+  }, []);
+
+  // Reset scroll to top of Browse section on FAQ category selection change
+  useEffect(() => {
+    if (window.scrollY > 200) {
+      browseRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [selectedCategory]);
+
   const handleScrollToBrowse = () => {
     browseRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -39,10 +55,6 @@ export const FaqPage: React.FC = () => {
   const handleScrollToSupport = () => {
     supportRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
-
-  // State
-  const [selectedCategory, setSelectedCategory] = useState("product");
-  const [searchQuery, setSearchQuery] = useState("");
 
   // Category definitions
   const categories = useMemo(
@@ -218,7 +230,7 @@ export const FaqPage: React.FC = () => {
           btnContact={t("support.btnContact")}
           cards={supportCards}
           onConnectClick={() => navigate("/contact")}
-          onContactClick={() => (window.location.href = "tel:+919625900369")}
+          onContactClick={() => (window.location.href = "tel:9315314828")}
         />
       </motion.section>
 

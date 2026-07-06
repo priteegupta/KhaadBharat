@@ -28,9 +28,10 @@ export const Footer: React.FC = () => {
           {/* Column 1: Company Logo and Bio */}
           <div className="lg:col-span-4 flex flex-col gap-4">
             <div className="flex items-center gap-3">
+            
               <img
-                className="w-10 h-10 object-contain brightness-0 invert"
-                src="/images/logo-mark.svg"
+                className="w-10 h-10 object-contain"
+                src="/images/logo-mark.png"
                 alt="KHAAD BHARAT Logo"
               />
               <div className="flex flex-col">
@@ -47,25 +48,9 @@ export const Footer: React.FC = () => {
             </p>
             <div className="flex items-center gap-3 mt-2">
               <a
-                href="#"
-                className="p-2 rounded-full bg-white/5 hover:bg-white/10 hover:text-brand-accent-sunlight transition-colors flex items-center justify-center"
-                aria-label="Facebook"
-              >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
-                </svg>
-              </a>
-              <a
-                href="#"
-                className="p-2 rounded-full bg-white/5 hover:bg-white/10 hover:text-brand-accent-sunlight transition-colors flex items-center justify-center"
-                aria-label="Twitter"
-              >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-              </a>
-              <a
-                href="#"
+                href="https://www.instagram.com/khaadbharat/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white/5 hover:bg-white/10 hover:text-brand-accent-sunlight transition-colors flex items-center justify-center"
                 aria-label="Instagram"
               >
@@ -73,6 +58,27 @@ export const Footer: React.FC = () => {
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-white/5 hover:bg-white/10 hover:text-brand-accent-sunlight transition-colors flex items-center justify-center"
+                aria-label="YouTube"
+              >
+                <svg
+                  className="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" />
                 </svg>
               </a>
             </div>
@@ -131,18 +137,18 @@ export const Footer: React.FC = () => {
                   JSL Enterprises, Delhi, India
                 </span>
               </div>
-              <div className="flex items-center gap-3">
+              <a href="tel:+919315314828" className="flex items-center gap-3 hover:text-brand-accent-sunlight transition-colors group">
                 <Phone className="w-4 h-4 text-brand-accent-sunlight flex-shrink-0" />
-                <span className="text-sm text-white/80 font-medium leading-none">
-                  +91 96259 00369
+                <span className="text-sm text-white/80 group-hover:text-brand-accent-sunlight font-medium leading-none">
+                  +91 93153 14828
                 </span>
-              </div>
-              <div className="flex items-center gap-3">
+              </a>
+              <a href="mailto:Jslgourav@gmail.com" className="flex items-center gap-3 hover:text-brand-accent-sunlight transition-colors group">
                 <Mail className="w-4 h-4 text-brand-accent-sunlight flex-shrink-0" />
-                <span className="text-sm text-white/80 font-medium leading-none">
-                  info@jslenterprises.com
+                <span className="text-sm text-white/80 group-hover:text-brand-accent-sunlight font-medium leading-none">
+                  Jslgourav@gmail.com
                 </span>
-              </div>
+              </a>
             </div>
             <Link
               to="/contact"
@@ -156,7 +162,9 @@ export const Footer: React.FC = () => {
 
         {/* Bottom copyright segment */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-xs font-semibold text-white/60">
-          <p>© {new Date().getFullYear()} JSL Enterprises. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} JSL Enterprises. All rights reserved.
+          </p>
           <p className="flex items-center gap-1">
             <Leaf className="w-3.5 h-3.5 text-brand-accent-sunlight" />
             KHAAD BHARAT BIOCHAR — Powered by JSL Enterprises

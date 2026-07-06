@@ -34,12 +34,12 @@ export const ContactForm: React.FC<ContactFormProps> = ({
   // Synchronize initial interest state
   const interestOptions = ["product", "farmer", "dealer", "partnership", "media", "other"];
 
-  const states = [
-    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Delhi (NCR)",
-    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala",
-    "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland",
-    "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura",
-    "Uttar Pradesh", "Uttarakhand", "West Bengal", "Other"
+  const stateKeys = [
+    "andhra_pradesh", "arunachal_pradesh", "assam", "bihar", "chhattisgarh", "delhi_ncr",
+    "goa", "gujarat", "haryana", "himachal_pradesh", "jharkhand", "karnataka", "kerala",
+    "madhya_pradesh", "maharashtra", "manipur", "meghalaya", "mizoram", "nagaland",
+    "odisha", "punjab", "rajasthan", "sikkim", "tamil_nadu", "telangana", "tripura",
+    "uttar_pradesh", "uttarakhand", "west_bengal", "other"
   ];
 
   const updateField = (field: string, value: string) => {
@@ -94,7 +94,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         name: form.name,
         phone: form.phone,
         email: form.email,
-        state: form.state,
+        state: t(`form.states.${form.state}`),
         interest: t(`form.interests.${selectedInterest}`),
         language: activeLanguageLabel,
         message: form.message,
@@ -118,14 +118,15 @@ export const ContactForm: React.FC<ContactFormProps> = ({
   };
 
   return (
-    <div id="contact-form-section" className="scroll-mt-24 bg-white rounded-3xl border border-brand-green/10 shadow-sm p-6 md:p-8 relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-2 h-full bg-brand-green" />
+    <div id="contact-form-section" className="scroll-mt-24 bg-white rounded-[32px] border border-brand-green/10 shadow-premium p-6 md:p-10 relative overflow-hidden">
+      {/* Decorative colored bar */}
+      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-brand-green-light via-brand-green to-brand-green-deep" />
 
-      <div className="mb-6">
-        <h3 className="text-xl md:text-2xl font-extrabold text-brand-green-deep tracking-tight">
+      <div className="mb-8">
+        <h3 className="text-xl md:text-2xl font-black text-brand-green-deep tracking-tight">
           {t("form.title")}
         </h3>
-        <p className="text-xs md:text-sm text-brand-text-muted font-bold mt-1">
+        <p className="text-xs md:text-sm text-brand-text-muted font-bold mt-1.5">
           {t("form.subtitle")}
         </p>
       </div>
@@ -134,53 +135,78 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         {success ? (
           <motion.div
             key="success-message"
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            className="flex flex-col items-center justify-center text-center py-8 px-4 bg-brand-green-light/40 rounded-2xl border border-brand-green/20"
+            exit={{ opacity: 0, scale: 0.96 }}
+            className="flex flex-col items-center justify-center text-center py-10 px-6 bg-brand-green-light/20 rounded-2xl border border-brand-green/15"
           >
-            <div className="w-16 h-16 rounded-full bg-brand-green flex items-center justify-center text-white mb-4 shadow-md">
+            <motion.div
+              initial={{ scale: 0, rotate: -45 }}
+              animate={{ scale: 1, rotate: 0 }}
+              transition={{ type: "spring", stiffness: 220, damping: 14, delay: 0.1 }}
+              className="w-16 h-16 rounded-full bg-brand-green flex items-center justify-center text-white mb-5 shadow-lg shadow-brand-green/20"
+            >
               <CheckCircle2 className="w-8 h-8" />
-            </div>
-            <h4 className="text-lg font-black text-brand-green-deep mb-2">
+            </motion.div>
+            <h4 className="text-xl font-black text-brand-green-deep mb-2">
               {t("form.successTitle")}
             </h4>
-            <p className="text-xs font-bold text-brand-text mb-6 max-w-sm">
+            <p className="text-xs md:text-sm font-bold text-brand-text mb-8 max-w-md leading-relaxed">
               {t("form.successDesc")}
             </p>
 
             {submittedData && (
-              <div className="w-full max-w-md bg-white rounded-xl border border-brand-green/15 p-4 text-left text-xs text-brand-text font-bold flex flex-col gap-2 shadow-sm">
-                <div><span className="text-brand-text-muted">{t("form.nameLabel")}:</span> {submittedData.name}</div>
-                <div><span className="text-brand-text-muted">{t("form.phoneLabel")}:</span> {submittedData.phone}</div>
-                {submittedData.email && <div><span className="text-brand-text-muted">{t("form.emailLabel")}:</span> {submittedData.email}</div>}
-                <div><span className="text-brand-text-muted">{t("form.stateLabel")}:</span> {submittedData.state}</div>
-                <div><span className="text-brand-text-muted">{t("form.interestLabel")}:</span> {submittedData.interest}</div>
-                <div className="border-t border-brand-green/5 pt-2 mt-1 font-semibold leading-relaxed">
-                  <span className="text-brand-text-muted font-bold block mb-1">{t("form.messageLabel")}:</span>
-                  {submittedData.message}
+              <div className="w-full max-w-md bg-white rounded-2xl border border-brand-green/10 p-5 text-left text-xs md:text-sm text-brand-text font-bold flex flex-col gap-3 shadow-sm relative">
+                <div className="absolute top-0 right-0 w-16 h-16 bg-brand-green/5 rounded-bl-full pointer-events-none" />
+                <div className="flex justify-between border-b border-brand-green/5 pb-2.5">
+                  <span className="text-brand-text-muted">{t("form.nameLabel")}:</span>
+                  <span className="text-brand-green-deep">{submittedData.name}</span>
+                </div>
+                <div className="flex justify-between border-b border-brand-green/5 pb-2.5">
+                  <span className="text-brand-text-muted">{t("form.phoneLabel")}:</span>
+                  <span className="text-brand-green-deep">{submittedData.phone}</span>
+                </div>
+                {submittedData.email && (
+                  <div className="flex justify-between border-b border-brand-green/5 pb-2.5">
+                    <span className="text-brand-text-muted">{t("form.emailLabel")}:</span>
+                    <span className="text-brand-green-deep">{submittedData.email}</span>
+                  </div>
+                )}
+                <div className="flex justify-between border-b border-brand-green/5 pb-2.5">
+                  <span className="text-brand-text-muted">{t("form.stateLabel")}:</span>
+                  <span className="text-brand-green-deep">{submittedData.state}</span>
+                </div>
+                <div className="flex justify-between border-b border-brand-green/5 pb-2.5">
+                  <span className="text-brand-text-muted">{t("form.interestLabel")}:</span>
+                  <span className="text-brand-green-deep">{submittedData.interest}</span>
+                </div>
+                <div className="pt-1 mt-1 font-semibold leading-relaxed">
+                  <span className="text-brand-text-muted font-bold block mb-1.5">{t("form.messageLabel")}:</span>
+                  <p className="text-xs text-brand-text/90 bg-brand-beige-cream/15 border border-brand-green/5 rounded-xl p-3 font-semibold">
+                    {submittedData.message}
+                  </p>
                 </div>
               </div>
             )}
 
             <button
               onClick={() => setSuccess(false)}
-              className="mt-6 px-6 py-2.5 rounded-full text-xs font-black text-white bg-brand-green hover:bg-brand-green-deep transition-all duration-200"
+              className="mt-8 px-7 py-3 rounded-full text-xs md:text-sm font-black text-white bg-brand-green hover:bg-brand-green-deep transition-all duration-300 shadow-md hover:scale-[1.02] active:scale-[0.98]"
             >
               {t("form.sendAnother")}
             </button>
           </motion.div>
         ) : (
-          <form key="contact-form" onSubmit={handleSubmit} className="flex flex-col gap-5">
+          <form key="contact-form" onSubmit={handleSubmit} className="flex flex-col gap-6">
             {/* Form grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {/* Full Name */}
-              <div className="flex flex-col gap-1.5">
-                <label htmlFor="name" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="name" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1.5">
                   {t("form.nameLabel")} <span className="text-red-500">*</span>
                 </label>
                 <div className="relative">
-                  <span className="absolute inset-y-0 left-0 pl-4 flex items-center text-brand-text/45">
+                  <span className="absolute inset-y-0 left-0 pl-4 flex items-center text-brand-text/45 transition-colors group-focus-within:text-brand-green">
                     <User className="w-4 h-4" />
                   </span>
                   <input
@@ -189,22 +215,24 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                     value={form.name}
                     onChange={(e) => updateField("name", e.target.value)}
                     placeholder={t("form.namePlaceholder")}
-                    className={`w-full pl-11 pr-4 py-3 rounded-full border ${
-                      errors.name ? "border-red-500 focus:border-red-500" : "border-brand-green/20 focus:border-brand-green"
-                    } focus:outline-none bg-brand-beige-cream/10 text-sm font-semibold text-brand-text transition-colors duration-250`}
+                    className={`w-full pl-11 pr-4 py-3.5 rounded-full border ${
+                      errors.name
+                        ? "border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20"
+                        : "border-brand-green/20 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20"
+                    } focus:outline-none bg-brand-beige-cream/5 text-sm font-semibold text-brand-text transition-all duration-300 shadow-sm`}
                   />
                 </div>
                 {errors.name && (
-                  <span className="text-[10px] text-red-500 font-bold flex items-center gap-1 pl-1 mt-0.5">
-                    <AlertCircle className="w-3 h-3" />
+                  <span className="text-[10px] text-red-500 font-bold flex items-center gap-1 pl-2.5 mt-0.5">
+                    <AlertCircle className="w-3.5 h-3.5" />
                     {errors.name}
                   </span>
                 )}
               </div>
 
               {/* Phone Number */}
-              <div className="flex flex-col gap-1.5">
-                <label htmlFor="phone" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="phone" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1.5">
                   {t("form.phoneLabel")} <span className="text-red-500">*</span>
                 </label>
                 <div className="relative">
@@ -217,22 +245,24 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                     value={form.phone}
                     onChange={(e) => updateField("phone", e.target.value)}
                     placeholder={t("form.phonePlaceholder")}
-                    className={`w-full pl-11 pr-4 py-3 rounded-full border ${
-                      errors.phone ? "border-red-500 focus:border-red-500" : "border-brand-green/20 focus:border-brand-green"
-                    } focus:outline-none bg-brand-beige-cream/10 text-sm font-semibold text-brand-text transition-colors duration-250`}
+                    className={`w-full pl-11 pr-4 py-3.5 rounded-full border ${
+                      errors.phone
+                        ? "border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20"
+                        : "border-brand-green/20 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20"
+                    } focus:outline-none bg-brand-beige-cream/5 text-sm font-semibold text-brand-text transition-all duration-300 shadow-sm`}
                   />
                 </div>
                 {errors.phone && (
-                  <span className="text-[10px] text-red-500 font-bold flex items-center gap-1 pl-1 mt-0.5">
-                    <AlertCircle className="w-3 h-3" />
+                  <span className="text-[10px] text-red-500 font-bold flex items-center gap-1 pl-2.5 mt-0.5">
+                    <AlertCircle className="w-3.5 h-3.5" />
                     {errors.phone}
                   </span>
                 )}
               </div>
 
               {/* Email Address */}
-              <div className="flex flex-col gap-1.5">
-                <label htmlFor="email" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="email" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1.5">
                   {t("form.emailLabel")}
                 </label>
                 <div className="relative">
@@ -245,22 +275,24 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                     value={form.email}
                     onChange={(e) => updateField("email", e.target.value)}
                     placeholder={t("form.emailPlaceholder")}
-                    className={`w-full pl-11 pr-4 py-3 rounded-full border ${
-                      errors.email ? "border-red-500" : "border-brand-green/20 focus:border-brand-green"
-                    } focus:outline-none bg-brand-beige-cream/10 text-sm font-semibold text-brand-text transition-colors duration-250`}
+                    className={`w-full pl-11 pr-4 py-3.5 rounded-full border ${
+                      errors.email
+                        ? "border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20"
+                        : "border-brand-green/20 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20"
+                    } focus:outline-none bg-brand-beige-cream/5 text-sm font-semibold text-brand-text transition-all duration-300 shadow-sm`}
                   />
                 </div>
                 {errors.email && (
-                  <span className="text-[10px] text-red-500 font-bold flex items-center gap-1 pl-1 mt-0.5">
-                    <AlertCircle className="w-3 h-3" />
+                  <span className="text-[10px] text-red-500 font-bold flex items-center gap-1 pl-2.5 mt-0.5">
+                    <AlertCircle className="w-3.5 h-3.5" />
                     {errors.email}
                   </span>
                 )}
               </div>
 
               {/* State Dropdown */}
-              <div className="flex flex-col gap-1.5">
-                <label htmlFor="state" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="state" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1.5">
                   {t("form.stateLabel")} <span className="text-red-500">*</span>
                 </label>
                 <div className="relative">
@@ -271,13 +303,15 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                     id="state"
                     value={form.state}
                     onChange={(e) => updateField("state", e.target.value)}
-                    className={`w-full pl-11 pr-8 py-3 rounded-full border ${
-                      errors.state ? "border-red-500" : "border-brand-green/20 focus:border-brand-green"
-                    } focus:outline-none bg-brand-beige-cream/10 text-sm font-semibold text-brand-text appearance-none cursor-pointer transition-colors duration-250`}
+                    className={`w-full pl-11 pr-10 py-3.5 rounded-full border ${
+                      errors.state
+                        ? "border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20"
+                        : "border-brand-green/20 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20"
+                    } focus:outline-none bg-brand-beige-cream/5 text-sm font-semibold text-brand-text appearance-none cursor-pointer transition-all duration-300 shadow-sm`}
                   >
                     <option value="" disabled>{t("form.stateSelect")}</option>
-                    {states.map((st) => (
-                      <option key={st} value={st}>{st}</option>
+                    {stateKeys.map((key) => (
+                      <option key={key} value={key}>{t(`form.states.${key}`)}</option>
                     ))}
                   </select>
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-brand-text/45">
@@ -285,8 +319,8 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                   </div>
                 </div>
                 {errors.state && (
-                  <span className="text-[10px] text-red-500 font-bold flex items-center gap-1 pl-1 mt-0.5">
-                    <AlertCircle className="w-3 h-3" />
+                  <span className="text-[10px] text-red-500 font-bold flex items-center gap-1 pl-2.5 mt-0.5">
+                    <AlertCircle className="w-3.5 h-3.5" />
                     {errors.state}
                   </span>
                 )}
@@ -294,8 +328,8 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             </div>
 
             {/* Inquiry Type / Interest */}
-            <div className="flex flex-col gap-1.5">
-              <label htmlFor="interest" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1">
+            <div className="flex flex-col gap-2">
+              <label htmlFor="interest" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1.5">
                 {t("form.interestLabel")} <span className="text-red-500">*</span>
               </label>
               <div className="relative">
@@ -306,7 +340,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                   id="interest"
                   value={selectedInterest}
                   onChange={(e) => setSelectedInterest(e.target.value)}
-                  className="w-full pl-11 pr-8 py-3 rounded-full border border-brand-green/20 focus:outline-none focus:border-brand-green bg-brand-beige-cream/10 text-sm font-semibold text-brand-text appearance-none cursor-pointer"
+                  className="w-full pl-11 pr-10 py-3.5 rounded-full border border-brand-green/20 focus:outline-none focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 bg-brand-beige-cream/5 text-sm font-semibold text-brand-text appearance-none cursor-pointer transition-all duration-300 shadow-sm"
                 >
                   {interestOptions.map((opt) => (
                     <option key={opt} value={opt}>
@@ -321,8 +355,8 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             </div>
 
             {/* Message Area */}
-            <div className="flex flex-col gap-1.5">
-              <label htmlFor="message" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1">
+            <div className="flex flex-col gap-2">
+              <label htmlFor="message" className="text-xs font-black text-brand-green uppercase tracking-wider pl-1.5">
                 {t("form.messageLabel")} <span className="text-red-500">*</span>
               </label>
               <div className="relative">
@@ -336,13 +370,15 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                   onChange={(e) => updateField("message", e.target.value)}
                   placeholder={t("form.messagePlaceholder")}
                   className={`w-full pl-11 pr-4 py-3.5 rounded-2xl border ${
-                    errors.message ? "border-red-500 focus:border-red-500" : "border-brand-green/20 focus:border-brand-green"
-                  } focus:outline-none bg-brand-beige-cream/10 text-sm font-semibold text-brand-text resize-none transition-colors duration-250`}
+                    errors.message
+                      ? "border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20"
+                      : "border-brand-green/20 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20"
+                  } focus:outline-none bg-brand-beige-cream/5 text-sm font-semibold text-brand-text resize-none transition-all duration-300 shadow-sm`}
                 />
               </div>
               {errors.message && (
-                <span className="text-[10px] text-red-500 font-bold flex items-center gap-1 pl-1 mt-0.5">
-                  <AlertCircle className="w-3 h-3" />
+                <span className="text-[10px] text-red-500 font-bold flex items-center gap-1 pl-2.5 mt-0.5">
+                  <AlertCircle className="w-3.5 h-3.5" />
                   {errors.message}
                 </span>
               )}
@@ -353,11 +389,13 @@ export const ContactForm: React.FC<ContactFormProps> = ({
               type="submit"
               disabled={isSubmitting}
               className={`w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-sm font-black text-white ${
-                isSubmitting ? "bg-brand-green/60 cursor-not-allowed" : "bg-brand-green-deep hover:bg-brand-green shadow-md active:scale-[0.99]"
-              } transition-all duration-200 mt-2`}
+                isSubmitting
+                  ? "bg-brand-green/60 cursor-not-allowed"
+                  : "bg-brand-green-deep hover:bg-brand-green hover:shadow-lg hover:shadow-brand-green/20 hover:scale-[1.01] active:scale-[0.99]"
+              } transition-all duration-300 mt-2 shadow-md`}
             >
               {isSubmitting ? t("form.submitting") : t("form.submitBtn")}
-              {!isSubmitting && <Send className="w-4 h-4" />}
+              {!isSubmitting && <Send className="w-4 h-4 animate-pulse" />}
             </button>
           </form>
         )}

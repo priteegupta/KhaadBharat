@@ -25,8 +25,9 @@ interface SchemeCardProps {
 }
 
 export const SchemeCard: React.FC<SchemeCardProps> = ({ scheme }) => {
-  const { t } = useTranslation("schemes");
+  const { t, i18n } = useTranslation("schemes");
   const [isExpanded, setIsExpanded] = useState(false);
+  const isHi = i18n.language === "hi";
 
   // Helper to resolve state names to translated labels
   const getStateLabel = (stateKey: string) => {
@@ -107,7 +108,7 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({ scheme }) => {
   return (
     <motion.article
       layout="position"
-      className="p-6 md:p-8 rounded-3xl bg-white border border-brand-green/10 shadow-premium hover:shadow-premium-hover transition-all duration-300 flex flex-col gap-4 relative overflow-hidden"
+      className="p-6 md:p-8 rounded-3xl bg-white border border-brand-green/10 shadow-premium hover:shadow-premium-hover transition-all duration-300 flex flex-col gap-4 relative overflow-hidden text-left"
     >
       {/* Category Indicator Accent Line */}
       <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-green to-brand-accent-sunlight" />
@@ -137,8 +138,15 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({ scheme }) => {
           )}
         </div>
 
-        {/* Status Badge */}
-        {getStatusBadge(scheme.status)}
+        {/* Status & Verified Badges */}
+        <div className="flex items-center gap-2">
+          {getStatusBadge(scheme.status)}
+          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-100 text-emerald-800 border border-emerald-300/40 shadow-sm relative">
+            <span className="absolute inset-0 rounded-full bg-emerald-400 opacity-20 pointer-events-none animate-ping" style={{ animationDuration: "2.5s" }} />
+            <ShieldCheck className="w-3 h-3 text-emerald-600 relative z-10" />
+            <span className="relative z-10">{isHi ? "सत्यापित" : "Verified"}</span>
+          </span>
+        </div>
       </div>
 
       {/* Main Copy */}
@@ -205,7 +213,7 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({ scheme }) => {
       </div>
 
       {/* Expand/Collapse and Navigation Footer */}
-      <div className="flex items-center justify-between mt-1 pt-3 border-t border-brand-green/5 gap-3">
+      <div className="flex flex-wrap items-center justify-between mt-1 pt-3 border-t border-brand-green/5 gap-3">
         <div className="flex items-center gap-3">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
