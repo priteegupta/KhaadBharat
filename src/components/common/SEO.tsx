@@ -27,13 +27,13 @@ export const SEO: React.FC<SEOProps> = ({ title, description, keywords }) => {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={metaTitle} />
       <meta property="og:description" content={metaDescription} />
-      <meta property="og:image" content="/images/social-preview.png" />
+      <meta property="og:image" content="/images/social-preview.webp" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:title" content={metaTitle} />
       <meta property="twitter:description" content={metaDescription} />
-      <meta property="twitter:image" content="/images/social-preview.png" />
+      <meta property="twitter:image" content="/images/social-preview.webp" />
     </Helmet>
   );
 };

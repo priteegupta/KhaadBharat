@@ -32,6 +32,8 @@ export const StoryCard: React.FC<StoryCardProps> = ({ story, onOpenModal }) => {
           <img
             src={story.image}
             alt={story.name}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-green-deep/30 to-transparent pointer-events-none" />

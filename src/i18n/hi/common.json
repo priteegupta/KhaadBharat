@@ -317,7 +317,7 @@
       "packages": [
         {
           "title": "5 किलो पैक",
-          "image": "/images/product-pack-5kg.png",
+          "image": "/images/product-pack-5kg.webp",
           "size": "5 किग्रा",
           "bag": "पुनर्चक्रण योग्य बायोडिग्रेडेबल बैग",
           "details": [
@@ -329,7 +329,7 @@
         },
         {
           "title": "20 किलो पैक",
-          "image": "/images/product-pack-20kg.png",
+          "image": "/images/product-pack-20kg.webp",
           "size": "20 किग्रा",
           "bag": "पुनर्चक्रण योग्य बायोडिग्रेडेबल बैग",
           "details": [
@@ -341,7 +341,7 @@
         },
         {
           "title": "50 किलो पैक",
-          "image": "/images/product-pack-50kg.png",
+          "image": "/images/product-pack-50kg.webp",
           "size": "50 किग्रा",
           "bag": "पुनर्चक्रण योग्य बायोडिग्रेडेबल बैग",
           "details": [

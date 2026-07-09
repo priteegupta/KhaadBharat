@@ -64,6 +64,7 @@ const GalleryCard: React.FC<{
           src={imgUrl}
           alt={item.title}
           loading="lazy"
+          decoding="async"
           className="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
         />
 
@@ -96,12 +97,12 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({ title, subtitle,
 
   // Map local assets to the items by index
   const imageAssets = [
-    "/images/product-pack-5kg.png",
-    "/images/product-pack-20kg.png",
-    "/images/product-pack-50kg.png",
-    "/images/biochar-production.jpg",
-    "/images/healthy-crops.jpg",
-    "/images/soil-irrigation.jpg"
+    "/images/product-pack-5kg.webp",
+    "/images/product-pack-20kg.webp",
+    "/images/product-pack-50kg.webp",
+    "/images/biochar-production.webp",
+    "/images/healthy-crops.webp",
+    "/images/soil-irrigation.webp"
   ];
 
   return (
@@ -117,7 +118,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({ title, subtitle,
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {items.map((item, idx) => {
-          const imgUrl = imageAssets[idx] || "/images/biochar-production.jpg";
+          const imgUrl = imageAssets[idx] || "/images/biochar-production.webp";
           return (
             <GalleryCard
               key={idx}
@@ -155,8 +156,10 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({ title, subtitle,
               <div className="grid grid-cols-1 md:grid-cols-12">
                 <div className="md:col-span-8 bg-brand-green-light/20 p-8 flex items-center justify-center min-h-[300px]">
                   <img
-                    src={imageAssets[selectedIdx] || "/images/biochar-production.jpg"}
+                    src={imageAssets[selectedIdx] || "/images/biochar-production.webp"}
                     alt={items[selectedIdx].title}
+                    loading="lazy"
+                    decoding="async"
                     className="max-h-[70vh] object-contain rounded-2xl"
                   />
                 </div>

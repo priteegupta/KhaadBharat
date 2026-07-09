@@ -37,6 +37,7 @@ export const GalleryGrid: React.FC<GalleryGridProps> = ({ items }) => {
                 src={item.image}
                 alt={item.title}
                 loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
               />
               {/* Dark Hover Overlay */}
@@ -94,6 +95,8 @@ export const GalleryGrid: React.FC<GalleryGridProps> = ({ items }) => {
                 <img
                   src={selectedImage.image}
                   alt={selectedImage.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-auto max-h-[70vh] object-contain"
                 />
               </div>

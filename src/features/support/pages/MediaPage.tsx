@@ -277,6 +277,7 @@ export const MediaPage: React.FC = () => {
                           src={camp.image}
                           alt={camp.title}
                           loading="lazy"
+                          decoding="async"
                           className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
                         />
                         <div className="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-brand-accent-sunlight text-brand-text text-[9px] font-black uppercase shadow-sm">
@@ -404,6 +405,8 @@ export const MediaPage: React.FC = () => {
                   <img
                     src={selectedStory.image}
                     alt={selectedStory.name}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>

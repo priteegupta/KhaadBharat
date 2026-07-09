@@ -30,7 +30,7 @@
       "desc": "A guide demonstrating optimal crop application techniques, water mixing, and soil integration in agricultural practices.",
       "duration": "03:35",
       "category": "Product Guide",
-      "thumbnail": "/images/stubble-burning-field.jpg",
+      "thumbnail": "/images/stubble-burning-field.webp",
       "videoUrl": "https://www.youtube.com/embed/MfuwUZCLyVo"
     },
     "supporting": [
@@ -40,7 +40,7 @@
         "desc": "An educational guide on how biochar retains soil moisture, prevents nutrient runoff, and acts as a shield for agricultural fields.",
         "duration": "04:23",
         "category": "Case Study",
-        "thumbnail": "/images/healthy-crops.jpg",
+        "thumbnail": "/images/healthy-crops.webp",
         "videoUrl": "https://www.youtube.com/embed/_MHfWHKSzEA"
       },
       {
@@ -49,7 +49,7 @@
         "desc": "Learn the correct ratio and steps to mix biochar in nursery beds, seedlings potting soil, and compost.",
         "duration": "04:35",
         "category": "Tutorial",
-        "thumbnail": "/images/nursery-crops.jpg",
+        "thumbnail": "/images/nursery-crops.webp",
         "videoUrl": "https://www.youtube.com/embed/1VSlPOKtO0g"
       },
       {
@@ -58,7 +58,7 @@
         "desc": "Learn how local Indian farmers convert crop residue (parali) into organic fertilizer and reduce air pollution with biochar technology.",
         "duration": "08:32",
         "category": "Corporate Story",
-        "thumbnail": "/images/farmer-training.jpg",
+        "thumbnail": "/images/farmer-training.webp",
         "videoUrl": "https://www.youtube.com/embed/MV-cvfmThGM"
       }
     ]
@@ -80,7 +80,7 @@
         "impact": "35% less irrigation, improved grain density",
         "summary": "Saved immense pumping cost and achieved rich cotton yields verified by HAU Hisar trials.",
         "story": "Ramesh Kumar integrated KHAAD BHARAT Biochar into his 5-acre farm. Grounded in CCS HAU Hisar crop-yield trials, the soil moisture held during critical heat waves, allowing him to reduce diesel pump irrigation runs from twice a week to once every ten days. Cotton fiber density showed significant quality improvements.",
-        "image": "/images/farmer-ramesh.jpg"
+        "image": "/images/farmer-ramesh.webp"
       },
       {
         "id": "story-2",
@@ -90,7 +90,7 @@
         "impact": "20% higher yield, lower chemical fertilizer reliance",
         "summary": "Transformed dry sandy patches into fertile vegetable beds using CAZRI Jodhpur guidelines.",
         "story": "Savitri Devi manages a vegetable nursery. Following CAZRI Jodhpur trials for sandy soils, mixing biochar with organic manure allowed her sandy soil to retain vital nitrogen nutrients. She observed faster root development in saplings and decreased spending on chemical fertilizers.",
-        "image": "/images/farmer-savitri.jpg"
+        "image": "/images/farmer-savitri.webp"
       },
       {
         "id": "story-3",
@@ -100,7 +100,7 @@
         "impact": "Enhanced soil carbon, reduced fertilizer run-off",
         "summary": "Prevented nutrient leaching in sandy potato soils verified by PAU Ludhiana trials.",
         "story": "Gurpreet realized his fertilizer spends were rising while soil yields plateaued. Guided by Punjab Agricultural University (PAU) Ludhiana potato trials, adding KHAAD BHARAT Biochar created a porous carbon sponge that locked in soil nutrients. His potato tuber size remained uniform, commanding top prices.",
-        "image": "/images/struggling-farmer-portrait.jpg"
+        "image": "/images/struggling-farmer-portrait.webp"
       }
     ]
   },
@@ -113,49 +113,49 @@
         "id": "gal-1",
         "title": "Traditional Rice Seedling Planting",
         "category": "Field Work",
-        "image": "/images/rice-planting-mud.jpg"
+        "image": "/images/rice-planting-mud.webp"
       },
       {
         "id": "gal-2",
         "title": "Distributor Packaging & Ready Stock",
         "category": "Packaging",
-        "image": "/images/product-pack-50kg.png"
+        "image": "/images/product-pack-50kg.webp"
       },
       {
         "id": "gal-3",
         "title": "Tomato Seedlings in Biochar Mix",
         "category": "Nursery",
-        "image": "/images/nursery-crops.jpg"
+        "image": "/images/nursery-crops.webp"
       },
       {
         "id": "gal-4",
         "title": "Woman Farmer Broadcasting Fertilizer",
         "category": "Field Work",
-        "image": "/images/woman-broadcasting.jpg"
+        "image": "/images/woman-broadcasting.webp"
       },
       {
         "id": "gal-5",
         "title": "Farmer Tending Crops with Hoe",
         "category": "Field Work",
-        "image": "/images/farmer-hoe-field.jpg"
+        "image": "/images/farmer-hoe-field.webp"
       },
       {
         "id": "gal-6",
         "title": "Traditional Ploughing & Soil Preparation",
         "category": "Field Work",
-        "image": "/images/farmer-plow-ox.jpg"
+        "image": "/images/farmer-plow-ox.webp"
       },
       {
         "id": "gal-7",
         "title": "Tomato Crop Growth Tracking",
         "category": "Results",
-        "image": "/images/tomato-crops-growth.png"
+        "image": "/images/tomato-crops-growth.webp"
       },
       {
         "id": "gal-8",
         "title": "Modern Mechanized Land Tilling",
         "category": "Field Work",
-        "image": "/images/tractor-plowing-dry.jpg"
+        "image": "/images/tractor-plowing-dry.webp"
       }
     ]
   },
@@ -207,21 +207,21 @@
         "title": "Biochar Krishi Awareness Run",
         "desc": "Outreach meets educating gram panchayats on using agricultural residue biochar instead of stubble burning.",
         "tag": "Awareness Drive",
-        "image": "/images/community-outreach.jpg"
+        "image": "/images/community-outreach.webp"
       },
       {
         "id": "camp-2",
         "title": "Smarter Water, Richer Soil",
         "desc": "Direct workshops explaining moisture retention to combat dry summer spells using natural soil amendments.",
         "tag": "Water Conservation",
-        "image": "/images/smart-irrigation-field.png"
+        "image": "/images/smart-irrigation-field.webp"
       },
       {
         "id": "camp-3",
         "title": "Nursery Soil Enrichment Camps",
         "desc": "Interactive training in nurseries showing optimal composition rates for raising premium flower and vegetable beds.",
         "tag": "Training Session",
-        "image": "/images/nursery-crops.jpg"
+        "image": "/images/nursery-crops.webp"
       }
     ]
   },
@@ -287,7 +287,7 @@
         "category": "Product Packs",
         "fileType": "PNG",
         "fileSize": "2.4 MB",
-        "fileUrl": "/images/product-pack-5kg.png"
+        "fileUrl": "/images/product-pack-5kg.webp"
       },
       {
         "id": "res-4",
@@ -295,7 +295,7 @@
         "category": "Product Packs",
         "fileType": "PNG",
         "fileSize": "2.9 MB",
-        "fileUrl": "/images/product-pack-20kg.png"
+        "fileUrl": "/images/product-pack-20kg.webp"
       },
       {
         "id": "res-5",
@@ -303,7 +303,7 @@
         "category": "Product Packs",
         "fileType": "PNG",
         "fileSize": "3.1 MB",
-        "fileUrl": "/images/product-pack-50kg.png"
+        "fileUrl": "/images/product-pack-50kg.webp"
       },
       {
         "id": "res-6",
@@ -319,7 +319,7 @@
         "category": "Banners & Media",
         "fileType": "PNG",
         "fileSize": "2.6 MB",
-        "fileUrl": "/images/product-catalog-board.png"
+        "fileUrl": "/images/product-catalog-board.webp"
       },
       {
         "id": "res-8",

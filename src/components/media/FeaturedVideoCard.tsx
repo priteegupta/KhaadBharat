@@ -75,6 +75,8 @@ export const FeaturedVideoCard: React.FC<FeaturedVideoCardProps> = ({ video, isF
             <img
               src={video.thumbnail}
               alt={video.title}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
             />
             {/* Dark Overlay */}

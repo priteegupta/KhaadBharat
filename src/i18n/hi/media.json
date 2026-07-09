@@ -30,7 +30,7 @@
       "desc": "फसलों के जड़ क्षेत्र में सीधे बायोचार मिलाने की सटीक मात्रा, पानी के अनुपात और उपयोग की तकनीकों का विस्तृत मार्गदर्शन।",
       "duration": "03:35",
       "category": "उत्पाद निर्देश",
-      "thumbnail": "/images/stubble-burning-field.jpg",
+      "thumbnail": "/images/stubble-burning-field.webp",
       "videoUrl": "https://www.youtube.com/embed/MfuwUZCLyVo"
     },
     "supporting": [
@@ -40,7 +40,7 @@
         "desc": "देखिए कि कैसे मिट्टी की नमी और पोषक तत्वों को बरकरार रखने के लिए बायोचार एक रक्षक के रूप में काम करता है और उत्पादकता बढ़ाता है।",
         "duration": "04:23",
         "category": "केस स्टडी",
-        "thumbnail": "/images/healthy-crops.jpg",
+        "thumbnail": "/images/healthy-crops.webp",
         "videoUrl": "https://www.youtube.com/embed/_MHfWHKSzEA"
       },
       {
@@ -49,7 +49,7 @@
         "desc": "नर्सरी प्रबंधकों और बागवानी के लिए बायोचार को कोकोपीट और मिट्टी के साथ मिलाने का व्यावहारिक ट्यूटोरियल।",
         "duration": "04:35",
         "category": "ट्यूटोरियल",
-        "thumbnail": "/images/nursery-crops.jpg",
+        "thumbnail": "/images/nursery-crops.webp",
         "videoUrl": "https://www.youtube.com/embed/1VSlPOKtO0g"
       },
       {
@@ -58,7 +58,7 @@
         "desc": "इस विधि को अपनाकर किसान भाई फसल अवशेषों (पराली) से जैविक बायोचार खाद बना सकते हैं और प्रदूषण को कम कर सकते हैं।",
         "duration": "08:32",
         "category": "कॉरपोरेट कहानी",
-        "thumbnail": "/images/farmer-training.jpg",
+        "thumbnail": "/images/farmer-training.webp",
         "videoUrl": "https://www.youtube.com/embed/MV-cvfmThGM"
       }
     ]
@@ -80,7 +80,7 @@
         "impact": "सिंचाई में 35% कमी, कपास की गुणवत्ता में बड़ा सुधार",
         "summary": "सिंचाई के खर्च में भारी बचत की और HAU हिसार परीक्षणों द्वारा सत्यापित कपास की भरपूर फसल हासिल की।",
         "story": "रमेश कुमार ने अपने 5 एकड़ के खेत में खाद भारत बायोचार का उपयोग किया। CCS HAU हिसार के फसल पैदावार परीक्षणों के अनुसार, गर्मियों में मिट्टी की नमी बरकरार रहने से उन्होंने अपने सिंचाई पंप के फेरों को सप्ताह में दो बार से घटाकर हर दस दिन में एक बार कर दिया। कपास की गुणवत्ता और फाइबर घनत्व में बड़ा सुधार देखा गया।",
-        "image": "/images/farmer-ramesh.jpg"
+        "image": "/images/farmer-ramesh.webp"
       },
       {
         "id": "story-2",
@@ -90,7 +90,7 @@
         "impact": "पैदावार में 20% की वृद्धि, रासायनिक खादों पर निर्भरता कम हुई",
         "summary": "CAZRI जोधपुर के दिशा-निर्देशों का उपयोग करके सूखे रेतीले पैच को उपजाऊ सब्जी क्यारियों में बदल दिया।",
         "story": "सावित्री देवी एक सब्जी नर्सरी चलाती हैं। रेतीली मिट्टी के लिए CAZRI जोधपुर के परीक्षणों के अनुसार, मिट्टी में बायोचार को जैविक खाद के साथ मिलाने से नाइट्रोजन पोषक तत्व रुके रहे। उन्होंने पौधों में तेजी से जड़ विकास देखा और रासायनिक उर्वरकों पर होने वाले खर्च को काफी कम कर दिया।",
-        "image": "/images/farmer-savitri.jpg"
+        "image": "/images/farmer-savitri.webp"
       },
       {
         "id": "story-3",
@@ -100,7 +100,7 @@
         "impact": "मिट्टी के कार्बन में सुधार, पोषक तत्वों का बहना कम हुआ",
         "summary": "पोषक तत्वों को बहने से रोका और PAU लुधियाना परीक्षणों द्वारा आलू की समान गुणवत्ता प्राप्त की।",
         "story": "गुरप्रीत ने देखा कि उनके उर्वरक का खर्च बढ़ रहा था जबकि मिट्टी की उपज स्थिर हो गई थी। पंजाब कृषि विश्वविद्यालय (PAU) लुधियाना के आलू परीक्षणों से प्रेरित होकर, खाद भारत बायोचार मिलाने से मिट्टी में एक छिद्रपूर्ण कार्बन स्पंज बन गया जिसने पोषक तत्वों को बांध लिया। उनके आलू के कंदों का आकार एकसमान रहा, जिससे उन्हें बाजार में बेहतरीन दाम मिले।",
-        "image": "/images/struggling-farmer-portrait.jpg"
+        "image": "/images/struggling-farmer-portrait.webp"
       }
     ]
   },
@@ -113,49 +113,49 @@
         "id": "gal-1",
         "title": "पारंपरिक धान की रोपाई",
         "category": "कृषि कार्य",
-        "image": "/images/rice-planting-mud.jpg"
+        "image": "/images/rice-planting-mud.webp"
       },
       {
         "id": "gal-2",
         "title": "वितरक पैकेजिंग और तैयार स्टॉक",
         "category": "पैकेजिंग",
-        "image": "/images/product-pack-50kg.png"
+        "image": "/images/product-pack-50kg.webp"
       },
       {
         "id": "gal-3",
         "title": "बायोचार मिश्रण में टमाटर के पौधे",
         "category": "नर्सरी",
-        "image": "/images/nursery-crops.jpg"
+        "image": "/images/nursery-crops.webp"
       },
       {
         "id": "gal-4",
         "title": "महिला किसान - खाद का छिड़काव",
         "category": "कृषि कार्य",
-        "image": "/images/woman-broadcasting.jpg"
+        "image": "/images/woman-broadcasting.webp"
       },
       {
         "id": "gal-5",
         "title": "कुदाल से फसल की देखभाल करता किसान",
         "category": "कृषि कार्य",
-        "image": "/images/farmer-hoe-field.jpg"
+        "image": "/images/farmer-hoe-field.webp"
       },
       {
         "id": "gal-6",
         "title": "पारंपरिक हल-बैलों से खेत की जुताई",
         "category": "कृषि कार्य",
-        "image": "/images/farmer-plow-ox.jpg"
+        "image": "/images/farmer-plow-ox.webp"
       },
       {
         "id": "gal-7",
         "title": "टमाटर की फसल में विकास का आकलन",
         "category": "परिणाम",
-        "image": "/images/tomato-crops-growth.png"
+        "image": "/images/tomato-crops-growth.webp"
       },
       {
         "id": "gal-8",
         "title": "ट्रैक्टर से आधुनिक मशीनीकृत खेत की जुताई",
         "category": "कृषि कार्य",
-        "image": "/images/tractor-plowing-dry.jpg"
+        "image": "/images/tractor-plowing-dry.webp"
       }
     ]
   },
@@ -207,21 +207,21 @@
         "title": "बायोचार कृषि जागरूकता अभियान",
         "desc": "फसल अवशेषों को जलाने के बजाय उनका बायोचार बनाने के लिए ग्राम पंचायतों में चौपाल बैठकें।",
         "tag": "जागरूकता अभियान",
-        "image": "/images/community-outreach.jpg"
+        "image": "/images/community-outreach.webp"
       },
       {
         "id": "camp-2",
         "title": "स्मार्ट सिंचाई, उपजाऊ मिट्टी",
         "desc": "सूखे से निपटने के लिए मिट्टी में नमी धारण क्षमता बढ़ाने के तरीकों पर लाइव कार्यशालाएं।",
         "tag": "जल संरक्षण",
-        "image": "/images/smart-irrigation-field.png"
+        "image": "/images/smart-irrigation-field.webp"
       },
       {
         "id": "camp-3",
         "title": "नर्सरी मिट्टी संवर्धन शिविर",
         "desc": "सुंदर फूलों और सब्जी क्यारियों के लिए नर्सरी में बायोचार के इष्टतम मिश्रण अनुपात पर व्यावहारिक प्रशिक्षण।",
         "tag": "प्रशिक्षण शिविर",
-        "image": "/images/nursery-crops.jpg"
+        "image": "/images/nursery-crops.webp"
       }
     ]
   },
@@ -287,7 +287,7 @@
         "category": "उत्पाद पैकेजेस",
         "fileType": "पीएनजी",
         "fileSize": "२.४ एमबी",
-        "fileUrl": "/images/product-pack-5kg.png"
+        "fileUrl": "/images/product-pack-5kg.webp"
       },
       {
         "id": "res-4",
@@ -295,7 +295,7 @@
         "category": "उत्पाद पैकेजेस",
         "fileType": "पीएनजी",
         "fileSize": "२.९ एमबी",
-        "fileUrl": "/images/product-pack-20kg.png"
+        "fileUrl": "/images/product-pack-20kg.webp"
       },
       {
         "id": "res-5",
@@ -303,7 +303,7 @@
         "category": "उत्पाद पैकेजेस",
         "fileType": "पीएनजी",
         "fileSize": "३.१ एमबी",
-        "fileUrl": "/images/product-pack-50kg.png"
+        "fileUrl": "/images/product-pack-50kg.webp"
       },
       {
         "id": "res-6",
@@ -319,7 +319,7 @@
         "category": "बैनर और मीडिया",
         "fileType": "पीएनजी",
         "fileSize": "२.६ एमबी",
-        "fileUrl": "/images/product-catalog-board.png"
+        "fileUrl": "/images/product-catalog-board.webp"
       },
       {
         "id": "res-8",

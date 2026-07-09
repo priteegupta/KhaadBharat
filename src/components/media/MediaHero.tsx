@@ -14,39 +14,39 @@ export const MediaHero: React.FC<MediaHeroProps> = ({ onWatchStories, onDownload
 
   const slides = [
     {
-      url: "/images/struggling-farmer-portrait.jpg",
+      url: "/images/struggling-farmer-portrait.webp",
       alt: "Indian Farmer Struggles"
     },
     {
-      url: "/images/woman-farmer-resilient.jpg",
+      url: "/images/woman-farmer-resilient.webp",
       alt: "Resilient Indian Woman Farmer"
     },
     {
-      url: "/images/farmer-couple-hope.jpg",
+      url: "/images/farmer-couple-hope.webp",
       alt: "Farmer Couple Hope & Dedication"
     },
     {
-      url: "/images/rice-planting-mud.jpg",
+      url: "/images/rice-planting-mud.webp",
       alt: "Traditional Rice Seedling Planting"
     },
     {
-      url: "/images/farmer-hoe-field.jpg",
+      url: "/images/farmer-hoe-field.webp",
       alt: "Farmer Tending Crops with Hoe"
     },
     {
-      url: "/images/farmer-plow-storm.jpg",
+      url: "/images/farmer-plow-storm.webp",
       alt: "Traditional ploughing under stormy sky"
     },
     {
-      url: "/images/tractor-muddy-field.jpg",
+      url: "/images/tractor-muddy-field.webp",
       alt: "Mechanized tilling in muddy field"
     },
     {
-      url: "/images/tractor-plowing-dry.jpg",
+      url: "/images/tractor-plowing-dry.webp",
       alt: "Modern land tilling"
     },
     {
-      url: "/images/farmer-broadcasting-mud.jpg",
+      url: "/images/farmer-broadcasting-mud.webp",
       alt: "Cooperative paddy cultivation"
     }
   ];

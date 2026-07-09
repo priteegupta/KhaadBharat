@@ -30,7 +30,7 @@ export const AboutPage: React.FC = () => {
   const storyPoints = t("pages.about.storyPoints", { returnObjects: true }) as string[];
 
   // Retrieve photo properties dynamically
-  const photoSrc = t("pages.about.photoSrc", { defaultValue: "/images/founder-nidhi.png" });
+  const photoSrc = t("pages.about.photoSrc", { defaultValue: "/images/founder-nidhi.webp" });
   const photoLabel = t("pages.about.photoLabel", { defaultValue: "Founder portrait - Mrs. NIDHI" });
   const photoNote = t("pages.about.photoNote");
 
@@ -71,7 +71,7 @@ export const AboutPage: React.FC = () => {
         <aside className="card about-photo-card text-left">
           <figure className="founder-portrait">
             <div className="founder-portrait-frame overflow-hidden">
-              <img className="founder-portrait-image hover:scale-105 transition-transform duration-500" src={photoSrc} alt={photoLabel} />
+              <img className="founder-portrait-image hover:scale-105 transition-transform duration-500" src={photoSrc} alt={photoLabel} decoding="async" />
             </div>
             <figcaption className="mt-2">
               <strong>{photoLabel}</strong>
@@ -203,8 +203,10 @@ export const AboutPage: React.FC = () => {
         <div className="story-panel-visual card relative overflow-hidden group">
           <img
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            src={t("pages.about.storyImage", { defaultValue: "/images/farmers-paddy-field.jpg" })}
+            src={t("pages.about.storyImage", { defaultValue: "/images/farmers-paddy-field.webp" })}
             alt={t("pages.about.storyLabel")}
+            loading="lazy"
+            decoding="async"
           />
           <div className="absolute bottom-4 left-4 right-4 bg-brand-green-deep/85 backdrop-blur border border-white/10 p-3 rounded-xl text-left pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <span className="text-[10px] font-black text-brand-accent-sunlight uppercase tracking-wider block">Farmer Partnership</span>

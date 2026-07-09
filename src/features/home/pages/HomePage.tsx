@@ -234,8 +234,10 @@ export const HomePage: React.FC = () => {
                           >
                             <img
                               className="w-full h-full object-cover grayscale contrast-125 saturate-50 sepia-[0.1]"
-                              src="/images/dry-untreated-soil.png"
+                              src="/images/dry-untreated-soil.webp"
                               alt="Untreated soil"
+                              loading="lazy"
+                              decoding="async"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-red-950/40 via-transparent to-transparent pointer-events-none" />
                           </motion.div>
@@ -249,8 +251,10 @@ export const HomePage: React.FC = () => {
                           >
                             <img
                               className="w-full h-full object-cover"
-                              src="/images/rich-biochar-soil.png"
+                              src="/images/rich-biochar-soil.webp"
                               alt="Biochar soil"
+                              loading="lazy"
+                              decoding="async"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-brand-green-deep/40 via-transparent to-transparent pointer-events-none" />
                           </motion.div>
@@ -348,8 +352,10 @@ export const HomePage: React.FC = () => {
                 <div className="lg:col-span-5 relative rounded-2xl bg-white p-4 border border-brand-green/10 shadow-premium overflow-hidden aspect-[4/3] w-full flex items-center justify-center">
                   <img
                     className="w-full h-full object-cover rounded-xl"
-                    src="/images/soil-irrigation.jpg"
+                    src="/images/soil-irrigation.webp"
                     alt="Irrigation savings demo"
+                    loading="lazy"
+                    decoding="async"
                   />
                   {/* Dynamic Water Reservoir Panel */}
                   <div className="absolute bottom-4 right-4 bg-white/95 border border-brand-green/15 p-4 rounded-xl shadow-premium flex flex-col items-center gap-2 relative z-10 w-40">

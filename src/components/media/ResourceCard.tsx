@@ -29,7 +29,8 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({ resource }) => {
             src={getAssetUrl(resource.fileUrl)}
             alt={resource.title}
             loading="lazy"
-            className="max-w-[70%] max-h-[85%] object-contain group-hover:scale-105 transition-transform duration-500"
+            decoding="async"
+            className="max-h-[85%] max-w-[70%] object-contain transition-transform duration-500 group-hover:scale-105"
             onError={(e) => {
               // fallback if it fails or isn't a direct renderable image
               e.currentTarget.style.display = "none";
