@@ -50,13 +50,14 @@ export const SocialCard: React.FC = () => {
       name: "Instagram",
       icon: InstagramIcon,
       url: "https://www.instagram.com/khaadbharat/",
-      colorClass: "text-[#E1306C] hover:text-white hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7]",
+      colorClass:
+        "text-[#E1306C] hover:text-white hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7]",
       bgLightClass: "bg-[#E1306C]/8",
     },
     {
       name: "YouTube",
       icon: YoutubeIcon,
-      url: "https://youtube.com",
+      url: "https://www.youtube.com/@khaadbharat",
       colorClass: "text-[#FF0000] hover:text-white hover:bg-[#FF0000]",
       bgLightClass: "bg-[#FF0000]/8",
     },

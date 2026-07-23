@@ -28,12 +28,12 @@ export const ProductCTA: React.FC<ProductCTAProps> = ({
 
   useEffect(() => {
     if (isHi) {
-      const hindiUrl = "/downloads/Khaad_Bharat_Biochar_Photo_Guide_Hi.pdf";
+      const hindiUrl = "/downloads/खाद_भारत_बायोचार_जानकारी_पुस्तिका.pdf";
       fetch(getAssetUrl(hindiUrl), { method: "HEAD" })
         .then((res) => {
           if (res.ok) {
             setDownloadUrl(hindiUrl);
-            setDownloadName("Khaad_Bharat_Biochar_Photo_Guide_Hi.pdf");
+            setDownloadName("खाद_भारत_बायोचार_जानकारी_पुस्तिका.pdf");
           } else {
             setDownloadUrl("/downloads/Khaad_Bharat_Biochar_Photo_Guide.pdf");
             setDownloadName("Khaad_Bharat_Biochar_Photo_Guide.pdf");

@@ -28,7 +28,6 @@ export const Footer: React.FC = () => {
           {/* Column 1: Company Logo and Bio */}
           <div className="lg:col-span-4 flex flex-col gap-4">
             <div className="flex items-center gap-3">
-            
               <img
                 className="w-10 h-10 object-contain"
                 src="/images/logo-mark.png"
@@ -54,14 +53,23 @@ export const Footer: React.FC = () => {
                 className="p-2 rounded-full bg-white/5 hover:bg-white/10 hover:text-brand-accent-sunlight transition-colors flex items-center justify-center"
                 aria-label="Instagram"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                 </svg>
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/@khaadbharat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white/5 hover:bg-white/10 hover:text-brand-accent-sunlight transition-colors flex items-center justify-center"
@@ -78,7 +86,10 @@ export const Footer: React.FC = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" />
+                  <polygon
+                    points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                    fill="currentColor"
+                  />
                 </svg>
               </a>
             </div>
@@ -137,13 +148,19 @@ export const Footer: React.FC = () => {
                   JSL Enterprises, Delhi, India
                 </span>
               </div>
-              <a href="tel:+919315314828" className="flex items-center gap-3 hover:text-brand-accent-sunlight transition-colors group">
+              <a
+                href="tel:+919315314828"
+                className="flex items-center gap-3 hover:text-brand-accent-sunlight transition-colors group"
+              >
                 <Phone className="w-4 h-4 text-brand-accent-sunlight flex-shrink-0" />
                 <span className="text-sm text-white/80 group-hover:text-brand-accent-sunlight font-medium leading-none">
                   +91 93153 14828
                 </span>
               </a>
-              <a href="mailto:Jslgourav@gmail.com" className="flex items-center gap-3 hover:text-brand-accent-sunlight transition-colors group">
+              <a
+                href="mailto:Jslgourav@gmail.com"
+                className="flex items-center gap-3 hover:text-brand-accent-sunlight transition-colors group"
+              >
                 <Mail className="w-4 h-4 text-brand-accent-sunlight flex-shrink-0" />
                 <span className="text-sm text-white/80 group-hover:text-brand-accent-sunlight font-medium leading-none">
                   Jslgourav@gmail.com

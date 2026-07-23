@@ -169,16 +169,16 @@
         "title": "KHAAD BHARAT Product Brochure",
         "desc": "Overview of Biochar production, key chemical properties, and benefits for commercial crop growers.",
         "fileType": "PDF",
-        "fileSize": "2.7 KB",
-        "fileUrl": "/downloads/product-brochure.pdf"
+        "fileSize": "6.1 MB",
+        "fileUrl": "/downloads/KHAAD_BHARAT_Brochure-2.pdf"
       },
       {
         "id": "doc-2",
         "title": "Farmer Biochar Application Guide",
         "desc": "A simple pictorial handbook detailing recommended mixing ratios, seasonal application rules, and crop guides.",
         "fileType": "PDF",
-        "fileSize": "2.5 KB",
-        "fileUrl": "/downloads/farmer-guide.pdf"
+        "fileSize": "2.6 MB",
+        "fileUrl": "/downloads/Farmer_Biochar_Application_Guide.pdf"
       },
       {
         "id": "doc-3",
@@ -194,7 +194,7 @@
         "desc": "Scientific evaluation showing water absorption metrics and soil carbon health charts using biochar organic inputs.",
         "fileType": "PDF",
         "fileSize": "2.6 KB",
-        "fileUrl": "/downloads/soil-manual.pdf"
+        "fileUrl": "/downloads/SoilMoisture.pdf"
       }
     ]
   },

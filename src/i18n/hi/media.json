@@ -169,16 +169,16 @@
         "title": "खाद भारत उत्पाद विवरण पत्रक",
         "desc": "बायोचार इनपुट की विस्तृत रासायनिक संरचना, जैविक प्रमाणीकरण विवरण और विभिन्न फसलों के लिए लाभों का विवरण।",
         "fileType": "PDF",
-        "fileSize": "2.7 KB",
-        "fileUrl": "/downloads/product-brochure.pdf"
+        "fileSize": "1.0 MB",
+        "fileUrl": "/downloads/खाद भारत – जानकारी पुस्तिका.pdf"
       },
       {
         "id": "doc-2",
         "title": "किसान बायोचार उपयोग गाइड",
         "desc": "सरल चित्रों के साथ उपयोग की विधि, मिश्रण अनुपात, मौसमी नियम और फसलों के अनुसार मात्रा की गाइड।",
         "fileType": "PDF",
-        "fileSize": "2.5 KB",
-        "fileUrl": "/downloads/farmer-guide.pdf"
+        "fileSize": "2.1 एमबी",
+        "fileUrl": "/downloads/किसान आवेदन मार्गदर्शिका.pdf"
       },
       {
         "id": "doc-3",
@@ -186,7 +186,7 @@
         "desc": "जेएसएल एंटरप्राइजेज के भागीदारों के लिए मूल्य निर्धारण, लॉजिस्टिक्स नियम, डीलरशिप पात्रता मानदंड और मार्केटिंग सामग्री।",
         "fileType": "PDF",
         "fileSize": "2.6 KB",
-        "fileUrl": "/downloads/distributor-kit.pdf"
+        "fileUrl": "/downloads/वितरक किट (Distributor Kit).pdf"
       },
       {
         "id": "doc-4",
@@ -194,7 +194,7 @@
         "desc": "बायोचार जैविक इनपुट का उपयोग करके जल अवशोषण मेट्रिक्स और मिट्टी कार्बन स्वास्थ्य चार्ट का वैज्ञानिक मूल्यांकन।",
         "fileType": "PDF",
         "fileSize": "2.6 KB",
-        "fileUrl": "/downloads/soil-manual.pdf"
+        "fileUrl": "/downloads/मिट्टी की नमी(Soil Moisture).pdf"
       }
     ]
   },
